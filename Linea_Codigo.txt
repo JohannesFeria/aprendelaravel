@@ -1,0 +1,24 @@
+git config --global user.name JohannesFeria
+git config --global user.email johannes.lfl@gmail.com
+
+mkdir aprendelaravel
+
+cd aprendelaravel
+git init
+
+git remote add origin https://github.com/JohannesFeria/aprendelaravel.git
+
+git pull origin master
+
+ls
+
+git status
+
+git add -A
+git commit -a
+
+git commit -m "2 Commit"
+
+git push origin master
+
+git restore "Documento/Archivo2.docx"
