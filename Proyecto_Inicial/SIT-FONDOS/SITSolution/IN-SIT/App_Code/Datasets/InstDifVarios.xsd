@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="InstDifVarios" targetNamespace="http://tempuri.org/InstDifVarios.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/InstDifVarios.xsd" xmlns:mstns="http://tempuri.org/InstDifVarios.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="InstDifVarios" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="InstrumentoDiferenciaVarios">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoCustodio" type="xs:string" minOccurs="0" />
+							<xs:element name="Emisor" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTipoTitulo" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTipoInstrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="Nro" type="xs:string" minOccurs="0" />
+							<xs:element name="Unidades" type="xs:string" minOccurs="0" />
+							<xs:element name="Vpn" type="xs:string" minOccurs="0" />
+							<xs:element name="Saldo" type="xs:string" minOccurs="0" />
+							<xs:element name="Total" type="xs:string" minOccurs="0" />
+							<xs:element name="Diferencia" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

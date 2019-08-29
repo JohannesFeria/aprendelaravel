@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ParticipeSegmentacionTD" targetNamespace="http://tempuri.org/ParticipeSegmentacionTD.xsd" xmlns:mstns="http://tempuri.org/ParticipeSegmentacionTD.xsd" xmlns="http://tempuri.org/ParticipeSegmentacionTD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ParticipeSegmentacionTD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ParticipeSegmentacionTD" msprop:Generator_DataSetName="ParticipeSegmentacionTD" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PARTICIPE_SEGMENTACION_REGIONAL" msprop:Generator_UserTableName="PARTICIPE_SEGMENTACION_REGIONAL" msprop:Generator_RowDeletedName="PARTICIPE_SEGMENTACION_REGIONALRowDeleted" msprop:Generator_RowChangedName="PARTICIPE_SEGMENTACION_REGIONALRowChanged" msprop:Generator_RowClassName="PARTICIPE_SEGMENTACION_REGIONALRow" msprop:Generator_RowChangingName="PARTICIPE_SEGMENTACION_REGIONALRowChanging" msprop:Generator_RowEvArgName="PARTICIPE_SEGMENTACION_REGIONALRowChangeEvent" msprop:Generator_RowEvHandlerName="PARTICIPE_SEGMENTACION_REGIONALRowChangeEventHandler" msprop:Generator_TableClassName="PARTICIPE_SEGMENTACION_REGIONALDataTable" msprop:Generator_TableVarName="tablePARTICIPE_SEGMENTACION_REGIONAL" msprop:Generator_RowDeletingName="PARTICIPE_SEGMENTACION_REGIONALRowDeleting" msprop:Generator_TablePropName="PARTICIPE_SEGMENTACION_REGIONAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NUMERO_DOCUMENTO" msprop:Generator_UserColumnName="NUMERO_DOCUMENTO" msprop:Generator_ColumnPropNameInRow="NUMERO_DOCUMENTO" msprop:Generator_ColumnVarNameInTable="columnNUMERO_DOCUMENTO" msprop:Generator_ColumnPropNameInTable="NUMERO_DOCUMENTOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SEGMENTACION_REGIONAL" msprop:Generator_UserColumnName="SEGMENTACION_REGIONAL" msprop:Generator_ColumnPropNameInRow="SEGMENTACION_REGIONAL" msprop:Generator_ColumnVarNameInTable="columnSEGMENTACION_REGIONAL" msprop:Generator_ColumnPropNameInTable="SEGMENTACION_REGIONALColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USUARIO" msprop:Generator_UserColumnName="USUARIO" msprop:Generator_ColumnVarNameInTable="columnUSUARIO" msprop:Generator_ColumnPropNameInRow="USUARIO" msprop:Generator_ColumnPropNameInTable="USUARIOColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PARTICIPE_SEGMENTACION_REGIONALKey1">
+      <xs:selector xpath=".//mstns:PARTICIPE_SEGMENTACION_REGIONAL" />
+      <xs:field xpath="mstns:NUMERO_DOCUMENTO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

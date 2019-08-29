@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PorGestorBE" targetNamespace="http://tempuri.org/PorGestorBE.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/PorGestorBE.xsd" xmlns:mstns="http://tempuri.org/PorGestorBE.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="PorGestorBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PorGestor">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DescripcionRenta" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:string" minOccurs="0" />
+							<xs:element name="Operacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTpoTitulo" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Emisor" type="xs:string" minOccurs="0" />
+							<xs:element name="Contraparte" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="PTasa" type="xs:decimal" minOccurs="0" />
+							<xs:element name="YTM" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontoNominal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontoOperacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaLiquidacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CantidadOperacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrecioNegociacionLimpio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SAB" type="xs:string" minOccurs="0" />
+							<xs:element name="Banco" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoCambio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoLiquidacion" type="xs:string" minOccurs="0" />
+							<xs:element name="MontoDivisa" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MonedaOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Portafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="Gestor" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

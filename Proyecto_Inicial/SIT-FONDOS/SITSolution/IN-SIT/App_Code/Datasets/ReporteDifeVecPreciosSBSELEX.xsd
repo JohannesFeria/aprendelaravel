@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ReporteDifeVecPreciosSBSELEX" targetNamespace="http://tempuri.org/ReporteDifeVecPreciosSBSELEX.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ReporteDifeVecPreciosSBSELEX.xsd"
+	xmlns:mstns="http://tempuri.org/ReporteDifeVecPreciosSBSELEX.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ReporteDifeVecPreciosSBSELEX" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReporteDifeVecPreciosSBSELEX">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NemonicoVAX" type="xs:string" minOccurs="0" />
+							<xs:element name="SBS" type="xs:string" minOccurs="0" />
+							<xs:element name="ELEX" type="xs:string" minOccurs="0" />
+							<xs:element name="Diferencia" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

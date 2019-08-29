@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AnexoIDI3B" targetNamespace="http://tempuri.org/AnexoIDI3B.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/AnexoIDI3B.xsd" xmlns:mstns="http://tempuri.org/AnexoIDI3B.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="AnexoIDI3B" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AnexoIDI3B">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaProceso" type="xs:string" minOccurs="0" />
+							<xs:element name="Consecutivo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaNegociacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraNegociacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Movimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaEmision" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorInicial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ValorAlVencimiento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoTasa" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NombreTasa" type="xs:string" minOccurs="0" />
+							<xs:element name="TasaInteresAnual" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PlazoLiquidacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="BaseAnual" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoIntermediario" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreIntermediario" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicaCajaBanco" type="xs:string" minOccurs="0" />
+							<xs:element name="Plaza" type="xs:string" minOccurs="0" />
+							<xs:element name="MetodoValoracion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

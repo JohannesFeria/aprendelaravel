@@ -1,0 +1,25 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="TipoDeCambio.aspx.vb" Inherits="Modulos_Valorizacion_y_Custodia_Reportes_TipoDeCambio" %>
+
+<%@ Register Assembly="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
+    Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TipoDeCambio</title>
+    <script language="javascript" type="text/javascript">
+    		    function CloseWindow() {
+    		        window.close();
+    		        return false;
+    		    }
+			
+	</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Button ID="btnCancelar" runat="server" Text="Retornar" />
+        <CR:CrystalReportViewer ID="crTipoDeCambio" runat="server" AutoDataBind="true" />
+    </form>
+</body>
+</html>

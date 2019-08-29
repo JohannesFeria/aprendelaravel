@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsRentabilidadEncaje" targetNamespace="http://tempuri.org/dsRentabilidadEncaje.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsRentabilidadEncaje.xsd"
+	xmlns:mstns="http://tempuri.org/dsRentabilidadEncaje.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsRentabilidadEncaje" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="dsRentabilidadEncaje">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TipoInstrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="UtilidadTotal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="UtilidadFondo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="UtilidadEncaje" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

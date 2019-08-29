@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ClaseCuentaBE" targetNamespace="http://tempuri.org/ClaseCuentaBE.xsd" xmlns:mstns="http://tempuri.org/ClaseCuentaBE.xsd" xmlns="http://tempuri.org/ClaseCuentaBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ClaseCuentaBE" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="ClaseCuentaBE" msprop:Generator_UserDSName="ClaseCuentaBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ClaseCuenta" msprop:Generator_TableClassName="ClaseCuentaDataTable" msprop:Generator_TableVarName="tableClaseCuenta" msprop:Generator_TablePropName="ClaseCuenta" msprop:Generator_RowDeletingName="ClaseCuentaRowDeleting" msprop:Generator_RowChangingName="ClaseCuentaRowChanging" msprop:Generator_RowEvHandlerName="ClaseCuentaRowChangeEventHandler" msprop:Generator_RowDeletedName="ClaseCuentaRowDeleted" msprop:Generator_UserTableName="ClaseCuenta" msprop:Generator_RowChangedName="ClaseCuentaRowChanged" msprop:Generator_RowEvArgName="ClaseCuentaRowChangeEvent" msprop:Generator_RowClassName="ClaseCuentaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoClaseCuenta" msprop:Generator_ColumnVarNameInTable="columnCodigoClaseCuenta" msprop:Generator_ColumnPropNameInRow="CodigoClaseCuenta" msprop:Generator_ColumnPropNameInTable="CodigoClaseCuentaColumn" msprop:Generator_UserColumnName="CodigoClaseCuenta" type="xs:string" />
+              <xs:element name="UsuarioCreacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioCreacion" msprop:Generator_ColumnPropNameInRow="UsuarioCreacion" msprop:Generator_ColumnPropNameInTable="UsuarioCreacionColumn" msprop:Generator_UserColumnName="UsuarioCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCreacion" msprop:Generator_ColumnVarNameInTable="columnFechaCreacion" msprop:Generator_ColumnPropNameInRow="FechaCreacion" msprop:Generator_ColumnPropNameInTable="FechaCreacionColumn" msprop:Generator_UserColumnName="FechaCreacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UsuarioModificacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioModificacion" msprop:Generator_ColumnPropNameInRow="UsuarioModificacion" msprop:Generator_ColumnPropNameInTable="UsuarioModificacionColumn" msprop:Generator_UserColumnName="UsuarioModificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="HoraCreacion" msprop:Generator_ColumnVarNameInTable="columnHoraCreacion" msprop:Generator_ColumnPropNameInRow="HoraCreacion" msprop:Generator_ColumnPropNameInTable="HoraCreacionColumn" msprop:Generator_UserColumnName="HoraCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaModificacion" msprop:Generator_ColumnVarNameInTable="columnFechaModificacion" msprop:Generator_ColumnPropNameInRow="FechaModificacion" msprop:Generator_ColumnPropNameInTable="FechaModificacionColumn" msprop:Generator_UserColumnName="FechaModificacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion" type="xs:string" minOccurs="0" />
+              <xs:element name="HoraModificacion" msprop:Generator_ColumnVarNameInTable="columnHoraModificacion" msprop:Generator_ColumnPropNameInRow="HoraModificacion" msprop:Generator_ColumnPropNameInTable="HoraModificacionColumn" msprop:Generator_UserColumnName="HoraModificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Host" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Host" msprop:Generator_ColumnVarNameInTable="columnHost" msprop:Generator_ColumnPropNameInTable="HostColumn" msprop:Generator_UserColumnName="Host" type="xs:string" />
+              <xs:element name="UsuarioEliminacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioEliminacion" msprop:Generator_ColumnPropNameInRow="UsuarioEliminacion" msprop:Generator_ColumnPropNameInTable="UsuarioEliminacionColumn" msprop:Generator_UserColumnName="UsuarioEliminacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEliminacion" msprop:Generator_ColumnVarNameInTable="columnFechaEliminacion" msprop:Generator_ColumnPropNameInRow="FechaEliminacion" msprop:Generator_ColumnPropNameInTable="FechaEliminacionColumn" msprop:Generator_UserColumnName="FechaEliminacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HoraEliminacion" msprop:Generator_ColumnVarNameInTable="columnHoraEliminacion" msprop:Generator_ColumnPropNameInRow="HoraEliminacion" msprop:Generator_ColumnPropNameInTable="HoraEliminacionColumn" msprop:Generator_UserColumnName="HoraEliminacion" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoPortafolioSBS" msprop:Generator_ColumnVarNameInTable="columnCodigoPortafolioSBS" msprop:Generator_ColumnPropNameInRow="CodigoPortafolioSBS" msprop:Generator_ColumnPropNameInTable="CodigoPortafolioSBSColumn" msprop:Generator_UserColumnName="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

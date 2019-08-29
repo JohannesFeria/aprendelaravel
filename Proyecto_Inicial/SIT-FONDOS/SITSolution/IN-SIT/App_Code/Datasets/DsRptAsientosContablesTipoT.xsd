@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsRptAsientosContablesTipoT" targetNamespace="http://tempuri.org/DsRptAsientosContablesTipoT.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsRptAsientosContablesTipoT.xsd"
+	xmlns:mstns="http://tempuri.org/DsRptAsientosContablesTipoT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsRptAsientosContablesTipoT" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RptAsientosContablesTipoT">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Asiento" type="xs:string" minOccurs="0" />
+							<xs:element name="DetalleAsiento" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoImporte" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionCentroCosto" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoContable" type="xs:string" minOccurs="0" />
+							<xs:element name="Divisa" type="xs:string" minOccurs="0" />
+							<xs:element name="MontoDebe" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontoHaber" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							<xs:element name="Transaccion" type="xs:string" minOccurs="0" />
+							<xs:element name="OperacionContable" type="xs:string" minOccurs="0" />
+							<xs:element name="ImporteOrigen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

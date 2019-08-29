@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RepMovimientos" targetNamespace="http://tempuri.org/RepMovimientos.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/RepMovimientos.xsd" xmlns:mstns="http://tempuri.org/RepMovimientos.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="RepMovimientos" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Movimientos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoOperacionCaja" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaLiquidado" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionMercado" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionPortafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NumeroOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="IntermediarioDescripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoMovimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

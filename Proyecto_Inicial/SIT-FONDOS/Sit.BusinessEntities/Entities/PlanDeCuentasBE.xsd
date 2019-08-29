@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PlanDeCuentasBE" targetNamespace="http://tempuri.org/PlanDeCuentasBE.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/PlanDeCuentasBE.xsd" xmlns:mstns="http://tempuri.org/PlanDeCuentasBE.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="PlanDeCuentasBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PlanDeCuentas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Ano" type="xs:string" minOccurs="0" />
+							<xs:element name="CuentaContable" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorVigencia" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorCuentaImputable" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorConciliacionBancaria" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdenPago" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorCuentaGasto" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorLibroCompraVenta" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorTipoAnalisis" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorCuentaPresupuesto" type="xs:string" minOccurs="0" />
+							<xs:element name="NivelCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdenCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorAjuste" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

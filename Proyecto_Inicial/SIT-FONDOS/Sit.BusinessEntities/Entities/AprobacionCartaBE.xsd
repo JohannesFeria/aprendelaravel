@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AprobacionCartaBE" targetNamespace="http://tempuri.org/AprobacionCartaBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/AprobacionCartaBE.xsd"
+	xmlns:mstns="http://tempuri.org/AprobacionCartaBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="AprobacionCartaBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AprobacionCarta">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoModelo" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreUsuario1" type="xs:string" minOccurs="0" />
+							<xs:element name="CargoUsuario1" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreSuplente1" type="xs:string" minOccurs="0" />
+							<xs:element name="CargoSuplente1" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreAccesitario" type="xs:string" minOccurs="0" />
+							<xs:element name="CargoAccesitario" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreTitularUsuario" type="xs:string" minOccurs="0" />
+							<xs:element name="CargoTitularUsuario" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreSuplente2" type="xs:string" minOccurs="0" />
+							<xs:element name="CargoSuplente2" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreAccesitario2" type="xs:string" minOccurs="0" />
+							<xs:element name="CargoAccesitario2" type="xs:string" minOccurs="0" />
+							<xs:element name="Situacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Host" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaModificacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioEliminacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaEliminacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraEliminacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

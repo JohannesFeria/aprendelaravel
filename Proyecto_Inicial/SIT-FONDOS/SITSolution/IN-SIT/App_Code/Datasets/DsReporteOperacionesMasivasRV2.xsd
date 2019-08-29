@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsReporteOperacionesMasivasRV2" targetNamespace="http://tempuri.org/DsReporteOperacionesMasivasRV2.xsd" xmlns:mstns="http://tempuri.org/DsReporteOperacionesMasivasRV2.xsd" xmlns="http://tempuri.org/DsReporteOperacionesMasivasRV2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsReporteOperacionesMasivasRV2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsReporteOperacionesMasivasRV2" msprop:Generator_UserDSName="DsReporteOperacionesMasivasRV2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RegistroPrevio" msprop:Generator_TableClassName="RegistroPrevioDataTable" msprop:Generator_TableVarName="tableRegistroPrevio" msprop:Generator_TablePropName="RegistroPrevio" msprop:Generator_RowDeletingName="RegistroPrevioRowDeleting" msprop:Generator_UserTableName="RegistroPrevio" msprop:Generator_RowChangingName="RegistroPrevioRowChanging" msprop:Generator_RowEvHandlerName="RegistroPrevioRowChangeEventHandler" msprop:Generator_RowDeletedName="RegistroPrevioRowDeleted" msprop:Generator_RowEvArgName="RegistroPrevioRowChangeEvent" msprop:Generator_RowChangedName="RegistroPrevioRowChanged" msprop:Generator_RowClassName="RegistroPrevioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CV" msprop:Generator_ColumnVarNameInTable="columnCV" msprop:Generator_ColumnPropNameInRow="CV" msprop:Generator_ColumnPropNameInTable="CVColumn" msprop:Generator_UserColumnName="CV" type="xs:string" minOccurs="0" />
+              <xs:element name="Instrumento" msprop:Generator_ColumnVarNameInTable="columnInstrumento" msprop:Generator_ColumnPropNameInRow="Instrumento" msprop:Generator_ColumnPropNameInTable="InstrumentoColumn" msprop:Generator_UserColumnName="Instrumento" type="xs:string" minOccurs="0" />
+              <xs:element name="Emisor" msprop:Generator_ColumnVarNameInTable="columnEmisor" msprop:Generator_ColumnPropNameInRow="Emisor" msprop:Generator_ColumnPropNameInTable="EmisorColumn" msprop:Generator_UserColumnName="Emisor" type="xs:string" minOccurs="0" />
+              <xs:element name="Unidades" msprop:Generator_ColumnVarNameInTable="columnUnidades" msprop:Generator_ColumnPropNameInRow="Unidades" msprop:Generator_ColumnPropNameInTable="UnidadesColumn" msprop:Generator_UserColumnName="Unidades" type="xs:string" minOccurs="0" />
+              <xs:element name="Fondo1" msprop:Generator_ColumnVarNameInTable="columnFondo1" msprop:Generator_ColumnPropNameInRow="Fondo1" msprop:Generator_ColumnPropNameInTable="Fondo1Column" msprop:Generator_UserColumnName="Fondo1" type="xs:string" minOccurs="0" />
+              <xs:element name="Fondo2" msprop:Generator_ColumnVarNameInTable="columnFondo2" msprop:Generator_ColumnPropNameInRow="Fondo2" msprop:Generator_ColumnPropNameInTable="Fondo2Column" msprop:Generator_UserColumnName="Fondo2" type="xs:string" minOccurs="0" />
+              <xs:element name="Fondo3" msprop:Generator_ColumnVarNameInTable="columnFondo3" msprop:Generator_ColumnPropNameInRow="Fondo3" msprop:Generator_ColumnPropNameInTable="Fondo3Column" msprop:Generator_UserColumnName="Fondo3" type="xs:string" minOccurs="0" />
+              <xs:element name="Hora" msprop:Generator_ColumnVarNameInTable="columnHora" msprop:Generator_ColumnPropNameInRow="Hora" msprop:Generator_ColumnPropNameInTable="HoraColumn" msprop:Generator_UserColumnName="Hora" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Firma" msprop:Generator_TableClassName="FirmaDataTable" msprop:Generator_TableVarName="tableFirma" msprop:Generator_TablePropName="Firma" msprop:Generator_RowDeletingName="FirmaRowDeleting" msprop:Generator_UserTableName="Firma" msprop:Generator_RowChangingName="FirmaRowChanging" msprop:Generator_RowEvHandlerName="FirmaRowChangeEventHandler" msprop:Generator_RowDeletedName="FirmaRowDeleted" msprop:Generator_RowEvArgName="FirmaRowChangeEvent" msprop:Generator_RowChangedName="FirmaRowChanged" msprop:Generator_RowClassName="FirmaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Firma1" msprop:Generator_ColumnVarNameInTable="columnFirma1" msprop:Generator_ColumnPropNameInRow="Firma1" msprop:Generator_ColumnPropNameInTable="Firma1Column" msprop:Generator_UserColumnName="Firma1" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma2" msprop:Generator_ColumnVarNameInTable="columnFirma2" msprop:Generator_ColumnPropNameInRow="Firma2" msprop:Generator_ColumnPropNameInTable="Firma2Column" msprop:Generator_UserColumnName="Firma2" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma3" msprop:Generator_ColumnVarNameInTable="columnFirma3" msprop:Generator_ColumnPropNameInRow="Firma3" msprop:Generator_ColumnPropNameInTable="Firma3Column" msprop:Generator_UserColumnName="Firma3" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma4" msprop:Generator_ColumnVarNameInTable="columnFirma4" msprop:Generator_ColumnPropNameInRow="Firma4" msprop:Generator_ColumnPropNameInTable="Firma4Column" msprop:Generator_UserColumnName="Firma4" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma5" msprop:Generator_ColumnVarNameInTable="columnFirma5" msprop:Generator_ColumnPropNameInRow="Firma5" msprop:Generator_ColumnPropNameInTable="Firma5Column" msprop:Generator_UserColumnName="Firma5" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma6" msprop:Generator_ColumnVarNameInTable="columnFirma6" msprop:Generator_ColumnPropNameInRow="Firma6" msprop:Generator_ColumnPropNameInTable="Firma6Column" msprop:Generator_UserColumnName="Firma6" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma7" msprop:Generator_ColumnVarNameInTable="columnFirma7" msprop:Generator_ColumnPropNameInRow="Firma7" msprop:Generator_ColumnPropNameInTable="Firma7Column" msprop:Generator_UserColumnName="Firma7" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma8" msprop:Generator_ColumnVarNameInTable="columnFirma8" msprop:Generator_ColumnPropNameInRow="Firma8" msprop:Generator_ColumnPropNameInTable="Firma8Column" msprop:Generator_UserColumnName="Firma8" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma9" msprop:Generator_ColumnVarNameInTable="columnFirma9" msprop:Generator_ColumnPropNameInRow="Firma9" msprop:Generator_ColumnPropNameInTable="Firma9Column" msprop:Generator_UserColumnName="Firma9" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma10" msprop:Generator_ColumnVarNameInTable="columnFirma10" msprop:Generator_ColumnPropNameInRow="Firma10" msprop:Generator_ColumnPropNameInTable="Firma10Column" msprop:Generator_UserColumnName="Firma10" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma11" msprop:Generator_ColumnVarNameInTable="columnFirma11" msprop:Generator_ColumnPropNameInRow="Firma11" msprop:Generator_ColumnPropNameInTable="Firma11Column" msprop:Generator_UserColumnName="Firma11" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Firma12" msprop:Generator_ColumnVarNameInTable="columnFirma12" msprop:Generator_ColumnPropNameInRow="Firma12" msprop:Generator_ColumnPropNameInTable="Firma12Column" msprop:Generator_UserColumnName="Firma12" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

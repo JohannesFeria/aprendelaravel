@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsReporteValidacionFondos" targetNamespace="http://tempuri.org/DsReporteValidacionFondos.xsd" xmlns:mstns="http://tempuri.org/DsReporteValidacionFondos.xsd" xmlns="http://tempuri.org/DsReporteValidacionFondos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsReporteValidacionFondos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsReporteValidacionFondos" msprop:Generator_UserDSName="DsReporteValidacionFondos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DsReporteValidacionFondos" msprop:Generator_TableClassName="DsReporteValidacionFondosDataTable" msprop:Generator_TableVarName="tableDsReporteValidacionFondos" msprop:Generator_TablePropName="_DsReporteValidacionFondos" msprop:Generator_RowDeletingName="DsReporteValidacionFondosRowDeleting" msprop:Generator_UserTableName="DsReporteValidacionFondos" msprop:Generator_RowChangingName="DsReporteValidacionFondosRowChanging" msprop:Generator_RowEvHandlerName="DsReporteValidacionFondosRowChangeEventHandler" msprop:Generator_RowDeletedName="DsReporteValidacionFondosRowDeleted" msprop:Generator_RowEvArgName="DsReporteValidacionFondosRowChangeEvent" msprop:Generator_RowChangedName="DsReporteValidacionFondosRowChanged" msprop:Generator_RowClassName="DsReporteValidacionFondosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentasxPagar" msprop:Generator_ColumnVarNameInTable="columnCuentasxPagar" msprop:Generator_ColumnPropNameInRow="CuentasxPagar" msprop:Generator_ColumnPropNameInTable="CuentasxPagarColumn" msprop:Generator_UserColumnName="CuentasxPagar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Inversiones" msprop:Generator_ColumnVarNameInTable="columnInversiones" msprop:Generator_ColumnPropNameInRow="Inversiones" msprop:Generator_ColumnPropNameInTable="InversionesColumn" msprop:Generator_UserColumnName="Inversiones" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Caja" msprop:Generator_ColumnVarNameInTable="columnCaja" msprop:Generator_ColumnPropNameInRow="Caja" msprop:Generator_ColumnPropNameInTable="CajaColumn" msprop:Generator_UserColumnName="Caja" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CuentasxCobrar" msprop:Generator_ColumnVarNameInTable="columnCuentasxCobrar" msprop:Generator_ColumnPropNameInRow="CuentasxCobrar" msprop:Generator_ColumnPropNameInTable="CuentasxCobrarColumn" msprop:Generator_UserColumnName="CuentasxCobrar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Patrimonio" msprop:Generator_ColumnVarNameInTable="columnPatrimonio" msprop:Generator_ColumnPropNameInRow="Patrimonio" msprop:Generator_ColumnPropNameInTable="PatrimonioColumn" msprop:Generator_UserColumnName="Patrimonio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="F1" msprop:Generator_ColumnVarNameInTable="columnF1" msprop:Generator_ColumnPropNameInRow="F1" msprop:Generator_ColumnPropNameInTable="F1Column" msprop:Generator_UserColumnName="F1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="F2" msprop:Generator_ColumnVarNameInTable="columnF2" msprop:Generator_ColumnPropNameInRow="F2" msprop:Generator_ColumnPropNameInTable="F2Column" msprop:Generator_UserColumnName="F2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cuadra" msprop:Generator_ColumnVarNameInTable="columnCuadra" msprop:Generator_ColumnPropNameInRow="Cuadra" msprop:Generator_ColumnPropNameInTable="CuadraColumn" msprop:Generator_UserColumnName="Cuadra" type="xs:string" minOccurs="0" />
+              <xs:element name="Valorado" msprop:Generator_ColumnVarNameInTable="columnValorado" msprop:Generator_ColumnPropNameInRow="Valorado" msprop:Generator_ColumnPropNameInTable="ValoradoColumn" msprop:Generator_UserColumnName="Valorado" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ReporteContabilidadCabeceraBE" targetNamespace="http://tempuri.org/ReporteContabilidadCabeceraBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ReporteContabilidadCabeceraBE.xsd"
+	xmlns:mstns="http://tempuri.org/ReporteContabilidadCabeceraBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ReporteContabilidadCabeceraBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReporteContabilidadCabecera">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Asiento" type="xs:string" minOccurs="0" />
+							<xs:element name="Transaccion" type="xs:string" minOccurs="0" />
+							<xs:element name="OperacionContable" type="xs:string" minOccurs="0" />
+							<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							<xs:element name="TotalDebe" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalHaber" type="xs:decimal" minOccurs="0" />
+							<xs:element name="EstadoPortafolio" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

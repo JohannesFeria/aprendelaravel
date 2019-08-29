@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsReporteDuraciones2" targetNamespace="http://tempuri.org/dsReporteDuraciones2.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsReporteDuraciones2.xsd"
+	xmlns:mstns="http://tempuri.org/dsReporteDuraciones2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsReporteDuraciones2" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReporteDuraciones">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Fondo" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroTitulo" type="xs:string" minOccurs="0" />
+							<xs:element name="Instrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="Duracion" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

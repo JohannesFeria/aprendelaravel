@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="InstDife" targetNamespace="http://tempuri.org/InstDife.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/InstDife.xsd" xmlns:mstns="http://tempuri.org/InstDife.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="InstDife" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="InstrumentosDiferencias">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Código_x0020_Mnemónico" type="xs:string" minOccurs="0" />
+							<xs:element name="Código_x0020_ISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="Código_x0020_SBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Nombre_x0020_Emisor" type="xs:string" minOccurs="0" />
+							<xs:element name="Tipo_x0020_Titulo" type="xs:string" minOccurs="0" />
+							<xs:element name="Sinónimo" type="xs:string" minOccurs="0" />
+							<xs:element name="Número_x0020_Titulo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unidades" type="xs:decimal" minOccurs="0" />
+							<xs:element name="VPN_x0020_Origen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Valor_x0020_Custodio_x0020_Und" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Diferencia_x0020_Unidades" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Diferencia_x0020_Valor" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Fondo" type="xs:string" minOccurs="0" />
+							<xs:element name="Código_x0020_Custodio" type="xs:string" minOccurs="0" />
+							<xs:element name="Custodio" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

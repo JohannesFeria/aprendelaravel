@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsInventarioForward" targetNamespace="http://tempuri.org/DsInventarioForward.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsInventarioForward.xsd"
+	xmlns:mstns="http://tempuri.org/DsInventarioForward.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsInventarioForward" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DsInventarioForward">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FechaProceso" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor" type="xs:string" minOccurs="0" />
+							<xs:element name="CodEmisor" type="xs:string" minOccurs="0" />
+							<xs:element name="Emisor" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoRef" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraNegaciacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMonedaVenta" type="xs:string" minOccurs="0" />
+							<xs:element name="MonedaVenta" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorMovimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoForward" type="xs:string" minOccurs="0" />
+							<xs:element name="MontoForward" type="xs:string" minOccurs="0" />
+							<xs:element name="PrecioTransaccion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaEmision" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaLiquidacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="PlazoVencimiento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Modalidad" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoCambioForwardPactado" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IndicadorCaja" type="xs:string" minOccurs="0" />
+							<xs:element name="PlazaNegociacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Fondo" type="xs:string" minOccurs="0" />
+							<xs:element name="MontoCalculado" type="xs:string" minOccurs="0" />
+							<xs:element name="Fixing" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

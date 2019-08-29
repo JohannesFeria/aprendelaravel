@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsOrdenInversion" targetNamespace="http://tempuri.org/DsOrdenInversion.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsOrdenInversion.xsd"
+	xmlns:mstns="http://tempuri.org/DsOrdenInversion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsOrdenInversion" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="OrdenInversionReporte">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="numero" type="xs:string" minOccurs="0" />
+							<xs:element name="moneda" type="xs:string" minOccurs="0" />
+							<xs:element name="tipoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="tipoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="nroTrans" type="xs:string" minOccurs="0" />
+							<xs:element name="codigoIsin" type="xs:string" minOccurs="0" />
+							<xs:element name="descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="montoOperacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="fechaOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="fechaLiquidacion" type="xs:string" minOccurs="0" />
+							<xs:element name="estado" type="xs:string" minOccurs="0" />
+							<xs:element name="origen" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoNnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaSolCompra" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SumaSolVenta" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SumaDolCompra" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SumaDolVenta" type="xs:decimal" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="MotivoCambio" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Precio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaOI" type="xs:string" minOccurs="0" />
+							<xs:element name="Comentarios" type="xs:string" minOccurs="0" />
+							<xs:element name="CE" type="xs:string" minOccurs="0" />
+							<xs:element name="TC" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

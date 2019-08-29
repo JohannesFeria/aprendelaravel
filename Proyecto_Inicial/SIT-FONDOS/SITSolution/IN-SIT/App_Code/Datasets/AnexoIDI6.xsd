@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AnexoIDI6" targetNamespace="http://tempuri.org/AnexoIDI6.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/AnexoIDI6.xsd" xmlns:mstns="http://tempuri.org/AnexoIDI6.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="AnexoIDI6" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AnexoIDI6">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaProceso" type="xs:string" minOccurs="0" />
+							<xs:element name="Consecutivo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="codigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Movimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaLiquidacion" type="xs:string" minOccurs="0" />
+							<xs:element name="PlazoLiquidacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Tenencia" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Factor" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="TotalMonedaOrigen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalMonedaLocal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IndicaCajaBanco" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

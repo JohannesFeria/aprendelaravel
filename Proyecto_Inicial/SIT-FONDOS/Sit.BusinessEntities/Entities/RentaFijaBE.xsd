@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RentaFijaBE" targetNamespace="http://tempuri.org/RentaFijaBE.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/RentaFijaBE.xsd" xmlns:mstns="http://tempuri.org/RentaFijaBE.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="RentaFijaBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReporteOperacionRentaFija">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Fecha" type="xs:string" minOccurs="0" />
+							<xs:element name="Operacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTipoTitulo" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Contraparte" type="xs:string" minOccurs="0" />
+							<xs:element name="Emisor" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="PTasa" type="xs:decimal" minOccurs="0" />
+							<xs:element name="YTM" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontoNominal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontoOperacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaLiquidacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Portafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="Gestor" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

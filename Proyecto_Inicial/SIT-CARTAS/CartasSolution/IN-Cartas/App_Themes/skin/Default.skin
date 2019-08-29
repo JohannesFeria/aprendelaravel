@@ -1,0 +1,60 @@
+﻿<%-- Default --%>
+<asp:Button runat="server" CssClass="btn btn-integra" style="min-width: 80px; text-align: center; width:auto;" />
+<asp:RequiredFieldValidator CssClass="validator" runat="server" text="(*)" />
+<%-- Botones Personalizados --%>
+<asp:Button runat="server" SkinID="btnSmall" CssClass="btn btn-integra" style="min-width: 45px; text-align: center; width:auto; " />
+<%-- TextBox Personalizados --%>
+<asp:TextBox runat="server" SkinID="Date" style="width:86px;" placeholder="dd/MM/yyyy" data-mask="99/99/9999" />
+<asp:TextBox runat="server" SkinID="Hour" style="width:82px;" placeholder="hh:mm:ss" data-mask="99:99:99" />
+<%-- Grilla Personalizados --%>
+<%-- Grilla Normal --%>
+<asp:GridView SkinID="Grid" runat="server" AutoGenerateColumns="false"  ShowHeaderWhenEmpty="true"
+    BorderColor="#706F6F" SelectedRowStyle-BackColor="#FDF252" HeaderStyle-HorizontalAlign="Center"
+    CellPadding="4" GridLines="Both" BorderWidth="1px" PageSize="10" ShowFooter="false" AllowPaging="true"  
+    width="100%" CssClass="ColumnsGrilla" >
+    <HeaderStyle Font-Bold="True" HorizontalAlign="Right" Height="23px" Font-Names="Trebuchet MS" Font-Size="11px" BackColor="#eff4fa" ForeColor="#0039a6" />
+    <RowStyle Height="18px" Font-Names="Trebuchet MS" Font-Size="11px" cssClass="nowrap" />
+    <FooterStyle HorizontalAlign="center" />
+    <pagerstyle CssClass="paginacion" verticalalign="Bottom" horizontalalign="Left"/>    
+    <pagersettings Mode="NumericFirstLast" PageButtonCount="1" FirstPageText="<<" LastPageText=">>"/> 
+</asp:GridView>
+
+<%--Grilla sin paginado--%>
+
+<asp:GridView SkinID="Grid_AllowPaging_NO" runat="server" AutoGenerateColumns="false"  ShowHeaderWhenEmpty="true"
+    BorderColor="#706F6F" SelectedRowStyle-BackColor="#FDF252" HeaderStyle-HorizontalAlign="Center"
+    CellPadding="4" GridLines="Both" BorderWidth="1px" ShowFooter="false" AllowPaging="false"  
+    width="100%" CssClass="ColumnsGrilla" Height="23px" >
+    <HeaderStyle Font-Bold="True" HorizontalAlign="Right" Height="23px" Font-Names="Trebuchet MS" Font-Size="11px" BackColor="#eff4fa" ForeColor="#0039a6" />
+    <RowStyle Height="18px" Font-Names="Trebuchet MS" Font-Size="11px" cssClass="nowrap" />
+    <FooterStyle HorizontalAlign="center" />   
+   
+</asp:GridView>
+
+<%-- Grilla con Footer --%>
+<asp:GridView SkinID="GridFooter" runat="server" AutoGenerateColumns="false"  ShowHeaderWhenEmpty="true"
+    BorderColor="#706F6F" SelectedRowStyle-BackColor="#FDF252" HeaderStyle-HorizontalAlign="Center"
+    CellPadding="4" GridLines="Both" BorderWidth="1px" ShowFooter="true" AllowPaging="false"
+    width="100%" CssClass="ColumnsGrilla">
+    <%-- PageSize="10" --%>
+    <HeaderStyle Font-Bold="True" HorizontalAlign="Right" Height="23px" Font-Names="Trebuchet MS" Font-Size="11px" BackColor="#eff4fa" ForeColor="#0039a6" />
+    <RowStyle Height="18px" Font-Names="Trebuchet MS" Font-Size="11px" cssClass="nowrap" />
+    <FooterStyle HorizontalAlign="center" />
+    <%-- <pagerstyle CssClass="paginacion" verticalalign="Bottom" horizontalalign="Left"/> --%>
+    <%-- <pagersettings Mode="NumericFirstLast" PageButtonCount="1" FirstPageText="<<" LastPageText=">>"/> --%>
+</asp:GridView>
+
+<%-- Grilla Pequeña --%>
+<asp:GridView SkinID="GridSmall" runat="server" AutoGenerateColumns="false" width="100%" ShowHeaderWhenEmpty="true"
+    BorderColor="#706F6F" SelectedRowStyle-BackColor="#FDF252" CellPadding="4" GridLines="Both" BorderWidth="1px"  
+    ShowFooter="false" AllowPaging="false">
+    <HeaderStyle Font-Bold="True" HorizontalAlign="Center" Height="23px" Font-Names="Verdana" Font-Size="11px" BackColor="#FCED1C" ForeColor="#021494" />
+    <RowStyle Height="18px" Font-Names="Verdana" Font-Size="11px" cssClass="nowrap" />
+</asp:GridView>
+<%-- ImageButton Personalizados --%>
+<asp:imageButton runat="server" SkinID="imgCheck" ImageUrl="~/App_Themes/img/icons/glyphicons_check.png" style=" heigth:15px; width:15px; margin-left:5px;margin-right:8px;" />
+<asp:imageButton runat="server" SkinID="imgDelete" ImageUrl="~/App_Themes/img/icons/glyphicons_bin.png" style=" heigth:15px; width:15px; margin: 2px 5px" />
+<asp:imageButton runat="server" SkinID="imgEdit" ImageUrl="~/App_Themes/img/icons/glyphicons_edit.png" style=" heigth:23px; width:23px; margin: 2px 5px"/>
+<asp:imageButton runat="server" SkinID="imgSearch" ImageUrl="~/App_Themes/img/icons/glyphicons_search.png" style=" heigth:12px; width:12px;margin-left:5px;margin-right:8px;" />
+<asp:imageButton runat="server" SkinID="imgAdd" ImageUrl="~/App_Themes/img/icons/glyphicons_circle_plus.png" style=" heigth:15px; width:15px;margin-left:5px;margin-right:8px;" />
+<asp:imageButton runat="server" SkinID="imgMenu" ImageUrl="~/App_Themes/img/icons/tree_list.png" style=" heigth:15px; width:15px;margin-left:5px;margin-right:8px;" />

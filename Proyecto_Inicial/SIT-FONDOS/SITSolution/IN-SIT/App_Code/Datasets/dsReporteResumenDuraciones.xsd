@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReporteResumenDuraciones" targetNamespace="http://tempuri.org/dsReporteResumenDuraciones.xsd" xmlns:mstns="http://tempuri.org/dsReporteResumenDuraciones.xsd" xmlns="http://tempuri.org/dsReporteResumenDuraciones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReporteResumenDuraciones" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="dsReporteResumenDuraciones" msprop:Generator_UserDSName="dsReporteResumenDuraciones">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ResumenDuraciones" msprop:Generator_TableClassName="ResumenDuracionesDataTable" msprop:Generator_TableVarName="tableResumenDuraciones" msprop:Generator_TablePropName="ResumenDuraciones" msprop:Generator_RowDeletingName="ResumenDuracionesRowDeleting" msprop:Generator_RowChangingName="ResumenDuracionesRowChanging" msprop:Generator_RowEvHandlerName="ResumenDuracionesRowChangeEventHandler" msprop:Generator_RowDeletedName="ResumenDuracionesRowDeleted" msprop:Generator_UserTableName="ResumenDuraciones" msprop:Generator_RowChangedName="ResumenDuracionesRowChanged" msprop:Generator_RowEvArgName="ResumenDuracionesRowChangeEvent" msprop:Generator_RowClassName="ResumenDuracionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Portafolio" msprop:Generator_ColumnVarNameInTable="columnPortafolio" msprop:Generator_ColumnPropNameInRow="Portafolio" msprop:Generator_ColumnPropNameInTable="PortafolioColumn" msprop:Generator_UserColumnName="Portafolio" type="xs:string" minOccurs="0" />
+              <xs:element name="Periodo" msprop:Generator_ColumnVarNameInTable="columnPeriodo" msprop:Generator_ColumnPropNameInRow="Periodo" msprop:Generator_ColumnPropNameInTable="PeriodoColumn" msprop:Generator_UserColumnName="Periodo" type="xs:string" minOccurs="0" />
+              <xs:element name="Monto" msprop:Generator_ColumnVarNameInTable="columnMonto" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_UserColumnName="Monto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Duracion" msprop:Generator_ColumnVarNameInTable="columnDuracion" msprop:Generator_ColumnPropNameInRow="Duracion" msprop:Generator_ColumnPropNameInTable="DuracionColumn" msprop:Generator_UserColumnName="Duracion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PorcSobreFondo" msprop:Generator_ColumnVarNameInTable="columnPorcSobreFondo" msprop:Generator_ColumnPropNameInRow="PorcSobreFondo" msprop:Generator_ColumnPropNameInTable="PorcSobreFondoColumn" msprop:Generator_UserColumnName="PorcSobreFondo" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AnexoIDI8" targetNamespace="http://tempuri.org/AnexoIDI8.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/AnexoIDI8.xsd" xmlns:mstns="http://tempuri.org/AnexoIDI8.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="AnexoIDI8" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AnexoIDI8">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaProceso" type="xs:string" minOccurs="0" />
+							<xs:element name="Consecutivo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CantidadInstrumento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="InstrumentosTransito" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalInstrumentos" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ValorizacionInstrumento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoCustodio" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionCustodio" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

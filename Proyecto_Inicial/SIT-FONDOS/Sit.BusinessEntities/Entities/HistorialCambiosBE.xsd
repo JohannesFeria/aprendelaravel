@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="HistorialCambiosBE" targetNamespace="http://tempuri.org/HistorialCambiosBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/HistorialCambiosBE.xsd"
+	xmlns:mstns="http://tempuri.org/HistorialCambiosBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="HistorialCambiosBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="HistorialCambios">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Aplicativo" type="xs:string" minOccurs="0" />
+							<xs:element name="Funcionalidad" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Host" type="xs:string" minOccurs="0" />
+							<xs:element name="idRegistro" type="xs:string" minOccurs="0" />
+							<xs:element name="SituacionAnterior" type="xs:string" minOccurs="0" />
+							<xs:element name="SituacionActual" type="xs:string" minOccurs="0" />
+							<xs:element name="Rol_RutaFirma" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

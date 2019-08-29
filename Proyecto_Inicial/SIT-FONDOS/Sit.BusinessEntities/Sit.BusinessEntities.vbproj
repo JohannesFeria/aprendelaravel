@@ -1,0 +1,2935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Sit.BusinessEntities</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Sit.BusinessEntities</RootNamespace>
+    <StartupObject>Sit.BusinessEntities.%28Ninguno%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Sit.BusinessEntities/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Sit.BusinessEntities.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Sit.BusinessEntities.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\AnhioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnhioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AplicacionContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AplicacionContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AprobacionCartaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AprobacionCartaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AprobadorCartaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AprobadorCartaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AprobadorDocumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AprobadorDocumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AprobadorTraderBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AprobadorTraderBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ArchivoPlanoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchivoPlanoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ArchivoPlanoEstructuraBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchivoPlanoEstructuraBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ArchivosVAXBCOSBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchivosVAXBCOSBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ArchivosVAXBMIDASBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchivosVAXBMIDASBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AsientoContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AsientoContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AumentoCapitalBE.vb" />
+    <Compile Include="Entities\BalanceContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BalanceContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\BCRSeriadoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BCRSeriadoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\BCRUnicoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BCRUnicoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CabeceraMatrizContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CabeceraMatrizContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CalificacionInstrumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalificacionInstrumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CaracteristicaGrupoBE.vb" />
+    <Compile Include="Entities\CaracteristicaLimiteBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaracteristicaLimiteBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CargoFirmanteBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CargoFirmanteBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CarteraIndirectaBE.vb" />
+    <Compile Include="Entities\CarteraTituloValoracionBE.vb">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Entities\CentroCostosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CentroCostosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaseCuentaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClaseCuentaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClaseInstrumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClaseInstrumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ClienteMandatoBE.vb" />
+    <Compile Include="Entities\CodigoPostalBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodigoPostalBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CodigoValorBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CodigoValorBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ConceptoAsientoContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConceptoAsientoContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ConceptoIdiBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConceptoIdiBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ConceptoOperacionContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConceptoOperacionContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ContactoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CronogramaPagosBE.vb" />
+    <Compile Include="Entities\CotizacionVACBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CotizacionVACBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CuentaEconomicaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuentaEconomicaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CuentasPorCobrarPagarBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuentasPorCobrarPagarBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CuentasPorTipoInstrumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuentasPorTipoInstrumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CuentaTercerosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuentaTercerosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CuponeraEspecialBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuponeraEspecialBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CuponeraNormalBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuponeraNormalBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CuponeraNormalValoresBE.vb" />
+    <Compile Include="Entities\CustodioAjusteBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustodioAjusteBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CustodioArchivoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustodioArchivoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CustodioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustodioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CustodioCuentaDepositariaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustodioCuentaDepositariaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CustodioKardexBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustodioKardexBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DatosCartasBE.vb" />
+    <Compile Include="Entities\DatosOrdenInversionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosOrdenInversionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DetalleMatrizContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalleMatrizContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DetallePortafolioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetallePortafolioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DevolucionComisionBE.vb" />
+    <Compile Include="Entities\DistribucionLibBE.vb" />
+    <Compile Include="Entities\DividendosRebatesLiberadasBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DividendosRebatesLiberadasBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DivisasBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DivisasBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EmisorBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmisorBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EncajeBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EncajeBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EncajeDetalleBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EncajeDetalleBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EntidadBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntidadBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EntidadExcesosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntidadExcesosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EntidadSitBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntidadSitBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\EventosAutomaticosBE.vb" />
+    <Compile Include="Entities\FactorBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FactorBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FeriadoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeriadoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FirmaDocumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirmaDocumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FirmaDocumentoDetBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirmaDocumentoDetBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FrecuenciaDividendoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrecuenciaDividendoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FrecuenciaDividendoBE.vb">
+      <DependentUpon>FrecuenciaDividendoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GapsBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GapsBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GapsFondoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GapsFondoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GrupoCategoriaInstrumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrupoCategoriaInstrumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GrupoEconomicoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrupoEconomicoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GrupoLimiteTraderBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrupoLimiteTraderBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GrupoLimiteTraderDetalleBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrupoLimiteTraderDetalleBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GrupoPortafolioBE.vb" />
+    <Compile Include="Entities\GrupoTipoInstrumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrupoTipoInstrumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GrupoTipoRentaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrupoTipoRentaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\HechosImportanciaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HechosImportanciaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\HistorialCambiosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HistorialCambiosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ImportadorExcelBE.vb" />
+    <Compile Include="Entities\ImpuestosComisionesBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImpuestosComisionesBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ImpuestosComisionesOrdenPreOrdenBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImpuestosComisionesOrdenPreOrdenBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IndicadorBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndicadorBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IndicadorBE.vb">
+      <DependentUpon>IndicadorBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IndicadorBenchmarkBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndicadorBenchmarkBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InstrumentoPorLimiteBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InstrumentoPorLimiteBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InstrumentosCompuestosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InstrumentosCompuestosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InstrumentosEstructuradosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InstrumentosEstructuradosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IntermediarioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntermediarioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\IntermediarioContactoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntermediarioContactoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\InventarioCartasBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventarioCartasBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\KardexCarteraBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KardexCarteraBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LimiteBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LimiteBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LimiteBE.vb">
+      <DependentUpon>LimiteBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LimiteCaracteristicaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LimiteCaracteristicaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LimiteInstrumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LimiteInstrumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LimiteIntermediarioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LimiteIntermediarioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LimiteTradingBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LimiteTradingBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LiquidacionesReportesBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LiquidacionesReportesBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LiquidezAccionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LiquidezAccionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\LocacionBBHBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocacionBBHBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MatrizContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatrizContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MercadoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MercadoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MesBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MesBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MnMenuAccesoBE.vb" />
+    <Compile Include="Entities\MnRolBE.vb" />
+    <Compile Include="Entities\ModalidadPagoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModalidadPagoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ModeloCartaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloCartaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ModeloCartaEstructuraBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloCartaEstructuraBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MonedaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonedaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MontoNegociadoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MontoNegociadoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MontoNegociadoBVLBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MontoNegociadoBVLBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MotivoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotivoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MovimientoBancarioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovimientoBancarioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MovimientoPersonalBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovimientoPersonalBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\NegocioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NegocioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\NivelesCoberturaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NivelesCoberturaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ObligacionTecnicaBE.Designer.vb" />
+    <Compile Include="Entities\OperacionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OperacionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OperacionCajaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OperacionCajaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OperacionContableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OperacionContableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrdenesBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenesBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrdenInversionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenInversionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrdenInversionTMPBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenInversionTMPBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrdenInversion_DetalleSWAPBE.vb" />
+    <Compile Include="Entities\OrdenPreOrdenInversionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenPreOrdenInversionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OrdenPreOrdenInversionBE.vb">
+      <DependentUpon>OrdenPreOrdenInversionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PagoFechaComisionBE.vb" />
+    <Compile Include="Entities\PaisBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaisBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PatrimonioEmisorBE.vb" />
+    <Compile Include="Entities\PatrimonioFideicomisoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatrimonioFideicomisoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PatrimonioFideicomisoDetalleBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatrimonioFideicomisoDetalleBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PatrimonioTerceroBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatrimonioTerceroBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PatrimonioTerceroBE.vb">
+      <DependentUpon>PatrimonioTerceroBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PatrimonioValorBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatrimonioValorBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PeriodicidadBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PeriodicidadBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PeriodoLiborBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PeriodoLiborBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PersonalBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PersonalBE.vb">
+      <DependentUpon>PersonalBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PlanDeCuentasBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanDeCuentasBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PlazaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlazaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PorcentajeNivelRatingBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PorcentajeNivelRatingBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PorcentajeNivelRatingBE.vb">
+      <DependentUpon>PorcentajeNivelRatingBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PorCorrelativoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PorCorrelativoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PorGestorBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PorGestorBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PortafolioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PortafolioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PortafolioBE.vb">
+      <DependentUpon>PortafolioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PortafolioDirectorioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PortafolioDirectorioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PortafolioPorcentajeComisionBE.vb" />
+    <Compile Include="Entities\PrevisionCierre.vb" />
+    <Compile Include="Entities\PrevisionCuentasCorrientes.vb" />
+    <Compile Include="Entities\PrevisionDetalleUsuario.vb" />
+    <Compile Include="Entities\PrevisionMemo.vb" />
+    <Compile Include="Entities\PrevisionPago.vb" />
+    <Compile Include="Entities\PrevisionPagoDetalle.vb" />
+    <Compile Include="Entities\PrevisionParametria.vb" />
+    <Compile Include="Entities\PrevisionPersonal.vb" />
+    <Compile Include="Entities\PrevisionUsuario.vb" />
+    <Compile Include="Entities\PrevOrdenInversionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrevOrdenInversionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PrevOrdenInversionDetalleBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrevOrdenInversionDetalleBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RatingBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RatingBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RentaFijaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentaFijaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RentaVariableBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentaVariableBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ReporteContabilidadCabeceraBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteContabilidadCabeceraBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ReportesContabilidadBE.vb">
+      <DependentUpon>ReportesContabilidadBE.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Entities\ReportesLimitesBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportesLimitesBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ReportesResumenEnvioPUADM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportesResumenEnvioPUADM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ReporteVLMidasBE.vb" />
+    <Compile Include="Entities\RolTraderBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RolTraderBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\E_Rol_Menu.vb" />
+    <Compile Include="Entities\SaldoNoAdministradoBE.vb" />
+    <Compile Include="Entities\SaldosBancariosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaldosBancariosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SaldosCargadosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaldosCargadosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SaldosNoCargadosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaldosNoCargadosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SectorEmpresarialBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SectorEmpresarialBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SolicitudReversionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolicitudReversionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\SolicitudReversionBE.vb">
+      <DependentUpon>SolicitudReversionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TasaEncajeBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TasaEncajeBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TercerosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TercerosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TercerosE.vb" />
+    <Compile Include="Entities\Terceros_FondoClienteBE.vb" />
+    <Compile Include="Entities\TipoAgrupacionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoAgrupacionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoAmortizacionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoAmortizacionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoBursatilidadBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoBursatilidadBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoCambioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoCambioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoCambioDI_BE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoCambioDI_BE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoCuponBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoCuponBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoDocumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoDocumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoEntidadBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoEntidadBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoInstrumentoBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoInstrumentoBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoInstrumentoCuentaBCRBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoInstrumentoCuentaBCRBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoOperacionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoOperacionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoRentaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoRentaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoTerceroBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoTerceroBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoTituloBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoTituloBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TipoValorizacionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoValorizacionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TmpOperacionesEPUBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TmpOperacionesEPUBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TmpOperacionesEPUDetBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TmpOperacionesEPUDetBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TmpResumenOperacionesEPUBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TmpResumenOperacionesEPUBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TransCustodioBBHBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransCustodioBBHBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TrazabilidadOperacionBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrazabilidadOperacionBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UsuariosNotificaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuariosNotificaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ValidadorLimiteDetalleBE.vb" />
+    <Compile Include="Entities\ValidarFicheroBE.vb" />
+    <Compile Include="Entities\ValorCuotaBEvb.vb" />
+    <Compile Include="Entities\ValorCuotaVariacionBE.vb" />
+    <Compile Include="Entities\ValoresBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValoresBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ValoresBE.vb">
+      <DependentUpon>ValoresBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ValoresE.vb" />
+    <Compile Include="Entities\ValorizacionAmortizadaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValorizacionAmortizadaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ValorizacionAmortizadaBE.vb">
+      <DependentUpon>ValorizacionAmortizadaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorForwardSBSBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VectorForwardSBSBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorPrecioBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VectorPrecioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorPrecioBloombergNavBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VectorPrecioBloombergNavBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorPrecioPIPBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VectorPrecioPIPBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorPrecioPIPBE.vb">
+      <DependentUpon>VectorPrecioPIPBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorPrecioSBSBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VectorPrecioSBSBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorSwapBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VectorSwapBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorTipoCambioBE.Designer.vb">
+      <DependentUpon>VectorTipoCambioBE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VectorTipoCambioBE.vb">
+      <DependentUpon>VectorTipoCambioBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\VencimientosBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VencimientosBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Menu_AccesoBE.vb" />
+    <Compile Include="ValorCuotaBE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValorCuotaBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ValorCuotaBE.vb">
+      <DependentUpon>ValorCuotaBE.xsd</DependentUpon>
+    </Compile>
+    <Content Include="Entities\AnhioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnhioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\AplicacionContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AplicacionContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\AprobacionCartaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AprobacionCartaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\AprobadorCartaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AprobadorCartaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\AprobadorTraderBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AprobadorTraderBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ArchivoPlanoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchivoPlanoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ArchivoPlanoEstructuraBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchivoPlanoEstructuraBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ArchivosVAXBCOSBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchivosVAXBCOSBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ArchivosVAXBMIDASBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchivosVAXBMIDASBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\AsientoContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AsientoContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\BalanceContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BalanceContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\BCRSeriadoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BCRSeriadoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\BCRUnicoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BCRUnicoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CabeceraMatrizContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CabeceraMatrizContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CalificacionInstrumentoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalificacionInstrumentoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CaracteristicaLimiteBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CaracteristicaLimiteBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CarteraTituloValoracionBE.xsd" />
+    <Content Include="Entities\CentroCostosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CentroCostosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ClaseCuentaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClaseCuentaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ClaseInstrumentoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClaseInstrumentoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CodigoPostalBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodigoPostalBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ConceptoAsientoContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConceptoAsientoContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ConceptoIdiBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConceptoIdiBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ConceptoOperacionContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConceptoOperacionContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ContactoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContactoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CotizacionVACBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CotizacionVACBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CuentaEconomicaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuentaEconomicaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CuentasPorCobrarPagarBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuentasPorCobrarPagarBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CuentasPorTipoInstrumentoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuentasPorTipoInstrumentoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CuentaTercerosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuentaTercerosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CuponeraEspecialBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuponeraEspecialBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CuponeraNormalBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuponeraNormalBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CustodioAjusteBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustodioAjusteBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CustodioArchivoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustodioArchivoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CustodioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustodioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CustodioCuentaDepositariaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustodioCuentaDepositariaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\CustodioKardexBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustodioKardexBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\DatosOrdenInversionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosOrdenInversionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\DetalleMatrizContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalleMatrizContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\DetallePortafolioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetallePortafolioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\DividendosRebatesLiberadasBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DividendosRebatesLiberadasBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\DivisasBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DivisasBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\EmisorBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmisorBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\EncajeBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EncajeBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\EncajeDetalleBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EncajeDetalleBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\EntidadBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EntidadBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\EntidadExcesosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EntidadExcesosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\EntidadSitBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EntidadSitBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\FactorBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FactorBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\FeriadoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeriadoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\GapsBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GapsBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\GapsFondoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GapsFondoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\GrupoEconomicoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GrupoEconomicoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\GrupoLimiteTraderBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GrupoLimiteTraderBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\GrupoLimiteTraderDetalleBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GrupoLimiteTraderDetalleBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\GrupoTipoInstrumentoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GrupoTipoInstrumentoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\GrupoTipoRentaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GrupoTipoRentaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\HechosImportanciaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HechosImportanciaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\HistorialCambiosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HistorialCambiosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ImpuestosComisionesBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImpuestosComisionesBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ImpuestosComisionesOrdenPreOrdenBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImpuestosComisionesOrdenPreOrdenBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\IndicadorBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndicadorBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\IndicadorBenchmarkBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndicadorBenchmarkBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\InstrumentoPorLimiteBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InstrumentoPorLimiteBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\InstrumentosCompuestosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InstrumentosCompuestosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\InstrumentosEstructuradosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InstrumentosEstructuradosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\IntermediarioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IntermediarioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\IntermediarioContactoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IntermediarioContactoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\InventarioCartasBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventarioCartasBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\KardexCarteraBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KardexCarteraBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\LimiteBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LimiteBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\LimiteCaracteristicaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LimiteCaracteristicaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\LimiteInstrumentoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LimiteInstrumentoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\LimiteIntermediarioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LimiteIntermediarioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\LimiteTradingBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LimiteTradingBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\LiquidacionesReportesBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LiquidacionesReportesBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\LiquidezAccionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LiquidezAccionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\LocacionBBHBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocacionBBHBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\MatrizContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatrizContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\MercadoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MercadoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\MesBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MesBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ModalidadPagoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ModalidadPagoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ModeloCartaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ModeloCartaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ModeloCartaEstructuraBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ModeloCartaEstructuraBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\MonedaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MonedaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\MontoNegociadoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MontoNegociadoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\MontoNegociadoBVLBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MontoNegociadoBVLBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\MotivoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MotivoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\MovimientoBancarioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovimientoBancarioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\NegocioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NegocioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\NivelesCoberturaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NivelesCoberturaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\OperacionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OperacionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\OperacionCajaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OperacionCajaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\OperacionContableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OperacionContableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\OrdenesBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenesBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\OrdenInversionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenInversionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\OrdenInversionTMPBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenInversionTMPBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\OrdenPreOrdenInversionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenPreOrdenInversionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PaisBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PaisBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PatrimonioFideicomisoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatrimonioFideicomisoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PatrimonioFideicomisoDetalleBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatrimonioFideicomisoDetalleBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PatrimonioValorBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatrimonioValorBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PeriodicidadBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PeriodicidadBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PeriodoLiborBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PeriodoLiborBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PersonalBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PersonalBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PlanDeCuentasBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlanDeCuentasBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PlazaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlazaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PorcentajeNivelRatingBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PorcentajeNivelRatingBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PorCorrelativoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PorCorrelativoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PorGestorBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PorGestorBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PortafolioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PortafolioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PortafolioDirectorioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PortafolioDirectorioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PrevOrdenInversionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrevOrdenInversionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\PrevOrdenInversionDetalleBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrevOrdenInversionDetalleBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\RentaFijaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentaFijaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\RentaVariableBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentaVariableBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ReporteContabilidadCabeceraBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReporteContabilidadCabeceraBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ReportesLimitesBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportesLimitesBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ReportesResumenEnvioPUADM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportesResumenEnvioPUADM.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\RolTraderBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RolTraderBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\SaldosBancariosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaldosBancariosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\SaldosCargadosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaldosCargadosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\SaldosNoCargadosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaldosNoCargadosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\SectorEmpresarialBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SectorEmpresarialBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TasaEncajeBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TasaEncajeBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TercerosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TercerosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoAgrupacionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoAgrupacionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoAmortizacionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoAmortizacionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoBursatilidadBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoBursatilidadBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoCambioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoCambioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoCambioDI_BE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoCambioDI_BE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoCuponBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoCuponBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoDocumentoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoDocumentoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoEntidadBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoEntidadBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoInstrumentoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoInstrumentoBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoInstrumentoCuentaBCRBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoInstrumentoCuentaBCRBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoOperacionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoOperacionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoRentaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoRentaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoTerceroBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoTerceroBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoTituloBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoTituloBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TipoValorizacionBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipoValorizacionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TmpOperacionesEPUBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TmpOperacionesEPUBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TmpOperacionesEPUDetBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TmpOperacionesEPUDetBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TmpResumenOperacionesEPUBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TmpResumenOperacionesEPUBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\TransCustodioBBHBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransCustodioBBHBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\UsuariosNotificaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsuariosNotificaBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\ValoresBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ValoresBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\VectorForwardSBSBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VectorForwardSBSBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\VectorPrecioBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VectorPrecioBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\VectorPrecioBloombergNavBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VectorPrecioBloombergNavBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\VectorPrecioSBSBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VectorPrecioSBSBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\VectorSwapBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VectorSwapBE.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Entities\VencimientosBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VencimientosBE.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="Entities\AnhioBE.xsc">
+      <DependentUpon>AnhioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AnhioBE.xsx">
+      <DependentUpon>AnhioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AplicacionContableBE.xsc">
+      <DependentUpon>AplicacionContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AplicacionContableBE.xsx">
+      <DependentUpon>AplicacionContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobacionCartaBE.xsc">
+      <DependentUpon>AprobacionCartaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobacionCartaBE.xss">
+      <DependentUpon>AprobacionCartaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobacionCartaBE.xsx">
+      <DependentUpon>AprobacionCartaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobadorCartaBE.xsc">
+      <DependentUpon>AprobadorCartaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobadorCartaBE.xss">
+      <DependentUpon>AprobadorCartaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobadorCartaBE.xsx">
+      <DependentUpon>AprobadorCartaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobadorDocumentoBE.xsc">
+      <DependentUpon>AprobadorDocumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobadorDocumentoBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AprobadorDocumentoBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\AprobadorDocumentoBE.xss">
+      <DependentUpon>AprobadorDocumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobadorTraderBE.xsc">
+      <DependentUpon>AprobadorTraderBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobadorTraderBE.xss">
+      <DependentUpon>AprobadorTraderBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AprobadorTraderBE.xsx">
+      <DependentUpon>AprobadorTraderBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivoPlanoBE.xsc">
+      <DependentUpon>ArchivoPlanoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivoPlanoBE.xss">
+      <DependentUpon>ArchivoPlanoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivoPlanoBE.xsx">
+      <DependentUpon>ArchivoPlanoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivoPlanoEstructuraBE.xsc">
+      <DependentUpon>ArchivoPlanoEstructuraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivoPlanoEstructuraBE.xss">
+      <DependentUpon>ArchivoPlanoEstructuraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivoPlanoEstructuraBE.xsx">
+      <DependentUpon>ArchivoPlanoEstructuraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivosVAXBCOSBE.xsc">
+      <DependentUpon>ArchivosVAXBCOSBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivosVAXBCOSBE.xsx">
+      <DependentUpon>ArchivosVAXBCOSBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivosVAXBMIDASBE.xsc">
+      <DependentUpon>ArchivosVAXBMIDASBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ArchivosVAXBMIDASBE.xsx">
+      <DependentUpon>ArchivosVAXBMIDASBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AsientoContableBE.xsc">
+      <DependentUpon>AsientoContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\AsientoContableBE.xsx">
+      <DependentUpon>AsientoContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\BalanceContableBE.xsc">
+      <DependentUpon>BalanceContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\BalanceContableBE.xsx">
+      <DependentUpon>BalanceContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\BCRSeriadoBE.xsc">
+      <DependentUpon>BCRSeriadoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\BCRSeriadoBE.xsx">
+      <DependentUpon>BCRSeriadoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\BCRUnicoBE.xsc">
+      <DependentUpon>BCRUnicoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\BCRUnicoBE.xsx">
+      <DependentUpon>BCRUnicoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CabeceraMatrizContableBE.xsc">
+      <DependentUpon>CabeceraMatrizContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CabeceraMatrizContableBE.xss">
+      <DependentUpon>CabeceraMatrizContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CabeceraMatrizContableBE.xsx">
+      <DependentUpon>CabeceraMatrizContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CalificacionInstrumentoBE.xsc">
+      <DependentUpon>CalificacionInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CalificacionInstrumentoBE.xsx">
+      <DependentUpon>CalificacionInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CaracteristicaLimiteBE.xsc">
+      <DependentUpon>CaracteristicaLimiteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CaracteristicaLimiteBE.xsx">
+      <DependentUpon>CaracteristicaLimiteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CargoFirmanteBE.xsc">
+      <DependentUpon>CargoFirmanteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CargoFirmanteBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CargoFirmanteBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\CargoFirmanteBE.xss">
+      <DependentUpon>CargoFirmanteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CarteraTituloValoracionBE.xsx">
+      <DependentUpon>CarteraTituloValoracionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CentroCostosBE.xsc">
+      <DependentUpon>CentroCostosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CentroCostosBE.xsx">
+      <DependentUpon>CentroCostosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ClaseCuentaBE.xsc">
+      <DependentUpon>ClaseCuentaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ClaseCuentaBE.xss">
+      <DependentUpon>ClaseCuentaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ClaseCuentaBE.xsx">
+      <DependentUpon>ClaseCuentaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ClaseInstrumentoBE.xsc">
+      <DependentUpon>ClaseInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ClaseInstrumentoBE.xsx">
+      <DependentUpon>ClaseInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CodigoPostalBE.xsc">
+      <DependentUpon>CodigoPostalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CodigoPostalBE.xsx">
+      <DependentUpon>CodigoPostalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CodigoValorBE.xsc">
+      <DependentUpon>CodigoValorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CodigoValorBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CodigoValorBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\CodigoValorBE.xss">
+      <DependentUpon>CodigoValorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ConceptoAsientoContableBE.xsc">
+      <DependentUpon>ConceptoAsientoContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ConceptoAsientoContableBE.xsx">
+      <DependentUpon>ConceptoAsientoContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ConceptoIdiBE.xsc">
+      <DependentUpon>ConceptoIdiBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ConceptoIdiBE.xsx">
+      <DependentUpon>ConceptoIdiBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ConceptoOperacionContableBE.xsc">
+      <DependentUpon>ConceptoOperacionContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ConceptoOperacionContableBE.xsx">
+      <DependentUpon>ConceptoOperacionContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ContactoBE.xsc">
+      <DependentUpon>ContactoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ContactoBE.xsx">
+      <DependentUpon>ContactoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CotizacionVACBE.xsc">
+      <DependentUpon>CotizacionVACBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CotizacionVACBE.xsx">
+      <DependentUpon>CotizacionVACBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentaEconomicaBE.xsc">
+      <DependentUpon>CuentaEconomicaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentaEconomicaBE.xss">
+      <DependentUpon>CuentaEconomicaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentaEconomicaBE.xsx">
+      <DependentUpon>CuentaEconomicaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentasPorCobrarPagarBE.xsc">
+      <DependentUpon>CuentasPorCobrarPagarBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentasPorCobrarPagarBE.xss">
+      <DependentUpon>CuentasPorCobrarPagarBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentasPorCobrarPagarBE.xsx">
+      <DependentUpon>CuentasPorCobrarPagarBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentasPorTipoInstrumentoBE.xsc">
+      <DependentUpon>CuentasPorTipoInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentasPorTipoInstrumentoBE.xsx">
+      <DependentUpon>CuentasPorTipoInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentaTercerosBE.xsc">
+      <DependentUpon>CuentaTercerosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentaTercerosBE.xss">
+      <DependentUpon>CuentaTercerosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuentaTercerosBE.xsx">
+      <DependentUpon>CuentaTercerosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuponeraEspecialBE.xsc">
+      <DependentUpon>CuponeraEspecialBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuponeraEspecialBE.xsx">
+      <DependentUpon>CuponeraEspecialBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuponeraNormalBE.xsc">
+      <DependentUpon>CuponeraNormalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuponeraNormalBE.xss">
+      <DependentUpon>CuponeraNormalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CuponeraNormalBE.xsx">
+      <DependentUpon>CuponeraNormalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioAjusteBE.xsc">
+      <DependentUpon>CustodioAjusteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioAjusteBE.xss">
+      <DependentUpon>CustodioAjusteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioAjusteBE.xsx">
+      <DependentUpon>CustodioAjusteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioArchivoBE.xsc">
+      <DependentUpon>CustodioArchivoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioArchivoBE.xsx">
+      <DependentUpon>CustodioArchivoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioBE.xsc">
+      <DependentUpon>CustodioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioBE.xss">
+      <DependentUpon>CustodioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioBE.xsx">
+      <DependentUpon>CustodioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioCuentaDepositariaBE.xsc">
+      <DependentUpon>CustodioCuentaDepositariaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioCuentaDepositariaBE.xss">
+      <DependentUpon>CustodioCuentaDepositariaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioCuentaDepositariaBE.xsx">
+      <DependentUpon>CustodioCuentaDepositariaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioKardexBE.xsc">
+      <DependentUpon>CustodioKardexBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\CustodioKardexBE.xsx">
+      <DependentUpon>CustodioKardexBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DatosOrdenInversionBE.xsc">
+      <DependentUpon>DatosOrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DatosOrdenInversionBE.xsx">
+      <DependentUpon>DatosOrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DetalleMatrizContableBE.xsc">
+      <DependentUpon>DetalleMatrizContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DetalleMatrizContableBE.xsx">
+      <DependentUpon>DetalleMatrizContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DetallePortafolioBE.xsc">
+      <DependentUpon>DetallePortafolioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DetallePortafolioBE.xsx">
+      <DependentUpon>DetallePortafolioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DividendosRebatesLiberadasBE.xsc">
+      <DependentUpon>DividendosRebatesLiberadasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DividendosRebatesLiberadasBE.xss">
+      <DependentUpon>DividendosRebatesLiberadasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DividendosRebatesLiberadasBE.xsx">
+      <DependentUpon>DividendosRebatesLiberadasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DivisasBE.xsc">
+      <DependentUpon>DivisasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\DivisasBE.xsx">
+      <DependentUpon>DivisasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EmisorBE.xsc">
+      <DependentUpon>EmisorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EmisorBE.xsx">
+      <DependentUpon>EmisorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EncajeBE.xsc">
+      <DependentUpon>EncajeBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EncajeBE.xsx">
+      <DependentUpon>EncajeBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EncajeDetalleBE.xsc">
+      <DependentUpon>EncajeDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EncajeDetalleBE.xsx">
+      <DependentUpon>EncajeDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EntidadBE.xsc">
+      <DependentUpon>EntidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EntidadBE.xss">
+      <DependentUpon>EntidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EntidadBE.xsx">
+      <DependentUpon>EntidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EntidadExcesosBE.xsc">
+      <DependentUpon>EntidadExcesosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EntidadExcesosBE.xsx">
+      <DependentUpon>EntidadExcesosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EntidadSitBE.xsc">
+      <DependentUpon>EntidadSitBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\EntidadSitBE.xsx">
+      <DependentUpon>EntidadSitBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FactorBE.xsc">
+      <DependentUpon>FactorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FactorBE.xsx">
+      <DependentUpon>FactorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FeriadoBE.xsc">
+      <DependentUpon>FeriadoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FeriadoBE.xsx">
+      <DependentUpon>FeriadoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FirmaDocumentoBE.xsc">
+      <DependentUpon>FirmaDocumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FirmaDocumentoBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirmaDocumentoBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\FirmaDocumentoBE.xss">
+      <DependentUpon>FirmaDocumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FirmaDocumentoDetBE.xsc">
+      <DependentUpon>FirmaDocumentoDetBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FirmaDocumentoDetBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirmaDocumentoDetBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\FirmaDocumentoDetBE.xss">
+      <DependentUpon>FirmaDocumentoDetBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FrecuenciaDividendoBE.xsc">
+      <DependentUpon>FrecuenciaDividendoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FrecuenciaDividendoBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FrecuenciaDividendoBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\FrecuenciaDividendoBE.xss">
+      <DependentUpon>FrecuenciaDividendoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\FrecuenciaDividendoBE.xsx">
+      <DependentUpon>FrecuenciaDividendoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GapsBE.xsc">
+      <DependentUpon>GapsBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GapsBE.xss">
+      <DependentUpon>GapsBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GapsBE.xsx">
+      <DependentUpon>GapsBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GapsFondoBE.xsc">
+      <DependentUpon>GapsFondoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GapsFondoBE.xsx">
+      <DependentUpon>GapsFondoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoCategoriaInstrumentoBE.xsc">
+      <DependentUpon>GrupoCategoriaInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoCategoriaInstrumentoBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GrupoCategoriaInstrumentoBE.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Entities\GrupoCategoriaInstrumentoBE.xss">
+      <DependentUpon>GrupoCategoriaInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoEconomicoBE.xsc">
+      <DependentUpon>GrupoEconomicoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoEconomicoBE.xsx">
+      <DependentUpon>GrupoEconomicoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoLimiteTraderBE.xsc">
+      <DependentUpon>GrupoLimiteTraderBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoLimiteTraderBE.xsx">
+      <DependentUpon>GrupoLimiteTraderBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoLimiteTraderDetalleBE.xsc">
+      <DependentUpon>GrupoLimiteTraderDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoLimiteTraderDetalleBE.xsx">
+      <DependentUpon>GrupoLimiteTraderDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoTipoInstrumentoBE.xsc">
+      <DependentUpon>GrupoTipoInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoTipoInstrumentoBE.xsx">
+      <DependentUpon>GrupoTipoInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoTipoRentaBE.xsc">
+      <DependentUpon>GrupoTipoRentaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\GrupoTipoRentaBE.xsx">
+      <DependentUpon>GrupoTipoRentaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\HechosImportanciaBE.xsc">
+      <DependentUpon>HechosImportanciaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\HechosImportanciaBE.xsx">
+      <DependentUpon>HechosImportanciaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\HistorialCambiosBE.xsc">
+      <DependentUpon>HistorialCambiosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\HistorialCambiosBE.xsx">
+      <DependentUpon>HistorialCambiosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ImpuestosComisionesBE.xsc">
+      <DependentUpon>ImpuestosComisionesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ImpuestosComisionesBE.xss">
+      <DependentUpon>ImpuestosComisionesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ImpuestosComisionesBE.xsx">
+      <DependentUpon>ImpuestosComisionesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ImpuestosComisionesOrdenPreOrdenBE.xsc">
+      <DependentUpon>ImpuestosComisionesOrdenPreOrdenBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ImpuestosComisionesOrdenPreOrdenBE.xss">
+      <DependentUpon>ImpuestosComisionesOrdenPreOrdenBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ImpuestosComisionesOrdenPreOrdenBE.xsx">
+      <DependentUpon>ImpuestosComisionesOrdenPreOrdenBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IndicadorBE.xsc">
+      <DependentUpon>IndicadorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IndicadorBE.xss">
+      <DependentUpon>IndicadorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IndicadorBE.xsx">
+      <DependentUpon>IndicadorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IndicadorBenchmarkBE.xsc">
+      <DependentUpon>IndicadorBenchmarkBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IndicadorBenchmarkBE.xsx">
+      <DependentUpon>IndicadorBenchmarkBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InstrumentoPorLimiteBE.xsc">
+      <DependentUpon>InstrumentoPorLimiteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InstrumentoPorLimiteBE.xsx">
+      <DependentUpon>InstrumentoPorLimiteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InstrumentosCompuestosBE.xsc">
+      <DependentUpon>InstrumentosCompuestosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InstrumentosCompuestosBE.xsx">
+      <DependentUpon>InstrumentosCompuestosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InstrumentosEstructuradosBE.xsc">
+      <DependentUpon>InstrumentosEstructuradosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InstrumentosEstructuradosBE.xsx">
+      <DependentUpon>InstrumentosEstructuradosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IntermediarioBE.xsc">
+      <DependentUpon>IntermediarioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IntermediarioBE.xsx">
+      <DependentUpon>IntermediarioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IntermediarioContactoBE.xsc">
+      <DependentUpon>IntermediarioContactoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\IntermediarioContactoBE.xsx">
+      <DependentUpon>IntermediarioContactoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InventarioCartasBE.xsc">
+      <DependentUpon>InventarioCartasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\InventarioCartasBE.xsx">
+      <DependentUpon>InventarioCartasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\KardexCarteraBE.xsc">
+      <DependentUpon>KardexCarteraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\KardexCarteraBE.xsx">
+      <DependentUpon>KardexCarteraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteBE.xsc">
+      <DependentUpon>LimiteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteBE.xss">
+      <DependentUpon>LimiteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteBE.xsx">
+      <DependentUpon>LimiteBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteCaracteristicaBE.xsc">
+      <DependentUpon>LimiteCaracteristicaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteCaracteristicaBE.xsx">
+      <DependentUpon>LimiteCaracteristicaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteInstrumentoBE.xsc">
+      <DependentUpon>LimiteInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteInstrumentoBE.xsx">
+      <DependentUpon>LimiteInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteIntermediarioBE.xsc">
+      <DependentUpon>LimiteIntermediarioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteIntermediarioBE.xsx">
+      <DependentUpon>LimiteIntermediarioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteTradingBE.xsc">
+      <DependentUpon>LimiteTradingBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LimiteTradingBE.xsx">
+      <DependentUpon>LimiteTradingBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LiquidacionesReportesBE.xsc">
+      <DependentUpon>LiquidacionesReportesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LiquidacionesReportesBE.xsx">
+      <DependentUpon>LiquidacionesReportesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LiquidezAccionBE.xsc">
+      <DependentUpon>LiquidezAccionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LiquidezAccionBE.xsx">
+      <DependentUpon>LiquidezAccionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LocacionBBHBE.xsc">
+      <DependentUpon>LocacionBBHBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\LocacionBBHBE.xsx">
+      <DependentUpon>LocacionBBHBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MatrizContableBE.xsc">
+      <DependentUpon>MatrizContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MatrizContableBE.xsx">
+      <DependentUpon>MatrizContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MercadoBE.xsc">
+      <DependentUpon>MercadoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MercadoBE.xsx">
+      <DependentUpon>MercadoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MesBE.xsc">
+      <DependentUpon>MesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MesBE.xsx">
+      <DependentUpon>MesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ModalidadPagoBE.xsc">
+      <DependentUpon>ModalidadPagoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ModalidadPagoBE.xsx">
+      <DependentUpon>ModalidadPagoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ModeloCartaBE.xsc">
+      <DependentUpon>ModeloCartaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ModeloCartaBE.xsx">
+      <DependentUpon>ModeloCartaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ModeloCartaEstructuraBE.xsc">
+      <DependentUpon>ModeloCartaEstructuraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ModeloCartaEstructuraBE.xss">
+      <DependentUpon>ModeloCartaEstructuraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ModeloCartaEstructuraBE.xsx">
+      <DependentUpon>ModeloCartaEstructuraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MonedaBE.xsc">
+      <DependentUpon>MonedaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MonedaBE.xss">
+      <DependentUpon>MonedaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MonedaBE.xsx">
+      <DependentUpon>MonedaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MontoNegociadoBE.xsc">
+      <DependentUpon>MontoNegociadoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MontoNegociadoBE.xsx">
+      <DependentUpon>MontoNegociadoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MontoNegociadoBVLBE.xsc">
+      <DependentUpon>MontoNegociadoBVLBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MontoNegociadoBVLBE.xsx">
+      <DependentUpon>MontoNegociadoBVLBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MotivoBE.xsc">
+      <DependentUpon>MotivoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MotivoBE.xss">
+      <DependentUpon>MotivoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MotivoBE.xsx">
+      <DependentUpon>MotivoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MovimientoBancarioBE.xsc">
+      <DependentUpon>MovimientoBancarioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MovimientoBancarioBE.xss">
+      <DependentUpon>MovimientoBancarioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MovimientoBancarioBE.xsx">
+      <DependentUpon>MovimientoBancarioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MovimientoPersonalBE.xsc">
+      <DependentUpon>MovimientoPersonalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\MovimientoPersonalBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovimientoPersonalBE.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Entities\MovimientoPersonalBE.xss">
+      <DependentUpon>MovimientoPersonalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\NegocioBE.xsc">
+      <DependentUpon>NegocioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\NegocioBE.xss">
+      <DependentUpon>NegocioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\NegocioBE.xsx">
+      <DependentUpon>NegocioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\NivelesCoberturaBE.xsc">
+      <DependentUpon>NivelesCoberturaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\NivelesCoberturaBE.xss">
+      <DependentUpon>NivelesCoberturaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\NivelesCoberturaBE.xsx">
+      <DependentUpon>NivelesCoberturaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ObligacionTecnicaBE.xsc">
+      <DependentUpon>ObligacionTecnicaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ObligacionTecnicaBE.xsd" />
+    <None Include="Entities\ObligacionTecnicaBE.xss">
+      <DependentUpon>ObligacionTecnicaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OperacionBE.xsc">
+      <DependentUpon>OperacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OperacionBE.xss">
+      <DependentUpon>OperacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OperacionBE.xsx">
+      <DependentUpon>OperacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OperacionCajaBE.xsc">
+      <DependentUpon>OperacionCajaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OperacionCajaBE.xss">
+      <DependentUpon>OperacionCajaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OperacionCajaBE.xsx">
+      <DependentUpon>OperacionCajaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OperacionContableBE.xsc">
+      <DependentUpon>OperacionContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OperacionContableBE.xsx">
+      <DependentUpon>OperacionContableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenesBE.xsc">
+      <DependentUpon>OrdenesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenesBE.xsx">
+      <DependentUpon>OrdenesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenInversionBE.xsc">
+      <DependentUpon>OrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenInversionBE.xss">
+      <DependentUpon>OrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenInversionBE.xsx">
+      <DependentUpon>OrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenInversionTMPBE.xsc">
+      <DependentUpon>OrdenInversionTMPBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenInversionTMPBE.xsx">
+      <DependentUpon>OrdenInversionTMPBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenPreOrdenInversionBE.xsc">
+      <DependentUpon>OrdenPreOrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenPreOrdenInversionBE.xss">
+      <DependentUpon>OrdenPreOrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\OrdenPreOrdenInversionBE.xsx">
+      <DependentUpon>OrdenPreOrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PaisBE.xsc">
+      <DependentUpon>PaisBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PaisBE.xsx">
+      <DependentUpon>PaisBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioFideicomisoBE.xsc">
+      <DependentUpon>PatrimonioFideicomisoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioFideicomisoBE.xsx">
+      <DependentUpon>PatrimonioFideicomisoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioFideicomisoDetalleBE.xsc">
+      <DependentUpon>PatrimonioFideicomisoDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioFideicomisoDetalleBE.xsx">
+      <DependentUpon>PatrimonioFideicomisoDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioTerceroBE.xsc">
+      <DependentUpon>PatrimonioTerceroBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioTerceroBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatrimonioTerceroBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\PatrimonioTerceroBE.xss">
+      <DependentUpon>PatrimonioTerceroBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioValorBE.xsc">
+      <DependentUpon>PatrimonioValorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioValorBE.xss">
+      <DependentUpon>PatrimonioValorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PatrimonioValorBE.xsx">
+      <DependentUpon>PatrimonioValorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PeriodicidadBE.xsc">
+      <DependentUpon>PeriodicidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PeriodicidadBE.xsx">
+      <DependentUpon>PeriodicidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PeriodoLiborBE.xsc">
+      <DependentUpon>PeriodoLiborBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PeriodoLiborBE.xsx">
+      <DependentUpon>PeriodoLiborBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PersonalBE.xsc">
+      <DependentUpon>PersonalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PersonalBE.xss">
+      <DependentUpon>PersonalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PersonalBE.xsx">
+      <DependentUpon>PersonalBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PlanDeCuentasBE.xsc">
+      <DependentUpon>PlanDeCuentasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PlanDeCuentasBE.xsx">
+      <DependentUpon>PlanDeCuentasBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PlazaBE.xsc">
+      <DependentUpon>PlazaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PlazaBE.xsx">
+      <DependentUpon>PlazaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PorcentajeNivelRatingBE.xsc">
+      <DependentUpon>PorcentajeNivelRatingBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PorcentajeNivelRatingBE.xss">
+      <DependentUpon>PorcentajeNivelRatingBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PorcentajeNivelRatingBE.xsx">
+      <DependentUpon>PorcentajeNivelRatingBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PorCorrelativoBE.xsc">
+      <DependentUpon>PorCorrelativoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PorCorrelativoBE.xss">
+      <DependentUpon>PorCorrelativoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PorCorrelativoBE.xsx">
+      <DependentUpon>PorCorrelativoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PorGestorBE.xsc">
+      <DependentUpon>PorGestorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PorGestorBE.xsx">
+      <DependentUpon>PorGestorBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PortafolioBE.xsc">
+      <DependentUpon>PortafolioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PortafolioBE.xss">
+      <DependentUpon>PortafolioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PortafolioBE.xsx">
+      <DependentUpon>PortafolioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PortafolioDirectorioBE.xsc">
+      <DependentUpon>PortafolioDirectorioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PortafolioDirectorioBE.xsx">
+      <DependentUpon>PortafolioDirectorioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PrevOrdenInversionBE.xsc">
+      <DependentUpon>PrevOrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PrevOrdenInversionBE.xss">
+      <DependentUpon>PrevOrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PrevOrdenInversionBE.xsx">
+      <DependentUpon>PrevOrdenInversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PrevOrdenInversionDetalleBE.xsc">
+      <DependentUpon>PrevOrdenInversionDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PrevOrdenInversionDetalleBE.xss">
+      <DependentUpon>PrevOrdenInversionDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\PrevOrdenInversionDetalleBE.xsx">
+      <DependentUpon>PrevOrdenInversionDetalleBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\RatingBE.xsc">
+      <DependentUpon>RatingBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\RatingBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RatingBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\RatingBE.xss">
+      <DependentUpon>RatingBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\RentaFijaBE.xsc">
+      <DependentUpon>RentaFijaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\RentaFijaBE.xsx">
+      <DependentUpon>RentaFijaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\RentaVariableBE.xsc">
+      <DependentUpon>RentaVariableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\RentaVariableBE.xsx">
+      <DependentUpon>RentaVariableBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ReporteContabilidadCabeceraBE.xsc">
+      <DependentUpon>ReporteContabilidadCabeceraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ReporteContabilidadCabeceraBE.xsx">
+      <DependentUpon>ReporteContabilidadCabeceraBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ReportesContabilidadBE.xsc">
+      <DependentUpon>ReportesContabilidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ReportesContabilidadBE.xsd">
+      <LastGenOutput>ReportesContabilidadBE1.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\ReportesContabilidadBE.xsx">
+      <DependentUpon>ReportesContabilidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ReportesLimitesBE.xsc">
+      <DependentUpon>ReportesLimitesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ReportesLimitesBE.xsx">
+      <DependentUpon>ReportesLimitesBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ReportesResumenEnvioPUADM.xsc">
+      <DependentUpon>ReportesResumenEnvioPUADM.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ReportesResumenEnvioPUADM.xsx">
+      <DependentUpon>ReportesResumenEnvioPUADM.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\RolTraderBE.xsc">
+      <DependentUpon>RolTraderBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\RolTraderBE.xsx">
+      <DependentUpon>RolTraderBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SaldosBancariosBE.xsc">
+      <DependentUpon>SaldosBancariosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SaldosBancariosBE.xss">
+      <DependentUpon>SaldosBancariosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SaldosBancariosBE.xsx">
+      <DependentUpon>SaldosBancariosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SaldosCargadosBE.xsc">
+      <DependentUpon>SaldosCargadosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SaldosCargadosBE.xsx">
+      <DependentUpon>SaldosCargadosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SaldosNoCargadosBE.xsc">
+      <DependentUpon>SaldosNoCargadosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SaldosNoCargadosBE.xsx">
+      <DependentUpon>SaldosNoCargadosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SectorEmpresarialBE.xsc">
+      <DependentUpon>SectorEmpresarialBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SectorEmpresarialBE.xsx">
+      <DependentUpon>SectorEmpresarialBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SolicitudReversionBE.xsc">
+      <DependentUpon>SolicitudReversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\SolicitudReversionBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolicitudReversionBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\SolicitudReversionBE.xss">
+      <DependentUpon>SolicitudReversionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TasaEncajeBE.xsc">
+      <DependentUpon>TasaEncajeBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TasaEncajeBE.xsx">
+      <DependentUpon>TasaEncajeBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TercerosBE.xsc">
+      <DependentUpon>TercerosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TercerosBE.xss">
+      <DependentUpon>TercerosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TercerosBE.xsx">
+      <DependentUpon>TercerosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoAgrupacionBE.xsc">
+      <DependentUpon>TipoAgrupacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoAgrupacionBE.xsx">
+      <DependentUpon>TipoAgrupacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoAmortizacionBE.xsc">
+      <DependentUpon>TipoAmortizacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoAmortizacionBE.xsx">
+      <DependentUpon>TipoAmortizacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoBursatilidadBE.xsc">
+      <DependentUpon>TipoBursatilidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoBursatilidadBE.xsx">
+      <DependentUpon>TipoBursatilidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoCambioBE.xsc">
+      <DependentUpon>TipoCambioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoCambioBE.xsx">
+      <DependentUpon>TipoCambioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoCambioDI_BE.xsc">
+      <DependentUpon>TipoCambioDI_BE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoCambioDI_BE.xsx">
+      <DependentUpon>TipoCambioDI_BE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoCuponBE.xsc">
+      <DependentUpon>TipoCuponBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoCuponBE.xsx">
+      <DependentUpon>TipoCuponBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoDocumentoBE.xsc">
+      <DependentUpon>TipoDocumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoDocumentoBE.xsx">
+      <DependentUpon>TipoDocumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoEntidadBE.xsc">
+      <DependentUpon>TipoEntidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoEntidadBE.xsx">
+      <DependentUpon>TipoEntidadBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoInstrumentoBE.xsc">
+      <DependentUpon>TipoInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoInstrumentoBE.xsx">
+      <DependentUpon>TipoInstrumentoBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoInstrumentoCuentaBCRBE.xsc">
+      <DependentUpon>TipoInstrumentoCuentaBCRBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoInstrumentoCuentaBCRBE.xsx">
+      <DependentUpon>TipoInstrumentoCuentaBCRBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoOperacionBE.xsc">
+      <DependentUpon>TipoOperacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoOperacionBE.xsx">
+      <DependentUpon>TipoOperacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoRentaBE.xsc">
+      <DependentUpon>TipoRentaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoRentaBE.xsx">
+      <DependentUpon>TipoRentaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoTerceroBE.xsc">
+      <DependentUpon>TipoTerceroBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoTerceroBE.xsx">
+      <DependentUpon>TipoTerceroBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoTituloBE.xsc">
+      <DependentUpon>TipoTituloBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoTituloBE.xsx">
+      <DependentUpon>TipoTituloBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoValorizacionBE.xsc">
+      <DependentUpon>TipoValorizacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TipoValorizacionBE.xsx">
+      <DependentUpon>TipoValorizacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TmpOperacionesEPUBE.xsc">
+      <DependentUpon>TmpOperacionesEPUBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TmpOperacionesEPUBE.xsx">
+      <DependentUpon>TmpOperacionesEPUBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TmpOperacionesEPUDetBE.xsc">
+      <DependentUpon>TmpOperacionesEPUDetBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TmpOperacionesEPUDetBE.xsx">
+      <DependentUpon>TmpOperacionesEPUDetBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TmpResumenOperacionesEPUBE.xsc">
+      <DependentUpon>TmpResumenOperacionesEPUBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TmpResumenOperacionesEPUBE.xsx">
+      <DependentUpon>TmpResumenOperacionesEPUBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TransCustodioBBHBE.xsc">
+      <DependentUpon>TransCustodioBBHBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TransCustodioBBHBE.xsx">
+      <DependentUpon>TransCustodioBBHBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\TrazabilidadOperacionBE.xsc">
+      <DependentUpon>TrazabilidadOperacionBE.xsd</DependentUpon>
+    </None>
+    <Content Include="Entities\TrazabilidadOperacionBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrazabilidadOperacionBE.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="Entities\TrazabilidadOperacionBE.xss">
+      <DependentUpon>TrazabilidadOperacionBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\UsuariosNotificaBE.xsc">
+      <DependentUpon>UsuariosNotificaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\UsuariosNotificaBE.xsx">
+      <DependentUpon>UsuariosNotificaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ValoresBE.xsc">
+      <DependentUpon>ValoresBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ValoresBE.xss">
+      <DependentUpon>ValoresBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ValoresBE.xsx">
+      <DependentUpon>ValoresBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ValorizacionAmortizadaBE.xsc">
+      <DependentUpon>ValorizacionAmortizadaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\ValorizacionAmortizadaBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ValorizacionAmortizadaBE.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Entities\ValorizacionAmortizadaBE.xss">
+      <DependentUpon>ValorizacionAmortizadaBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorForwardSBSBE.xsc">
+      <DependentUpon>VectorForwardSBSBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorForwardSBSBE.xss">
+      <DependentUpon>VectorForwardSBSBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorForwardSBSBE.xsx">
+      <DependentUpon>VectorForwardSBSBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioBE.xsc">
+      <DependentUpon>VectorPrecioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioBE.xss">
+      <DependentUpon>VectorPrecioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioBE.xsx">
+      <DependentUpon>VectorPrecioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioBloombergNavBE.xsc">
+      <DependentUpon>VectorPrecioBloombergNavBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioBloombergNavBE.xss">
+      <DependentUpon>VectorPrecioBloombergNavBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioBloombergNavBE.xsx">
+      <DependentUpon>VectorPrecioBloombergNavBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioPIPBE.xsc">
+      <DependentUpon>VectorPrecioPIPBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioPIPBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VectorPrecioPIPBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Entities\VectorPrecioPIPBE.xss">
+      <DependentUpon>VectorPrecioPIPBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioSBSBE.xsc">
+      <DependentUpon>VectorPrecioSBSBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioSBSBE.xss">
+      <DependentUpon>VectorPrecioSBSBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorPrecioSBSBE.xsx">
+      <DependentUpon>VectorPrecioSBSBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorSwapBE.xsc">
+      <DependentUpon>VectorSwapBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorSwapBE.xss">
+      <DependentUpon>VectorSwapBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorSwapBE.xsx">
+      <DependentUpon>VectorSwapBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorTipoCambioBE.xsc">
+      <DependentUpon>VectorTipoCambioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorTipoCambioBE.xsd" />
+    <None Include="Entities\VectorTipoCambioBE.xss">
+      <DependentUpon>VectorTipoCambioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VectorTipoCambioBE.xsx">
+      <DependentUpon>VectorTipoCambioBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VencimientosBE.xsc">
+      <DependentUpon>VencimientosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VencimientosBE.xss">
+      <DependentUpon>VencimientosBE.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\VencimientosBE.xsx">
+      <DependentUpon>VencimientosBE.xsd</DependentUpon>
+    </None>
+    <None Include="ValorCuotaBE.xsc">
+      <DependentUpon>ValorCuotaBE.xsd</DependentUpon>
+    </None>
+    <None Include="ValorCuotaBE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ValorCuotaBE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ValorCuotaBE.xss">
+      <DependentUpon>ValorCuotaBE.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

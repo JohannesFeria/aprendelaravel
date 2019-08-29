@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FirmaDocumentoDetBE" targetNamespace="http://tempuri.org/FirmaDocumentoDetBE.xsd" xmlns:mstns="http://tempuri.org/FirmaDocumentoDetBE.xsd" xmlns="http://tempuri.org/FirmaDocumentoDetBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FirmaDocumentoDetBE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FirmaDocumentoDetBE" msprop:Generator_UserDSName="FirmaDocumentoDetBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FirmaDocumentoDet" msprop:Generator_TableClassName="FirmaDocumentoDetDataTable" msprop:Generator_TableVarName="tableFirmaDocumentoDet" msprop:Generator_TablePropName="FirmaDocumentoDet" msprop:Generator_RowDeletingName="FirmaDocumentoDetRowDeleting" msprop:Generator_UserTableName="FirmaDocumentoDet" msprop:Generator_RowChangingName="FirmaDocumentoDetRowChanging" msprop:Generator_RowEvHandlerName="FirmaDocumentoDetRowChangeEventHandler" msprop:Generator_RowDeletedName="FirmaDocumentoDetRowDeleted" msprop:Generator_RowEvArgName="FirmaDocumentoDetRowChangeEvent" msprop:Generator_RowChangedName="FirmaDocumentoDetRowChanged" msprop:Generator_RowClassName="FirmaDocumentoDetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodFirmaDocumentoDet" msprop:Generator_ColumnVarNameInTable="columnCodFirmaDocumentoDet" msprop:Generator_ColumnPropNameInRow="CodFirmaDocumentoDet" msprop:Generator_ColumnPropNameInTable="CodFirmaDocumentoDetColumn" msprop:Generator_UserColumnName="CodFirmaDocumentoDet" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CodFirmaDocumento" msprop:Generator_ColumnVarNameInTable="columnCodFirmaDocumento" msprop:Generator_ColumnPropNameInRow="CodFirmaDocumento" msprop:Generator_ColumnPropNameInTable="CodFirmaDocumentoColumn" msprop:Generator_UserColumnName="CodFirmaDocumento" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CodigoInterno" msprop:Generator_ColumnVarNameInTable="columnCodigoInterno" msprop:Generator_ColumnPropNameInRow="CodigoInterno" msprop:Generator_ColumnPropNameInTable="CodigoInternoColumn" msprop:Generator_UserColumnName="CodigoInterno" type="xs:string" minOccurs="0" />
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

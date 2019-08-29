@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DivRebLibImp" targetNamespace="http://tempuri.org/DivRebLibImp.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DivRebLibImp.xsd" xmlns:mstns="http://tempuri.org/DivRebLibImp.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DivRebLibImp" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DivRebLibImp">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoNemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaIDI" type="xs:string" minOccurs="0" />
+							<xs:element name="Factor" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaCorte" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaEntrega" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoDistribucion" type="xs:string" minOccurs="0" />
+							<xs:element name="Situacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTipoTitulo" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoTitulo" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoCustodio" type="xs:string" minOccurs="0" />
+							<xs:element name="NroCuotasUnidades" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoCuponera" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreEmisor" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="FactorString" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

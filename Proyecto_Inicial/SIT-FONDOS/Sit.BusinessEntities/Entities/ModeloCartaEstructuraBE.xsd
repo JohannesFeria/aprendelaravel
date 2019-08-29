@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ModeloCartaEstructuraBE" targetNamespace="http://tempuri.org/ModeloCartaEstructura.xsd" xmlns:mstns="http://tempuri.org/ModeloCartaEstructura.xsd" xmlns="http://tempuri.org/ModeloCartaEstructura.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ModeloCartaEstructuraBE" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="ModeloCartaEstructuraBE" msprop:Generator_UserDSName="ModeloCartaEstructuraBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ModeloCartaEstructura" msprop:Generator_TableClassName="ModeloCartaEstructuraDataTable" msprop:Generator_TableVarName="tableModeloCartaEstructura" msprop:Generator_TablePropName="_ModeloCartaEstructura" msprop:Generator_RowDeletingName="ModeloCartaEstructuraRowDeleting" msprop:Generator_UserTableName="ModeloCartaEstructura" msprop:Generator_RowChangingName="ModeloCartaEstructuraRowChanging" msprop:Generator_RowEvHandlerName="ModeloCartaEstructuraRowChangeEventHandler" msprop:Generator_RowDeletedName="ModeloCartaEstructuraRowDeleted" msprop:Generator_RowEvArgName="ModeloCartaEstructuraRowChangeEvent" msprop:Generator_RowChangedName="ModeloCartaEstructuraRowChanged" msprop:Generator_RowClassName="ModeloCartaEstructuraRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoModelo" msprop:Generator_ColumnVarNameInTable="columnCodigoModelo" msprop:Generator_ColumnPropNameInRow="CodigoModelo" msprop:Generator_ColumnPropNameInTable="CodigoModeloColumn" msprop:Generator_UserColumnName="CodigoModelo" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoOperacion" msprop:Generator_ColumnVarNameInTable="columnCodigoOperacion" msprop:Generator_ColumnPropNameInRow="CodigoOperacion" msprop:Generator_ColumnPropNameInTable="CodigoOperacionColumn" msprop:Generator_UserColumnName="CodigoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreCampo" msprop:Generator_ColumnVarNameInTable="columnNombreCampo" msprop:Generator_ColumnPropNameInRow="NombreCampo" msprop:Generator_ColumnPropNameInTable="NombreCampoColumn" msprop:Generator_UserColumnName="NombreCampo" type="xs:string" minOccurs="0" />
+              <xs:element name="OrigenCampo" msprop:Generator_ColumnVarNameInTable="columnOrigenCampo" msprop:Generator_ColumnPropNameInRow="OrigenCampo" msprop:Generator_ColumnPropNameInTable="OrigenCampoColumn" msprop:Generator_UserColumnName="OrigenCampo" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreCampoNuevo" msprop:Generator_ColumnVarNameInTable="columnNombreCampoNuevo" msprop:Generator_ColumnPropNameInRow="NombreCampoNuevo" msprop:Generator_ColumnPropNameInTable="NombreCampoNuevoColumn" msprop:Generator_UserColumnName="NombreCampoNuevo" type="xs:string" minOccurs="0" />
+              <xs:element name="OrigenCampoNuevo" msprop:Generator_ColumnVarNameInTable="columnOrigenCampoNuevo" msprop:Generator_ColumnPropNameInRow="OrigenCampoNuevo" msprop:Generator_ColumnPropNameInTable="OrigenCampoNuevoColumn" msprop:Generator_UserColumnName="OrigenCampoNuevo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

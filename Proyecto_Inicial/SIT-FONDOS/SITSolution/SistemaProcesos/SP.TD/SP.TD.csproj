@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6691D14E-4703-4E5B-B424-D44B4C0B54B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaProcesosTD</RootNamespace>
+    <AssemblyName>SistemaProcesos.TD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CierreTD.Designer.cs" />
+    <Compile Include="CierreTD1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CierreTD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Constantes.cs" />
+    <Compile Include="DepositoTD.Designer.cs" />
+    <Compile Include="DepositoTD1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DepositoTD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrecierreTD.Designer.cs" />
+    <Compile Include="PrecierreTD1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrecierreTD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CierreTD.xsc">
+      <DependentUpon>CierreTD.xsd</DependentUpon>
+    </None>
+    <None Include="CierreTD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CierreTD1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CierreTD.xss">
+      <DependentUpon>CierreTD.xsd</DependentUpon>
+    </None>
+    <None Include="CierreTD.xsx">
+      <DependentUpon>CierreTD.xsd</DependentUpon>
+    </None>
+    <None Include="DepositoTD.xsc">
+      <DependentUpon>DepositoTD.xsd</DependentUpon>
+    </None>
+    <None Include="DepositoTD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DepositoTD1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DepositoTD.xss">
+      <DependentUpon>DepositoTD.xsd</DependentUpon>
+    </None>
+    <None Include="DepositoTD.xsx">
+      <DependentUpon>DepositoTD.xsd</DependentUpon>
+    </None>
+    <None Include="PrecierreTD.xsc">
+      <DependentUpon>PrecierreTD.xsd</DependentUpon>
+    </None>
+    <None Include="PrecierreTD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrecierreTD1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PrecierreTD.xss">
+      <DependentUpon>PrecierreTD.xsd</DependentUpon>
+    </None>
+    <None Include="PrecierreTD.xsx">
+      <DependentUpon>PrecierreTD.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

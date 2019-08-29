@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ArchivosVAXBMIDASBE" targetNamespace="http://tempuri.org/ArchivosVAXBMIDASBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ArchivosVAXBMIDASBE.xsd"
+	xmlns:mstns="http://tempuri.org/ArchivosVAXBMIDASBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ArchivosVAXBMIDASBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ArchivosVAXBMIDAS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPortafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreBanco" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCarga" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoSoles" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoDolares" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoEuros" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoYenes" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoLibras" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoDolCan" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoBRL" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoMxN" type="xs:decimal" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Host" type="xs:string" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="Saldo" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

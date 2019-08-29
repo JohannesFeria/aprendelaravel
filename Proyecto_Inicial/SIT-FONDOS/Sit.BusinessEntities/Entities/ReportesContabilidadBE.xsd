@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ReportesContabilidadBE" targetNamespace="http://tempuri.org/ReportesContabilidadBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ReportesContabilidadBE.xsd"
+	xmlns:mstns="http://tempuri.org/ReportesContabilidadBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ReportesContabilidadBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReporteContabilidad">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Fondo" type="xs:string" minOccurs="0" />
+							<xs:element name="Asiento" type="xs:string" minOccurs="0" />
+							<xs:element name="AsientoContable" type="xs:string" minOccurs="0" />
+							<xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="Debe" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Haber" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DescripcionOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="DB_CR" type="xs:string" minOccurs="0" />
+							<xs:element name="Divisa" type="xs:string" minOccurs="0" />
+							<xs:element name="CentroCostoDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoContabilizacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CentroCostoOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="LoteContable" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

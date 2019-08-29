@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsReporteCertificadoDeposito" targetNamespace="http://tempuri.org/DsReporteCertificadoDeposito.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsReporteCertificadoDeposito.xsd"
+	xmlns:mstns="http://tempuri.org/DsReporteCertificadoDeposito.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsReporteCertificadoDeposito" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReporteCertificadoDeposito">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoBCR" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="Monto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoCertificado" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoCambioSpot" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ValorNominal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Valorizacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaOperacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

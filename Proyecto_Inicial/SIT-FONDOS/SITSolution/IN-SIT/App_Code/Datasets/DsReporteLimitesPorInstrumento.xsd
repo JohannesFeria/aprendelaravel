@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsReporteLimitesPorInstrumento" targetNamespace="http://tempuri.org/DsReporteLimitesPorInstrumento.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsReporteLimitesPorInstrumento.xsd"
+	xmlns:mstns="http://tempuri.org/DsReporteLimitesPorInstrumento.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsReporteLimitesPorInstrumento" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReporteLimitesPorInstrumento">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoLimite" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreLimite" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionNivel" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorPorcentaje" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Posicion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Margen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Secuencial" type="xs:int" minOccurs="0" />
+							<xs:element name="Alerta" type="xs:string" minOccurs="0" />
+							<xs:element name="Fondo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

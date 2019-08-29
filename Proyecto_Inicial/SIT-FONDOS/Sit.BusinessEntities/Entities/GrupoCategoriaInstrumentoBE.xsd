@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GrupoCategoriaInstrumentoBE" targetNamespace="http://tempuri.org/GrupoCategoriaInstrumentoBE.xsd" xmlns:mstns="http://tempuri.org/GrupoCategoriaInstrumentoBE.xsd" xmlns="http://tempuri.org/GrupoCategoriaInstrumentoBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GrupoCategoriaInstrumentoBE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="GrupoCategoriaInstrumentoBE" msprop:Generator_UserDSName="GrupoCategoriaInstrumentoBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GrupoCategoriaInstrumento" msprop:Generator_TableClassName="GrupoCategoriaInstrumentoDataTable" msprop:Generator_TableVarName="tableGrupoCategoriaInstrumento" msprop:Generator_TablePropName="GrupoCategoriaInstrumento" msprop:Generator_RowDeletingName="GrupoCategoriaInstrumentoRowDeleting" msprop:Generator_UserTableName="GrupoCategoriaInstrumento" msprop:Generator_RowChangingName="GrupoCategoriaInstrumentoRowChanging" msprop:Generator_RowEvHandlerName="GrupoCategoriaInstrumentoRowChangeEventHandler" msprop:Generator_RowDeletedName="GrupoCategoriaInstrumentoRowDeleted" msprop:Generator_RowEvArgName="GrupoCategoriaInstrumentoRowChangeEvent" msprop:Generator_RowChangedName="GrupoCategoriaInstrumentoRowChanged" msprop:Generator_RowClassName="GrupoCategoriaInstrumentoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoTipoInstrumento" msprop:Generator_ColumnVarNameInTable="columnCodigoTipoInstrumento" msprop:Generator_ColumnPropNameInRow="CodigoTipoInstrumento" msprop:Generator_ColumnPropNameInTable="CodigoTipoInstrumentoColumn" msprop:Generator_UserColumnName="CodigoTipoInstrumento" type="xs:string" minOccurs="0" />
+              <xs:element name="GrupoCategoria" msprop:Generator_ColumnVarNameInTable="columnGrupoCategoria" msprop:Generator_ColumnPropNameInRow="GrupoCategoria" msprop:Generator_ColumnPropNameInTable="GrupoCategoriaColumn" msprop:Generator_UserColumnName="GrupoCategoria" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioCreacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioCreacion" msprop:Generator_ColumnPropNameInRow="UsuarioCreacion" msprop:Generator_ColumnPropNameInTable="UsuarioCreacionColumn" msprop:Generator_UserColumnName="UsuarioCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCreacion" msprop:Generator_ColumnVarNameInTable="columnFechaCreacion" msprop:Generator_ColumnPropNameInRow="FechaCreacion" msprop:Generator_ColumnPropNameInTable="FechaCreacionColumn" msprop:Generator_UserColumnName="FechaCreacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HoraCreacion" msprop:Generator_ColumnVarNameInTable="columnHoraCreacion" msprop:Generator_ColumnPropNameInRow="HoraCreacion" msprop:Generator_ColumnPropNameInTable="HoraCreacionColumn" msprop:Generator_UserColumnName="HoraCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioModificacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioModificacion" msprop:Generator_ColumnPropNameInRow="UsuarioModificacion" msprop:Generator_ColumnPropNameInTable="UsuarioModificacionColumn" msprop:Generator_UserColumnName="UsuarioModificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaModificacion" msprop:Generator_ColumnVarNameInTable="columnFechaModificacion" msprop:Generator_ColumnPropNameInRow="FechaModificacion" msprop:Generator_ColumnPropNameInTable="FechaModificacionColumn" msprop:Generator_UserColumnName="FechaModificacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HoraModificacion" msprop:Generator_ColumnVarNameInTable="columnHoraModificacion" msprop:Generator_ColumnPropNameInRow="HoraModificacion" msprop:Generator_ColumnPropNameInTable="HoraModificacionColumn" msprop:Generator_UserColumnName="HoraModificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Host" msprop:Generator_ColumnVarNameInTable="columnHost" msprop:Generator_ColumnPropNameInRow="Host" msprop:Generator_ColumnPropNameInTable="HostColumn" msprop:Generator_UserColumnName="Host" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionTipoInstrumento" msprop:Generator_ColumnVarNameInTable="columnDescripcionTipoInstrumento" msprop:Generator_ColumnPropNameInRow="DescripcionTipoInstrumento" msprop:Generator_ColumnPropNameInTable="DescripcionTipoInstrumentoColumn" msprop:Generator_UserColumnName="DescripcionTipoInstrumento" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

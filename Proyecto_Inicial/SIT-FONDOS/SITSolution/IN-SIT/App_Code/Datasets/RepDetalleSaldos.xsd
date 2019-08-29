@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RepDetalleSaldos" targetNamespace="http://tempuri.org/RepDetalleSaldos.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/RepDetalleSaldos.xsd"
+	xmlns:mstns="http://tempuri.org/RepDetalleSaldos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="RepDetalleSaldos" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DetalleSaldosBancarios">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DescripcionPortafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="ClaseDescripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionTercero" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="SaldoDisponibleInicial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IngresosEstimados" type="xs:decimal" minOccurs="0" />
+							<xs:element name="EgresosEstimados" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoDisponible" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoContable" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoContableInicial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMercado" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoIngreso" type="xs:string" minOccurs="0" />
+							<xs:element name="IngresosOC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="EgresosOC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuentaDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="Intermediario" type="xs:string" minOccurs="0" />
+							<xs:element name="TIPOPC" type="xs:string" minOccurs="0" />
+							<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

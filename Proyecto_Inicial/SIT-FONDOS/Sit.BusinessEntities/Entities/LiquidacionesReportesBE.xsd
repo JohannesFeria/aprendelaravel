@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="LiquidacionesBE" targetNamespace="http://tempuri.org/LiquidacionesBE.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/LiquidacionesBE.xsd" xmlns:mstns="http://tempuri.org/LiquidacionesBE.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="LiquidacionesBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="LiquidacionesTesoreria">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NroOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaNegociacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							<xs:element name="Importe" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionMercado" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionPortafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionIntermediario" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoMovimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="Categoria" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionEstado" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoRenta" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimientoSort" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMercado" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTercero" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTipoEntidad" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoEntidad" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

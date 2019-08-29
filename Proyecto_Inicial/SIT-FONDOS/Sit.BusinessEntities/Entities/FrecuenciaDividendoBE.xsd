@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PeriodicidadBE" targetNamespace="http://tempuri.org/PeriodicidadBE.xsd" xmlns:mstns="http://tempuri.org/PeriodicidadBE.xsd" xmlns="http://tempuri.org/PeriodicidadBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PeriodicidadBE" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="PeriodicidadBE" msprop:Generator_UserDSName="PeriodicidadBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FrecuenciaDividendo" msprop:Generator_TableClassName="FrecuenciaDividendoDataTable" msprop:Generator_TableVarName="tableFrecuenciaDividendo" msprop:Generator_TablePropName="FrecuenciaDividendo" msprop:Generator_RowDeletingName="FrecuenciaDividendoRowDeleting" msprop:Generator_RowChangingName="FrecuenciaDividendoRowChanging" msprop:Generator_RowEvHandlerName="FrecuenciaDividendoRowChangeEventHandler" msprop:Generator_RowDeletedName="FrecuenciaDividendoRowDeleted" msprop:Generator_UserTableName="FrecuenciaDividendo" msprop:Generator_RowChangedName="FrecuenciaDividendoRowChanged" msprop:Generator_RowEvArgName="FrecuenciaDividendoRowChangeEvent" msprop:Generator_RowClassName="FrecuenciaDividendoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoFrecuenciaDividendo" msprop:Generator_ColumnVarNameInTable="columnCodigoFrecuenciaDividendo" msprop:Generator_ColumnPropNameInRow="CodigoFrecuenciaDividendo" msprop:Generator_ColumnPropNameInTable="CodigoFrecuenciaDividendoColumn" msprop:Generator_UserColumnName="CodigoFrecuenciaDividendo" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioCreacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioCreacion" msprop:Generator_ColumnPropNameInRow="UsuarioCreacion" msprop:Generator_ColumnPropNameInTable="UsuarioCreacionColumn" msprop:Generator_UserColumnName="UsuarioCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCreacion" msprop:Generator_ColumnVarNameInTable="columnFechaCreacion" msprop:Generator_ColumnPropNameInRow="FechaCreacion" msprop:Generator_ColumnPropNameInTable="FechaCreacionColumn" msprop:Generator_UserColumnName="FechaCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="HoraCreacion" msprop:Generator_ColumnVarNameInTable="columnHoraCreacion" msprop:Generator_ColumnPropNameInRow="HoraCreacion" msprop:Generator_ColumnPropNameInTable="HoraCreacionColumn" msprop:Generator_UserColumnName="HoraCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioModificacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioModificacion" msprop:Generator_ColumnPropNameInRow="UsuarioModificacion" msprop:Generator_ColumnPropNameInTable="UsuarioModificacionColumn" msprop:Generator_UserColumnName="UsuarioModificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="HoraModificacion" msprop:Generator_ColumnVarNameInTable="columnHoraModificacion" msprop:Generator_ColumnPropNameInRow="HoraModificacion" msprop:Generator_ColumnPropNameInTable="HoraModificacionColumn" msprop:Generator_UserColumnName="HoraModificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Host" msprop:Generator_ColumnVarNameInTable="columnHost" msprop:Generator_ColumnPropNameInRow="Host" msprop:Generator_ColumnPropNameInTable="HostColumn" msprop:Generator_UserColumnName="Host" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PatrimonioFideicomisoBE" targetNamespace="http://tempuri.org/PatrimonioFideicomisoBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/PatrimonioFideicomisoBE.xsd"
+	xmlns:mstns="http://tempuri.org/PatrimonioFideicomisoBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="PatrimonioFideicomisoBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PatrimonioFideicomisoBE">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPatrimonioFideicomiso" type="xs:string" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="TotalActivo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalPasivo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Patrimonio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaVigencia" type="xs:string" minOccurs="0" />
+							<xs:element name="Situacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Host" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaModificacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FactorRiesgo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FactorLiquidez" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

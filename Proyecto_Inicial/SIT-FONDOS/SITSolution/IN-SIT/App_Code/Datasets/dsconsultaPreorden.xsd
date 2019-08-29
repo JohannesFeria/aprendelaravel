@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsconsultaPreorden" targetNamespace="http://tempuri.org/dsconsultaPreorden.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsconsultaPreorden.xsd"
+	xmlns:mstns="http://tempuri.org/dsconsultaPreorden.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsconsultaPreorden" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="dsconsultaPreorden">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Fecha" type="xs:string" minOccurs="0" />
+							<xs:element name="Hora" type="xs:string" minOccurs="0" />
+							<xs:element name="Portafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+							<xs:element name="Mnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoInstrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="InteresCorrido" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Precio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Monto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Intermediario" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

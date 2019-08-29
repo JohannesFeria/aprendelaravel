@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="OrdenInversionTMPBE" targetNamespace="http://tempuri.org/OrdenInversionTMPBE.xsd"
+	elementFormDefault="qualified" xmlns="http://tempuri.org/OrdenInversionTMPBE.xsd" xmlns:mstns="http://tempuri.org/OrdenInversionTMPBE.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="OrdenInversionBETMP">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CodigoNemonico" type="xs:string" />
+				<xs:element name="CodigoOperacion" type="xs:string" />
+				<xs:element name="CodigoPortafolioSBS" type="xs:string" />
+				<xs:element name="CodigoTercero" type="xs:string" />
+				<xs:element name="CodigoCustodio" type="xs:string" />
+				<xs:element name="CantidadOrdenado" type="xs:decimal" />
+				<xs:element name="Guid" type="xs:string" />
+				<xs:element name="FechaSaldo" type="xs:decimal" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

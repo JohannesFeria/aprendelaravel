@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RegDetContable" targetNamespace="http://tempuri.org/RegDetContable.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/RegDetContable.xsd" xmlns:mstns="http://tempuri.org/RegDetContable.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	xmlns:NameSpace1="urn:schemas-microsoft-com:xml-msdatasource">
+	<xs:annotation>
+		<xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+			<DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public"
+				SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+				<Connections />
+				<Tables />
+				<Sources />
+			</DataSource>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:element name="RegDetContable" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Detallado">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Portafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="CuentaContable" type="xs:string" minOccurs="0" />
+							<xs:element name="SinonimoCodigoInstrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="SinonimoCodigoEmisor" type="xs:string" minOccurs="0" />
+							<xs:element name="SaldoAnteriorMonedaLocal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalCompras" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalVentas" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalVencimientos" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TotalCupones" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IndicadorCustodio" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

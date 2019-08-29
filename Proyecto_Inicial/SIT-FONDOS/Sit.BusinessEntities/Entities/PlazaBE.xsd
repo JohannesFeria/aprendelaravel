@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PlazaBE" targetNamespace="http://tempuri.org/PlazaBE.xsd" elementFormDefault="qualified"
+	xmlns="http://tempuri.org/PlazaBE.xsd" xmlns:mstns="http://tempuri.org/PlazaBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Plaza">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CodigoPlaza" type="xs:string" />
+				<xs:element name="Descripcion" type="xs:string" />
+				<xs:element name="CodigoMercado" type="xs:string" />
+				<xs:element name="Situacion" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

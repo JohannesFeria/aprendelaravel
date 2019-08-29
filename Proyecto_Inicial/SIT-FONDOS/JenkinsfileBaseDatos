@@ -1,0 +1,39 @@
+#!groovy
+
+@Library("despliegue-sit-fondos") _
+
+
+properties([parameters([string(defaultValue: '', description: 'Ingrese el nombre de los archivos sql a ejecutar, separado por comas ","', name: 'nombresArchivos', trim: true)])])
+
+pipeline {
+
+    stages{
+
+        stage('Copiar Fuentes') {
+            steps{
+                script{
+                        bat "xcopy * E:\\Publicacion-Sit /E /R /Y"	
+                }
+            }
+        }
+        stage('Prueba de ejecucion de BD') {
+
+            steps{
+                script{
+
+                        if (nombresArchivos?.trim()) {
+                            def archivos = nombresArchivos.split(',')
+                            for (String item : archivos) {
+                                withCredentials([usernamePassword(credentialsId: 'bd-credenciales-desa', 
+                                                                    passwordVariable: 'BD_PASSWORD_CREDENCIALES_DESA', 
+                                                                    usernameVariable: 'BD_USERNAME_CREDENCIALES_DESA')]) {
+
+                                    bat "scripts.bat %BD_USERNAME_CREDENCIALES_DESA% %BD_PASSWORD_CREDENCIALES_DESA% "+ item +".sql"
+                                }
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

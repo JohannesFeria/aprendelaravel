@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="InstNoreg" targetNamespace="http://tempuri.org/InstNoreg.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/InstNoreg.xsd" xmlns:mstns="http://tempuri.org/InstNoreg.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="InstNoreg" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="InstrumentosNoRegistrados">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Código_x0020_Mnemónico" type="xs:string" minOccurs="0" />
+							<xs:element name="Código_x0020_ISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="Descripción_x0020_de_x0020_la_x0020_emisión" type="xs:string" minOccurs="0" />
+							<xs:element name="Saldo_x0020_Contable" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Saldo_x0020_Disponible" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoCustodio" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CuentaDepositariaCustodio" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoInstrumento" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dscaracteristicas" targetNamespace="http://tempuri.org/dscaracteristicas.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dscaracteristicas.xsd"
+	xmlns:mstns="http://tempuri.org/dscaracteristicas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dscaracteristicas" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="dscaracteristicas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Car1" type="xs:string" minOccurs="0" />
+							<xs:element name="Val1" type="xs:string" minOccurs="0" />
+							<xs:element name="Car2" type="xs:string" minOccurs="0" />
+							<xs:element name="Val2" type="xs:string" minOccurs="0" />
+							<xs:element name="Car3" type="xs:string" minOccurs="0" />
+							<xs:element name="Val3" type="xs:string" minOccurs="0" />
+							<xs:element name="Car4" type="xs:string" minOccurs="0" />
+							<xs:element name="Val4" type="xs:string" minOccurs="0" />
+							<xs:element name="Car5" type="xs:string" minOccurs="0" />
+							<xs:element name="Val5" type="xs:string" minOccurs="0" />
+							<xs:element name="Car6" type="xs:string" minOccurs="0" />
+							<xs:element name="Val6" type="xs:string" minOccurs="0" />
+							<xs:element name="Car7" type="xs:string" minOccurs="0" />
+							<xs:element name="Val7" type="xs:string" minOccurs="0" />
+							<xs:element name="Car8" type="xs:string" minOccurs="0" />
+							<xs:element name="Val8" type="xs:string" minOccurs="0" />
+							<xs:element name="Car9" type="xs:string" minOccurs="0" />
+							<xs:element name="Val9" type="xs:string" minOccurs="0" />
+							<xs:element name="Car10" type="xs:string" minOccurs="0" />
+							<xs:element name="Val10" type="xs:string" minOccurs="0" />
+							<xs:element name="Car11" type="xs:string" minOccurs="0" />
+							<xs:element name="Val11" type="xs:string" minOccurs="0" />
+							<xs:element name="Car12" type="xs:string" minOccurs="0" />
+							<xs:element name="Val12" type="xs:string" minOccurs="0" />
+							<xs:element name="Car13" type="xs:string" minOccurs="0" />
+							<xs:element name="Val13" type="xs:string" minOccurs="0" />
+							<xs:element name="Car14" type="xs:string" minOccurs="0" />
+							<xs:element name="Val14" type="xs:string" minOccurs="0" />
+							<xs:element name="Car15" type="xs:string" minOccurs="0" />
+							<xs:element name="Val15" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

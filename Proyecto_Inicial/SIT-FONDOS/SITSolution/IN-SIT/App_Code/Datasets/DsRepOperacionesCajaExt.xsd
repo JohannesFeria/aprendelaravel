@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsRepOperacionesCajaExt" targetNamespace="http://tempuri.org/DsRepOperacionesCajaExt.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsRepOperacionesCajaExt.xsd"
+	xmlns:mstns="http://tempuri.org/DsRepOperacionesCajaExt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsRepOperacionesCajaExt" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RepOperacionesCajaExt">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Instrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionBancoOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionContacto" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuentaOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionBancoDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuentaDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Motivo" type="xs:string" minOccurs="0" />
+							<xs:element name="Observacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

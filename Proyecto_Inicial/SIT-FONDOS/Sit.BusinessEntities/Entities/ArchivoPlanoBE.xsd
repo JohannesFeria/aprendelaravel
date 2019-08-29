@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ArchivoPlanoBE" targetNamespace="http://tempuri.org/ArchivoPlanoBE.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ArchivoPlanoBE.xsd" xmlns:mstns="http://tempuri.org/ArchivoPlanoBE.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ArchivoPlanoBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ArchivoPlano">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ArchivoCodigo" type="xs:string" minOccurs="0" />
+							<xs:element name="ArchivoNombre" type="xs:string" minOccurs="0" />
+							<xs:element name="ArchivoDescripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="ArchivoExtension" type="xs:string" minOccurs="0" />
+							<xs:element name="ArchivoUbicacion" type="xs:string" minOccurs="0" />
+							<xs:element name="ArchivoTipoSeparador" type="xs:string" minOccurs="0" />
+							<xs:element name="ArchivoSeparador" type="xs:string" minOccurs="0" />
+							<xs:element name="ArchivoLongitudRegistro" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ArchivoSeparadorDecimales" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaModificacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="ArchivoFechaCortePosicion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ArchivoFechaCorteLongitud" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

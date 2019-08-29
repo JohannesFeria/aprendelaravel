@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RepMovNegociacion" targetNamespace="http://tempuri.org/RepMovNegociacion.xsd" xmlns:mstns="http://tempuri.org/RepMovNegociacion.xsd" xmlns="http://tempuri.org/RepMovNegociacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RepMovNegociacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RepMovNegociacion" msprop:Generator_UserDSName="RepMovNegociacion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MovimientosNeg1" msprop:Generator_TableClassName="MovimientosNeg1DataTable" msprop:Generator_TableVarName="tableMovimientosNeg1" msprop:Generator_TablePropName="MovimientosNeg1" msprop:Generator_RowDeletingName="MovimientosNeg1RowDeleting" msprop:Generator_UserTableName="MovimientosNeg1" msprop:Generator_RowChangingName="MovimientosNeg1RowChanging" msprop:Generator_RowEvHandlerName="MovimientosNeg1RowChangeEventHandler" msprop:Generator_RowDeletedName="MovimientosNeg1RowDeleted" msprop:Generator_RowEvArgName="MovimientosNeg1RowChangeEvent" msprop:Generator_RowChangedName="MovimientosNeg1RowChanged" msprop:Generator_RowClassName="MovimientosNeg1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Formula" type="xs:string" minOccurs="0" />
+              <xs:element name="Clasificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Soles" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Dolares" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Agrupador" type="xs:string" minOccurs="0" />
+              <xs:element name="Banco" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

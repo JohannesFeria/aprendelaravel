@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="1" viewPortLeft="-1585" viewPortTop="-656">
+    <Deposito_XmlElement left="608" top="344" width="9208" height="13758" selected="0" zOrder="0" index="0" />
+    <DepositoPrecierre_XmlElement left="10186" top="371" width="9366" height="4762" selected="0" zOrder="2" index="1" />
+</XSDDesignerLayout>

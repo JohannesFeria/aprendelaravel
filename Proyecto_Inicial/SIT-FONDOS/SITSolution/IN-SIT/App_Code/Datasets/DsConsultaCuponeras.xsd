@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsConsultaCuponeras" targetNamespace="http://tempuri.org/DsConsultaCuponeras.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsConsultaCuponeras.xsd"
+	xmlns:mstns="http://tempuri.org/DsConsultaCuponeras.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsConsultaCuponeras" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DsConsultaCuponeras">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Indice" type="xs:string" minOccurs="0" />
+							<xs:element name="Secuencia" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaInicio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaTermino" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaInicio1" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaTermino1" type="xs:string" minOccurs="0" />
+							<xs:element name="Amortizacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DiferenciaDias" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TasaCupon" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DiasAcumulados" type="xs:integer" minOccurs="0" />
+							<xs:element name="TotalVP" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Flujo" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

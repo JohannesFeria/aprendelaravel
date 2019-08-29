@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CuentaParticipacionTD" targetNamespace="http://tempuri.org/CuentaParticipacionTD.xsd" xmlns:mstns="http://tempuri.org/CuentaParticipacionTD.xsd" xmlns="http://tempuri.org/CuentaParticipacionTD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CuentaParticipacionTD" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="CuentaParticipacionTD" msprop:Generator_DataSetName="CuentaParticipacionTD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CUENTA_PARTICIPACION" msprop:Generator_UserTableName="CUENTA_PARTICIPACION" msprop:Generator_RowDeletedName="CUENTA_PARTICIPACIONRowDeleted" msprop:Generator_RowChangedName="CUENTA_PARTICIPACIONRowChanged" msprop:Generator_RowClassName="CUENTA_PARTICIPACIONRow" msprop:Generator_RowChangingName="CUENTA_PARTICIPACIONRowChanging" msprop:Generator_RowEvArgName="CUENTA_PARTICIPACIONRowChangeEvent" msprop:Generator_RowEvHandlerName="CUENTA_PARTICIPACIONRowChangeEventHandler" msprop:Generator_TableClassName="CUENTA_PARTICIPACIONDataTable" msprop:Generator_TableVarName="tableCUENTA_PARTICIPACION" msprop:Generator_RowDeletingName="CUENTA_PARTICIPACIONRowDeleting" msprop:Generator_TablePropName="CUENTA_PARTICIPACION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODIGO" msprop:Generator_UserColumnName="CODIGO" msprop:Generator_ColumnPropNameInRow="CODIGO" msprop:Generator_ColumnVarNameInTable="columnCODIGO" msprop:Generator_ColumnPropNameInTable="CODIGOColumn" type="xs:string" />
+              <xs:element name="ETIQUETA" msprop:Generator_UserColumnName="ETIQUETA" msprop:Generator_ColumnPropNameInRow="ETIQUETA" msprop:Generator_ColumnVarNameInTable="columnETIQUETA" msprop:Generator_ColumnPropNameInTable="ETIQUETAColumn" type="xs:string" />
+              <xs:element name="FLAG_PREDETERMINADO" msprop:Generator_UserColumnName="FLAG_PREDETERMINADO" msprop:Generator_ColumnPropNameInRow="FLAG_PREDETERMINADO" msprop:Generator_ColumnVarNameInTable="columnFLAG_PREDETERMINADO" msprop:Generator_ColumnPropNameInTable="FLAG_PREDETERMINADOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:length value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESTADO" msprop:Generator_UserColumnName="ESTADO" msprop:Generator_ColumnPropNameInRow="ESTADO" msprop:Generator_ColumnVarNameInTable="columnESTADO" msprop:Generator_ColumnPropNameInTable="ESTADOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ID_PARTICIPE" msprop:Generator_UserColumnName="ID_PARTICIPE" msprop:Generator_ColumnPropNameInRow="ID_PARTICIPE" msprop:Generator_ColumnVarNameInTable="columnID_PARTICIPE" msprop:Generator_ColumnPropNameInTable="ID_PARTICIPEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USUARIO_MODIFICACION" msprop:Generator_UserColumnName="USUARIO_MODIFICACION" msprop:Generator_ColumnPropNameInRow="USUARIO_MODIFICACION" msprop:Generator_ColumnVarNameInTable="columnUSUARIO_MODIFICACION" msprop:Generator_ColumnPropNameInTable="USUARIO_MODIFICACIONColumn" type="xs:string" />
+              <xs:element name="FECHA_MODIFICACION" msprop:Generator_UserColumnName="FECHA_MODIFICACION" msprop:Generator_ColumnPropNameInRow="FECHA_MODIFICACION" msprop:Generator_ColumnVarNameInTable="columnFECHA_MODIFICACION" msprop:Generator_ColumnPropNameInTable="FECHA_MODIFICACIONColumn" type="xs:dateTime" />
+              <xs:element name="FLAG_ELIMINADO" msprop:Generator_UserColumnName="FLAG_ELIMINADO" msprop:Generator_ColumnPropNameInRow="FLAG_ELIMINADO" msprop:Generator_ColumnVarNameInTable="columnFLAG_ELIMINADO" msprop:Generator_ColumnPropNameInTable="FLAG_ELIMINADOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:length value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USUARIO_CREACION" msprop:Generator_UserColumnName="USUARIO_CREACION" msprop:Generator_ColumnVarNameInTable="columnUSUARIO_CREACION" msprop:Generator_ColumnPropNameInRow="USUARIO_CREACION" msprop:Generator_ColumnPropNameInTable="USUARIO_CREACIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_CREACION" msprop:Generator_UserColumnName="FECHA_CREACION" msprop:Generator_ColumnVarNameInTable="columnFECHA_CREACION" msprop:Generator_ColumnPropNameInRow="FECHA_CREACION" msprop:Generator_ColumnPropNameInTable="FECHA_CREACIONColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AREA_MODIFICACION" msprop:Generator_UserColumnName="AREA_MODIFICACION" msprop:Generator_ColumnVarNameInTable="columnAREA_MODIFICACION" msprop:Generator_ColumnPropNameInRow="AREA_MODIFICACION" msprop:Generator_ColumnPropNameInTable="AREA_MODIFICACIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PORCENTAJE_PARTICIPACION" msprop:Generator_UserColumnName="PORCENTAJE_PARTICIPACION" msprop:Generator_ColumnVarNameInTable="columnPORCENTAJE_PARTICIPACION" msprop:Generator_ColumnPropNameInRow="PORCENTAJE_PARTICIPACION" msprop:Generator_ColumnPropNameInTable="PORCENTAJE_PARTICIPACIONColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ID_PARTICIPE_ASOCIADO" msprop:Generator_UserColumnName="ID_PARTICIPE_ASOCIADO" msprop:Generator_ColumnVarNameInTable="columnID_PARTICIPE_ASOCIADO" msprop:Generator_ColumnPropNameInRow="ID_PARTICIPE_ASOCIADO" msprop:Generator_ColumnPropNameInTable="ID_PARTICIPE_ASOCIADOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLAG_CUOTAS_GARANTIA" msprop:Generator_UserColumnName="FLAG_CUOTAS_GARANTIA" msprop:Generator_ColumnVarNameInTable="columnFLAG_CUOTAS_GARANTIA" msprop:Generator_ColumnPropNameInRow="FLAG_CUOTAS_GARANTIA" msprop:Generator_ColumnPropNameInTable="FLAG_CUOTAS_GARANTIAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:length value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODIGO_PLAN" msprop:Generator_UserColumnName="CODIGO_PLAN" msprop:Generator_ColumnVarNameInTable="columnCODIGO_PLAN" msprop:Generator_ColumnPropNameInRow="CODIGO_PLAN" msprop:Generator_ColumnPropNameInTable="CODIGO_PLANColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VIDA_AHORRO" msprop:Generator_UserColumnName="VIDA_AHORRO" msprop:Generator_ColumnPropNameInRow="VIDA_AHORRO" msprop:Generator_ColumnVarNameInTable="columnVIDA_AHORRO" msprop:Generator_ColumnPropNameInTable="VIDA_AHORROColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

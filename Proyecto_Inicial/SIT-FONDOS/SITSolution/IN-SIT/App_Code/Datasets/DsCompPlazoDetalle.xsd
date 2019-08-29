@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsCompPlazoDetalle" targetNamespace="http://tempuri.org/DsCompPlazoDetalle.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsCompPlazoDetalle.xsd"
+	xmlns:mstns="http://tempuri.org/DsCompPlazoDetalle.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsCompPlazoDetalle" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PlazoDetalle">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Portafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+							<xs:element name="PrecioVector" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TIRVal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="VariacionVector" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unidades" type="xs:decimal" minOccurs="0" />
+							<xs:element name="VPNOriginal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Periodo" type="xs:string" minOccurs="0" />
+							<xs:element name="Emisor" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

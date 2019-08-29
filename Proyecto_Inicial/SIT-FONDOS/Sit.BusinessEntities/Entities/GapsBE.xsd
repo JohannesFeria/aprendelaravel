@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="GapsBE" targetNamespace="http://tempuri.org/GapsBE.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/GapsBE.xsd" xmlns:mstns="http://tempuri.org/GapsBE.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="GapsBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Gaps">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Emisor" type="xs:string" minOccurs="0" />
+							<xs:element name="Codigo" type="xs:string" minOccurs="0" />
+							<xs:element name="HO1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HO2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HO3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IN1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IN2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IN3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PRI1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PRI2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PRI3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PF1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PF2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PF3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoEmisor" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

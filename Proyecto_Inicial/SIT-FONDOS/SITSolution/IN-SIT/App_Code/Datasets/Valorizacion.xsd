@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Valorizacion" targetNamespace="http://tempuri.org/Valorizacion.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Valorizacion.xsd" xmlns:mstns="http://tempuri.org/Valorizacion.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Valorizacion" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Valorizacion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTercero" type="xs:string" minOccurs="0" />
+							<xs:element name="Entidad" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroInversion" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorNominalMonedaLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaValorNominalMonedaLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalValorNominalMonedaLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorNominalMonedaOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaValorNominalMonedaOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalValorNominalMonedaOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="VPNLocalAnt" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaVPNLocalAnt" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalVPNLocalAnt" type="xs:string" minOccurs="0" />
+							<xs:element name="VPNLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaVPNLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalVPNLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="Diferencia" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaDiferencia" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalDiferencia" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorTIR360" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaValorTIR360" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalValorTIR360" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorTIROriginal" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaValorTIROriginal" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalValorTIROriginal" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorTIRLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaValorTIRLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalValorTIRLocal" type="xs:string" minOccurs="0" />
+							<xs:element name="Duracion" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaDuracion" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalDuracion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="Convexidad" type="xs:string" minOccurs="0" />
+							<xs:element name="SumaConvexidad" type="xs:string" minOccurs="0" />
+							<xs:element name="GlobalConvexidad" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTipoTitulo" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoTitulo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

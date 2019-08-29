@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="SaldosCargadosBE" targetNamespace="http://tempuri.org/SaldosCargadosBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/SaldosCargadosBE.xsd"
+	xmlns:mstns="http://tempuri.org/SaldosCargadosBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="SaldosCargadosBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SaldosCargados">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Banco" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="SaldoContable" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoDisponible" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Portafolio" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

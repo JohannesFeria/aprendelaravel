@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImpuestosComisionesOrdenPreOrdenBE" targetNamespace="http://tempuri.org/ImpuestosComisionesOrdenPreOrdenBE.xsd" xmlns:mstns="http://tempuri.org/ImpuestosComisionesOrdenPreOrdenBE.xsd" xmlns="http://tempuri.org/ImpuestosComisionesOrdenPreOrdenBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImpuestosComisionesOrdenPreOrdenBE" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="ImpuestosComisionesOrdenPreOrdenBE" msprop:Generator_UserDSName="ImpuestosComisionesOrdenPreOrdenBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ImpuestosComisionesOrdenPreOrden" msprop:Generator_TableClassName="ImpuestosComisionesOrdenPreOrdenDataTable" msprop:Generator_TableVarName="tableImpuestosComisionesOrdenPreOrden" msprop:Generator_TablePropName="ImpuestosComisionesOrdenPreOrden" msprop:Generator_RowDeletingName="ImpuestosComisionesOrdenPreOrdenRowDeleting" msprop:Generator_UserTableName="ImpuestosComisionesOrdenPreOrden" msprop:Generator_RowChangingName="ImpuestosComisionesOrdenPreOrdenRowChanging" msprop:Generator_RowEvHandlerName="ImpuestosComisionesOrdenPreOrdenRowChangeEventHandler" msprop:Generator_RowDeletedName="ImpuestosComisionesOrdenPreOrdenRowDeleted" msprop:Generator_RowEvArgName="ImpuestosComisionesOrdenPreOrdenRowChangeEvent" msprop:Generator_RowChangedName="ImpuestosComisionesOrdenPreOrdenRowChanged" msprop:Generator_RowClassName="ImpuestosComisionesOrdenPreOrdenRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoOrdenPreorden" msprop:Generator_ColumnVarNameInTable="columnCodigoOrdenPreorden" msprop:Generator_ColumnPropNameInRow="CodigoOrdenPreorden" msprop:Generator_ColumnPropNameInTable="CodigoOrdenPreordenColumn" msprop:Generator_UserColumnName="CodigoOrdenPreorden" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoPortafolioSBS" msprop:Generator_ColumnVarNameInTable="columnCodigoPortafolioSBS" msprop:Generator_ColumnPropNameInRow="CodigoPortafolioSBS" msprop:Generator_ColumnPropNameInTable="CodigoPortafolioSBSColumn" msprop:Generator_UserColumnName="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoTarifa" msprop:Generator_ColumnVarNameInTable="columnCodigoTarifa" msprop:Generator_ColumnPropNameInRow="CodigoTarifa" msprop:Generator_ColumnPropNameInTable="CodigoTarifaColumn" msprop:Generator_UserColumnName="CodigoTarifa" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoMercado" msprop:Generator_ColumnVarNameInTable="columnCodigoMercado" msprop:Generator_ColumnPropNameInRow="CodigoMercado" msprop:Generator_ColumnPropNameInTable="CodigoMercadoColumn" msprop:Generator_UserColumnName="CodigoMercado" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoRenta" msprop:Generator_ColumnVarNameInTable="columnCodigoRenta" msprop:Generator_ColumnPropNameInRow="CodigoRenta" msprop:Generator_ColumnPropNameInTable="CodigoRentaColumn" msprop:Generator_UserColumnName="CodigoRenta" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorCalculado" msprop:Generator_ColumnVarNameInTable="columnValorCalculado" msprop:Generator_ColumnPropNameInRow="ValorCalculado" msprop:Generator_ColumnPropNameInTable="ValorCalculadoColumn" msprop:Generator_UserColumnName="ValorCalculado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoComision" msprop:Generator_ColumnVarNameInTable="columnCodigoComision" msprop:Generator_ColumnPropNameInRow="CodigoComision" msprop:Generator_ColumnPropNameInTable="CodigoComisionColumn" msprop:Generator_UserColumnName="CodigoComision" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorReal" msprop:Generator_ColumnVarNameInTable="columnValorReal" msprop:Generator_ColumnPropNameInRow="ValorReal" msprop:Generator_ColumnPropNameInTable="ValorRealColumn" msprop:Generator_UserColumnName="ValorReal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CodigoPlaza" msprop:Generator_ColumnVarNameInTable="columnCodigoPlaza" msprop:Generator_ColumnPropNameInRow="CodigoPlaza" msprop:Generator_ColumnPropNameInTable="CodigoPlazaColumn" msprop:Generator_UserColumnName="CodigoPlaza" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

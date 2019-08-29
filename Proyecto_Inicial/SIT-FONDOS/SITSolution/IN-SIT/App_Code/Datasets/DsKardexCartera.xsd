@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsKardexCartera" targetNamespace="http://tempuri.org/DsKardexCartera.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DsKardexCartera.xsd" xmlns:mstns="http://tempuri.org/DsKardexCartera.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsKardexCartera" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DsKardexCartera">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="Custodio" type="xs:string" minOccurs="0" />
+							<xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Unidades" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoDisponible" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SaldoCustodio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Diferencia" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaLiquidacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

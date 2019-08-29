@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TmpOperacionesEPUDetBE" targetNamespace="http://tempuri.org/TmpOperacionesEPUDetBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TmpOperacionesEPUDetBE.xsd"
+	xmlns:mstns="http://tempuri.org/TmpOperacionesEPUDetBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TmpOperacionesEPUDetBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TmpOperacionesEPUDet">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Cntry" type="xs:string" minOccurs="0" />
+							<xs:element name="Acct" type="xs:string" minOccurs="0" />
+							<xs:element name="AcctDescription" type="xs:string" minOccurs="0" />
+							<xs:element name="Ric" type="xs:string" minOccurs="0" />
+							<xs:element name="Bloomberg" type="xs:string" minOccurs="0" />
+							<xs:element name="Sedol" type="xs:string" minOccurs="0" />
+							<xs:element name="ISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+							<xs:element name="ByS" type="xs:string" minOccurs="0" />
+							<xs:element name="ExecutedShares" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ExecutedPrices" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NetComm" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NetTax" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Currency" type="xs:string" minOccurs="0" />
+							<xs:element name="ResidualQty" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTercero" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoCambio" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

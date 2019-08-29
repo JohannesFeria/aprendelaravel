@@ -1,0 +1,1 @@
+xcopy SITSolution\\PrecompiledWeb\\IN-SIT \\SDPEAPP00009\Aplicaciones\CARTAS-II /E /R /Y

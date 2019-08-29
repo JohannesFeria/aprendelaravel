@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="MatrizContableBE" targetNamespace="http://tempuri.org/MatrizContableBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/MatrizContableBE.xsd"
+	xmlns:mstns="http://tempuri.org/MatrizContableBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="MatrizContableBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="MatrizContable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoMatrizContable" type="xs:int" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Situacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Host" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaModificacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioEliminacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaEliminacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraEliminacion" type="xs:string" minOccurs="0" />
+							<xs:element name="TablaMatriz" type="xs:string" minOccurs="0" />
+							<xs:element name="ClaveInterfaz" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

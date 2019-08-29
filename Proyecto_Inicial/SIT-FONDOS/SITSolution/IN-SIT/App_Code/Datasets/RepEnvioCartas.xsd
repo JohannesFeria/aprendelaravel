@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RepEnvioCartas" targetNamespace="http://tempuri.org/RepEnvioCartas.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/RepEnvioCartas.xsd" xmlns:mstns="http://tempuri.org/RepEnvioCartas.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="RepEnvioCartas" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="EnvioCartas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCarta" type="xs:string" minOccurs="0" />
+							<xs:element name="DescBanco" type="xs:string" minOccurs="0" />
+							<xs:element name="DescBancoDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionPortafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionIntermediario" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+							<xs:element name="EstadoCarta" type="xs:string" minOccurs="0" />
+							<xs:element name="VoBo1" type="xs:string" minOccurs="0" />
+							<xs:element name="VoBo2" type="xs:string" minOccurs="0" />
+							<xs:element name="Usuario1" type="xs:string" minOccurs="0" />
+							<xs:element name="Usuario2" type="xs:string" minOccurs="0" />
+							<xs:element name="Cargo1" type="xs:string" minOccurs="0" />
+							<xs:element name="Cargo2" type="xs:string" minOccurs="0" />
+							<xs:element name="Firma1" type="xs:string" minOccurs="0" />
+							<xs:element name="Firma2" type="xs:string" minOccurs="0" />
+							<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							<xs:element name="Importe2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

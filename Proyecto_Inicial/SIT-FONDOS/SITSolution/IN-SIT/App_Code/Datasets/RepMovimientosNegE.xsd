@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RepMovimientosNegE" targetNamespace="http://tempuri.org/RepMovimientosNegE.xsd" xmlns:mstns="http://tempuri.org/RepMovimientosNegE.xsd" xmlns="http://tempuri.org/RepMovimientosNegE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RepMovimientosNegE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RepMovimientosNegE" msprop:Generator_UserDSName="RepMovimientosNegE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MovimientosNeg1" msprop:Generator_TableClassName="MovimientosNeg1DataTable" msprop:Generator_TableVarName="tableMovimientosNeg1" msprop:Generator_TablePropName="MovimientosNeg1" msprop:Generator_RowDeletingName="MovimientosNeg1RowDeleting" msprop:Generator_UserTableName="MovimientosNeg1" msprop:Generator_RowChangingName="MovimientosNeg1RowChanging" msprop:Generator_RowEvHandlerName="MovimientosNeg1RowChangeEventHandler" msprop:Generator_RowDeletedName="MovimientosNeg1RowDeleted" msprop:Generator_RowEvArgName="MovimientosNeg1RowChangeEvent" msprop:Generator_RowChangedName="MovimientosNeg1RowChanged" msprop:Generator_RowClassName="MovimientosNeg1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoMercado" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaNegociacion" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroSecuencial" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Ingresos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Egresos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DescripcionMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MovimientosNeg2" msprop:Generator_TableClassName="MovimientosNeg2DataTable" msprop:Generator_TableVarName="tableMovimientosNeg2" msprop:Generator_TablePropName="MovimientosNeg2" msprop:Generator_RowDeletingName="MovimientosNeg2RowDeleting" msprop:Generator_UserTableName="MovimientosNeg2" msprop:Generator_RowChangingName="MovimientosNeg2RowChanging" msprop:Generator_RowEvHandlerName="MovimientosNeg2RowChangeEventHandler" msprop:Generator_RowDeletedName="MovimientosNeg2RowDeleted" msprop:Generator_RowEvArgName="MovimientosNeg2RowChangeEvent" msprop:Generator_RowChangedName="MovimientosNeg2RowChanged" msprop:Generator_RowClassName="MovimientosNeg2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoMercado" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaNegociacion" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroSecuencial" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoTipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Ingresos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Egresos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoInicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DescripcionMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

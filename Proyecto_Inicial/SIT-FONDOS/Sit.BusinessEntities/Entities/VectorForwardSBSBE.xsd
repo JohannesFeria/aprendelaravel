@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VectorForwardSBSBE" targetNamespace="http://tempuri.org/VectorForwardSBSBE.xsd" xmlns:mstns="http://tempuri.org/VectorForwardSBSBE.xsd" xmlns="http://tempuri.org/VectorForwardSBSBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VectorForwardSBSBE" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="VectorForwardSBSBE" msprop:Generator_UserDSName="VectorForwardSBSBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VectorForwardSBS" msprop:Generator_TableClassName="VectorForwardSBSDataTable" msprop:Generator_TableVarName="tableVectorForwardSBS" msprop:Generator_RowChangedName="VectorForwardSBSRowChanged" msprop:Generator_TablePropName="VectorForwardSBS" msprop:Generator_RowDeletingName="VectorForwardSBSRowDeleting" msprop:Generator_RowChangingName="VectorForwardSBSRowChanging" msprop:Generator_RowEvHandlerName="VectorForwardSBSRowChangeEventHandler" msprop:Generator_RowDeletedName="VectorForwardSBSRowDeleted" msprop:Generator_RowClassName="VectorForwardSBSRow" msprop:Generator_UserTableName="VectorForwardSBS" msprop:Generator_RowEvArgName="VectorForwardSBSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumeroPoliza" msprop:Generator_ColumnVarNameInTable="columnNumeroPoliza" msprop:Generator_ColumnPropNameInRow="NumeroPoliza" msprop:Generator_ColumnPropNameInTable="NumeroPolizaColumn" msprop:Generator_UserColumnName="NumeroPoliza" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrecioForward" msprop:Generator_ColumnVarNameInTable="columnPrecioForward" msprop:Generator_ColumnPropNameInRow="PrecioForward" msprop:Generator_ColumnPropNameInTable="PrecioForwardColumn" msprop:Generator_UserColumnName="PrecioForward" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Mtm" msprop:Generator_ColumnVarNameInTable="columnMtm" msprop:Generator_ColumnPropNameInRow="Mtm" msprop:Generator_ColumnPropNameInTable="MtmColumn" msprop:Generator_UserColumnName="Mtm" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MtmDestino" msprop:Generator_ColumnVarNameInTable="columnMtmDestino" msprop:Generator_ColumnPropNameInRow="MtmDestino" msprop:Generator_ColumnPropNameInTable="MtmDestinoColumn" msprop:Generator_UserColumnName="MtmDestino" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrecioVector" msprop:Generator_ColumnVarNameInTable="columnPrecioVector" msprop:Generator_ColumnPropNameInRow="PrecioVector" msprop:Generator_ColumnPropNameInTable="PrecioVectorColumn" msprop:Generator_UserColumnName="PrecioVector" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UsuarioCreacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioCreacion" msprop:Generator_ColumnPropNameInRow="UsuarioCreacion" msprop:Generator_ColumnPropNameInTable="UsuarioCreacionColumn" msprop:Generator_UserColumnName="UsuarioCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCreacion" msprop:Generator_ColumnVarNameInTable="columnFechaCreacion" msprop:Generator_ColumnPropNameInRow="FechaCreacion" msprop:Generator_ColumnPropNameInTable="FechaCreacionColumn" msprop:Generator_UserColumnName="FechaCreacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HoraCreacion" msprop:Generator_ColumnVarNameInTable="columnHoraCreacion" msprop:Generator_ColumnPropNameInRow="HoraCreacion" msprop:Generator_ColumnPropNameInTable="HoraCreacionColumn" msprop:Generator_UserColumnName="HoraCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Host" msprop:Generator_ColumnVarNameInTable="columnHost" msprop:Generator_ColumnPropNameInRow="Host" msprop:Generator_ColumnPropNameInTable="HostColumn" msprop:Generator_UserColumnName="Host" type="xs:string" minOccurs="0" />
+              <xs:element name="Ref" msprop:Generator_ColumnVarNameInTable="columnRef" msprop:Generator_ColumnPropNameInRow="Ref" msprop:Generator_ColumnPropNameInTable="RefColumn" msprop:Generator_UserColumnName="Ref" type="xs:string" minOccurs="0" />
+              <xs:element name="Nocional" msprop:Generator_ColumnVarNameInTable="columnNocional" msprop:Generator_ColumnPropNameInRow="Nocional" msprop:Generator_ColumnPropNameInTable="NocionalColumn" msprop:Generator_UserColumnName="Nocional" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VPN_Local" msprop:Generator_ColumnVarNameInTable="columnVPN_Local" msprop:Generator_ColumnPropNameInRow="VPN_Local" msprop:Generator_ColumnPropNameInTable="VPN_LocalColumn" msprop:Generator_UserColumnName="VPN_Local" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

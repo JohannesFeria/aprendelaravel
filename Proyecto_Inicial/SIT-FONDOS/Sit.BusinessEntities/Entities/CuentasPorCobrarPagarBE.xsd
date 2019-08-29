@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="CuentasPorCobrarPagarBE" targetNamespace="http://tempuri.org/CuentasPorCobrarPagarBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/CuentasPorCobrarPagarBE.xsd"
+	xmlns:mstns="http://tempuri.org/CuentasPorCobrarPagarBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="CuentasPorCobrarPagarBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="CuentasPorCobrarPagar">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NumeroOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+							<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaIngreso" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoClaseCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMercado" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaOperacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Situacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaPago" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoMovimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Host" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaModificacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTercero" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="Egreso" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

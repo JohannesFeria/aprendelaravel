@@ -1,0 +1,3177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DSConstitucion_VencimientoDPZ">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>d77f0218-a0e5-40e9-93e1-164e99bc408f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DSConstitucion_VencimientoDPZ">
+      <Fields>
+        <Field Name="NombrePortafolio">
+          <DataField>NombrePortafolio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaDDMMYY">
+          <DataField>FechaDDMMYY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreCompletoPortafolio">
+          <DataField>NombreCompletoPortafolio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaCarta">
+          <DataField>FechaCarta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Contraparte">
+          <DataField>Contraparte</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TituloCarta">
+          <DataField>TituloCarta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Moneda">
+          <DataField>Moneda</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Capital">
+          <DataField>Capital</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="FechaOperacion">
+          <DataField>FechaOperacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaVencimiento">
+          <DataField>FechaVencimiento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tasa">
+          <DataField>Tasa</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Interes">
+          <DataField>Interes</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Dias">
+          <DataField>Dias</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ValorOperacion">
+          <DataField>ValorOperacion</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SimboloMoneda">
+          <DataField>SimboloMoneda</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumeroCuenta">
+          <DataField>NumeroCuenta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Firma1">
+          <DataField>Firma1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Firma2">
+          <DataField>Firma2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreUsuarioF1">
+          <DataField>NombreUsuarioF1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreUsuarioF2">
+          <DataField>NombreUsuarioF2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CargoUsuarioF1">
+          <DataField>CargoUsuarioF1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CargoUsuarioF2">
+          <DataField>CargoUsuarioF2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RUCPortafolio">
+          <DataField>RUCPortafolio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreBanco">
+          <DataField>NombreBanco</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoUsuarioF1">
+          <DataField>CodigoUsuarioF1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoUsuarioF2">
+          <DataField>CodigoUsuarioF2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BancoPublico">
+          <DataField>BancoPublico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoOperacion">
+          <DataField>CodigoOperacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ObservacionCarta">
+          <DataField>ObservacionCarta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumeroCuentaContraparte">
+          <DataField>NumeroCuentaContraparte</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RUCContraparte">
+          <DataField>RUCContraparte</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoObservacionCarta">
+          <DataField>TipoObservacionCarta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Origen">
+          <DataField>Origen</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SWIFT">
+          <DataField>SWIFT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ABA">
+          <DataField>ABA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BancoDestino">
+          <DataField>BancoDestino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumeroCuentaDestino">
+          <DataField>NumeroCuentaDestino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CiudadDestino">
+          <DataField>CiudadDestino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PaisDestino">
+          <DataField>PaisDestino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoTerceroDestino">
+          <DataField>CodigoTerceroDestino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Direccion">
+          <DataField>Direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreMoneda">
+          <DataField>NombreMoneda</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumeroCuenta1">
+          <DataField>NumeroCuenta1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EntidadFinanciera">
+          <DataField>EntidadFinanciera</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Entidad">
+          <DataField>Entidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoTasa">
+          <DataField>TipoTasa</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DSConstitucion_VencimientoDPZ</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DSConstitucion_VencimientoDPZ</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\NP700916\Documents\Karina Docs\Proyectos\Sura\codigo\SIT-CARTAS\CartasSolution\IN-Cartas\App_Code\DSConstitucion_VencimientoDPZ.xsd</rd:SchemaPath>
+        <rd:TableName>sp_SIT_ImpresionCarta_Constitucion_CancelacionDPZ</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>sp_SIT_ImpresionCarta_Constitucion_CancelacionDPZTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>0.98063in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.98063in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.98062in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.98063in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.98063in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.74104in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.23274in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.40289in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox14">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Capital</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox16">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Fecha </Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>de Inicio</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox16</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox12">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Fecha de Vencimiento</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox12</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox18">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Tasa (%)</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=IIF(First(Fields!TipoTasa.Value, "DSConstitucion_VencimientoDPZ") = "1","Nominal","Efectiva")</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox18</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox20">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Interés</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox20</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox22">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Días</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox22</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox24">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Capital más Intereses</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox24</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.23622in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Capital">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Capital.Value</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Capital</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="FechaOperacion">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!FechaOperacion.Value</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>FechaOperacion</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="FechaVencimiento">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!FechaVencimiento.Value</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>FechaVencimiento</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Tasa">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Tasa.Value</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>%</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Tasa</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Interes">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Interes.Value</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Interes</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Dias">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Dias.Value</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Dias</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="ValorOperacion">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!ValorOperacion.Value</Value>
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>ValorOperacion</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DSConstitucion_VencimientoDPZ</DataSetName>
+        <Top>11.54188cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>1.62334cm</Height>
+        <Width>17.46738cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="NombreCompletoPortafolio">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!NombrePortafolio.Value, "DSConstitucion_VencimientoDPZ") &amp; " - " &amp; First(Fields!FechaDDMMYY.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!NombreCompletoPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Lima, " &amp; First(Fields!FechaCarta.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>NombreCompletoPortafolio</rd:DefaultName>
+        <Left>0.05107cm</Left>
+        <Height>1.42021cm</Height>
+        <Width>17.45122cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Contraparte">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Señores</Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=IIF(
+First(Fields!BancoPublico.Value, "DSConstitucion_VencimientoDPZ") = "",
+First(Fields!Contraparte.Value, "DSConstitucion_VencimientoDPZ"),
+First(Fields!BancoPublico.Value, "DSConstitucion_VencimientoDPZ")
+)</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Presente</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Contraparte</rd:DefaultName>
+        <Top>1.58601cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>1.44667cm</Height>
+        <Width>17.45128cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox32">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>At.: Área de Valores y Custodia</Value>
+                <Style>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Estimados señores</Value>
+                <Style>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox30</rd:DefaultName>
+        <Top>3.41448cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.99688cm</Height>
+        <Width>17.4195cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox34">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Por medio del presente, les solicitamos se sirvan realizar las siguientes Operaciones de Inversión</Value>
+                <Style>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>para el fondo </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!NombreCompletoPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>con RUC</Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!RUCPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox30</rd:DefaultName>
+        <Top>4.72694cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>1.02334cm</Height>
+        <Width>17.41946cm</Width>
+        <ZIndex>4</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ") = "EXT",True, IIf(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO",True,iif(First(Fields!BancoPublico.Value, "DSConstitucion_VencimientoDPZ") ="",False,True)))</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="CapitalR1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!SimboloMoneda.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO",
+SUM(Fields!Capital.Value, "DSConstitucion_VencimientoDPZ"),
+Sum(Fields!ValorOperacion.Value, "DSConstitucion_VencimientoDPZ")
+)</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>#,0.00;(#,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>CapitalR1</rd:DefaultName>
+        <Top>13.22961cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.6cm</Height>
+        <Width>17.41946cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox42">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Sírvanse cargar de la </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!NumeroCuenta.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> en el </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!NombreBanco.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> el importe de </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!SimboloMoneda.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Sum(Fields!Capital.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>#,0.00;(#,0.00)</Format>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> para la constitución del depósito mencionado a nombre del fondo </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!NombreCompletoPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox42</rd:DefaultName>
+        <Top>17.93445cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.98742cm</Height>
+        <Width>17.45128cm</Width>
+        <ZIndex>6</ZIndex>
+        <Visibility>
+          <Hidden>=iif(First(Fields!TipoObservacionCarta.Value, "DSConstitucion_VencimientoDPZ") = "2" AND Len(First(Fields!CodigoTerceroDestino.Value, "DSConstitucion_VencimientoDPZ")) = 0 AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ") = "NAC",false,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Image Name="Firma1">
+        <Source>External</Source>
+        <Value>=Parameters!Firma1.Value</Value>
+        <Sizing>Fit</Sizing>
+        <Top>20.72032cm</Top>
+        <Left>1.23804cm</Left>
+        <Height>3.25438cm</Height>
+        <Width>5.42396cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Image Name="Firma2">
+        <Source>External</Source>
+        <Value>=Parameters!Firma2.Value</Value>
+        <Sizing>Fit</Sizing>
+        <Top>20.72032cm</Top>
+        <Left>11.04009cm</Left>
+        <Height>3.25438cm</Height>
+        <Width>5.42396cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="NombreUsuarioF1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Trim(First(Fields!NombreUsuarioF1.Value, "DSConstitucion_VencimientoDPZ"))</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>NombreUsuarioF1</rd:DefaultName>
+        <Top>24.00116cm</Top>
+        <Left>0.28554cm</Left>
+        <Height>0.57354cm</Height>
+        <Width>7.35542cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Bottom</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="NombreUsuarioF2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Trim(First(Fields!NombreUsuarioF2.Value, "DSConstitucion_VencimientoDPZ"))</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>NombreUsuarioF2</rd:DefaultName>
+        <Top>23.9747cm</Top>
+        <Left>9.98212cm</Left>
+        <Height>0.6cm</Height>
+        <Width>7.35542cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Bottom</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="CargoUsuarioF2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Trim(First(Fields!CargoUsuarioF2.Value, "DSConstitucion_VencimientoDPZ"))</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>CargoUsuarioF2</rd:DefaultName>
+        <Top>24.5747cm</Top>
+        <Left>9.98212cm</Left>
+        <Height>0.6cm</Height>
+        <Width>7.35542cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Top</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line2">
+        <Top>23.9747cm</Top>
+        <Left>1.23804cm</Left>
+        <Height>0cm</Height>
+        <Width>5.42396cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line4">
+        <Top>23.9747cm</Top>
+        <Left>11.04009cm</Left>
+        <Height>0cm</Height>
+        <Width>5.42396cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="CargoUsuarioF1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Trim(First(Fields!CargoUsuarioF1.Value, "DSConstitucion_VencimientoDPZ"))</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>CargoUsuarioF1</rd:DefaultName>
+        <Top>24.5747cm</Top>
+        <Left>0.28554cm</Left>
+        <Height>0.6cm</Height>
+        <Width>7.35542cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Top</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="TituloCarta">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ") &amp; IIF(First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ") = "NAC","("&amp; First(Fields!Moneda.Value, "DSConstitucion_VencimientoDPZ") &amp; ")","")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>TituloCarta</rd:DefaultName>
+        <Top>10.87133cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.6cm</Height>
+        <Width>17.47425cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox43">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Sírvanse abonar el importe de </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!SimboloMoneda.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Sum(Fields!ValorOperacion.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>#,0.00;(#,0.00)</Format>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> a la </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!NumeroCuenta.Value</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> en el </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!NombreBanco.Value</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> por el vencimiento del deposito mencionado anteriormente para realizar una operación de inversión a nombre de </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Label>Portafolio</Label>
+                <Value>=Fields!NombreCompletoPortafolio.Value</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox42</rd:DefaultName>
+        <Top>17.93445cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>1.05798cm</Height>
+        <Width>17.41946cm</Width>
+        <ZIndex>16</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TipoObservacionCarta.Value, "DSConstitucion_VencimientoDPZ") = "0" AND Len(First(Fields!CodigoTerceroDestino.Value, "DSConstitucion_VencimientoDPZ")) = 0 AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ") = "NAC",false,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Sin otro particular, quedamos de ustedes. </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Atentamente,</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#000000</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>19.59243cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>1.04034cm</Height>
+        <Width>17.41946cm</Width>
+        <ZIndex>17</ZIndex>
+        <Visibility>
+          <Hidden>=iif(First(Fields!TipoObservacionCarta.Value, "DSConstitucion_VencimientoDPZ") = "1",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="TituloCarta2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>TRANSFERENCIA AL EXTERIOR:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>TituloCarta</rd:DefaultName>
+        <Top>5.89709cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.6cm</Height>
+        <Width>17.44314cm</Width>
+        <ZIndex>18</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Beneficiario</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>6.55882cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.45082cm</Width>
+        <ZIndex>19</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": " &amp; First(Fields!Contraparte.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>6.52354cm</Top>
+        <Left>3.71506cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.68952cm</Width>
+        <ZIndex>20</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": " &amp; First(Fields!NumeroCuentaDestino.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>7.03882cm</Top>
+        <Left>3.71506cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.68266cm</Width>
+        <ZIndex>21</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>N° de Cuenta</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>7.03882cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.45082cm</Width>
+        <ZIndex>22</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox26">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": " &amp; First(Fields!BancoDestino.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>8.0341cm</Top>
+        <Left>3.71506cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.68952cm</Width>
+        <ZIndex>23</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox29">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Banco</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>8.0341cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.45082cm</Width>
+        <ZIndex>24</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox30">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>SWIFT</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>8.56326cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.46701cm</Width>
+        <ZIndex>25</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox31">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": " &amp; First(Fields!SWIFT.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>8.56326cm</Top>
+        <Left>3.71505cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.68267cm</Width>
+        <ZIndex>26</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO"  AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox33">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": "&amp; First(Fields!PaisDestino.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>9.04326cm</Top>
+        <Left>3.72997cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.68953cm</Width>
+        <ZIndex>27</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox37">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": "&amp; First(Fields!CiudadDestino.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>9.52326cm</Top>
+        <Left>3.72998cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.68952cm</Width>
+        <ZIndex>28</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox36">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>País de Destino</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>9.04326cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.47054cm</Width>
+        <ZIndex>29</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox38">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Ciudad de Destino</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>9.52326cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.45746cm</Width>
+        <ZIndex>30</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox39">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": "&amp; First(Fields!NombreMoneda.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>10.00326cm</Top>
+        <Left>3.72997cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.68267cm</Width>
+        <ZIndex>31</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox40">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Moneda de Destino</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>10.00326cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.45746cm</Width>
+        <ZIndex>32</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox41">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": "&amp; First(Fields!ABA.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>14.6177cm</Top>
+        <Left>3.74184cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.67893cm</Width>
+        <ZIndex>33</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox44">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ABA</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>14.6177cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.47054cm</Width>
+        <ZIndex>34</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox45">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>For Futher Credit to</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>16.09296cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.46574cm</Width>
+        <ZIndex>35</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox46">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": "&amp; First(Fields!NombreCompletoPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>16.05769cm</Top>
+        <Left>3.74184cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.6708cm</Width>
+        <ZIndex>36</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox47">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>A/C #</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>16.60824cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.46574cm</Width>
+        <ZIndex>37</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox48">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": "&amp; First(Fields!NumeroCuenta1.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>16.60824cm</Top>
+        <Left>3.74184cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.67766cm</Width>
+        <ZIndex>38</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox49">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Monto</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>17.1588cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.46574cm</Width>
+        <ZIndex>39</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox50">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": "&amp;First(Fields!SimboloMoneda.Value, "DSConstitucion_VencimientoDPZ") &amp; " "&amp; CStr( Format(  IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO",
+SUM(Fields!Capital.Value, "DSConstitucion_VencimientoDPZ"),
+Sum(Fields!ValorOperacion.Value, "DSConstitucion_VencimientoDPZ")
+),"#,0.00") )</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>17.1588cm</Top>
+        <Left>3.74184cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.67766cm</Width>
+        <ZIndex>40</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Dirección</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox8</rd:DefaultName>
+        <Top>7.5541cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.45082cm</Width>
+        <ZIndex>41</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": " &amp; First(Fields!Direccion.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>7.5541cm</Top>
+        <Left>3.71506cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.68266cm</Width>
+        <ZIndex>42</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!ObservacionCarta.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>18.99243cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.6cm</Height>
+        <Width>17.32421cm</Width>
+        <ZIndex>43</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(LEN(Fields!ObservacionCarta.Value)=0,True,False)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox51">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Por medio del presente, les solicitamos se sirvan cargar el </Value>
+                <Style>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>= First(Fields!FechaOperacion.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> el importe de </Value>
+                <Style>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!SimboloMoneda.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=IIF(First(Fields!CodigoOperacion.Value, "DSConstitucion_VencimientoDPZ") ="3",
+SUM(Fields!Capital.Value, "DSConstitucion_VencimientoDPZ"),
+Sum(Fields!ValorOperacion.Value, "DSConstitucion_VencimientoDPZ")
+)</Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                  <Format>#,0.00;(#,0.00)</Format>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> de la </Value>
+                <Style>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=iif(First(Fields!EntidadFinanciera.Value, "DSConstitucion_VencimientoDPZ") ="BBH", "SUBCUENTA N° "&amp; First(Fields!NumeroCuenta1.Value, "DSConstitucion_VencimientoDPZ") &amp; " en " &amp; First(Fields!Entidad.Value, "DSConstitucion_VencimientoDPZ"), IIF(First(Fields!Moneda.Value, "DSConstitucion_VencimientoDPZ")="USD","CCME ","CCMN ") &amp; First(Fields!NumeroCuenta1.Value, "DSConstitucion_VencimientoDPZ") &amp;" en "&amp;First(Fields!Entidad.Value, "DSConstitucion_VencimientoDPZ"))</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>#,0.00;(#,0.00)</Format>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> perteneciente al </Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                  <Format>#,0.00;(#,0.00)</Format>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>fondo </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!NombreCompletoPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> y transferirlo a la siguiente cuenta para constituir un depósito a plazo mencionado con </Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>= First(Fields!Contraparte.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox30</rd:DefaultName>
+        <Top>4.69736cm</Top>
+        <Left>0.07759cm</Left>
+        <Height>1.02334cm</Height>
+        <Width>17.44773cm</Width>
+        <ZIndex>44</ZIndex>
+        <Visibility>
+          <Hidden>=iif(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox52">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Destino de los fondos</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>14.1377cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.46701cm</Width>
+        <ZIndex>45</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox27">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": " &amp; First(Fields!BancoDestino.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>14.1377cm</Top>
+        <Left>3.74184cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.67893cm</Width>
+        <ZIndex>46</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Beneficiario</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>15.09769cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.47054cm</Width>
+        <ZIndex>47</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": " &amp; First(Fields!Entidad.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>15.14046cm</Top>
+        <Left>3.74184cm</Left>
+        <Height>0.44472cm</Height>
+        <Width>13.67893cm</Width>
+        <ZIndex>48</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>N° de Cuenta</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>15.57769cm</Top>
+        <Left>0.05107cm</Left>
+        <Height>0.48cm</Height>
+        <Width>3.46574cm</Width>
+        <ZIndex>49</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" AND LEN(First(Fields!NumeroCuentaDestino.Value, "DSConstitucion_VencimientoDPZ")) &gt; 0 AND First(Fields!EntidadFinanciera.Value, "DSConstitucion_VencimientoDPZ")="BBH" ,False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox21">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=": " &amp; First(Fields!NumeroCuentaDestino.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>15.57769cm</Top>
+        <Left>3.74184cm</Left>
+        <Height>0.48cm</Height>
+        <Width>13.67893cm</Width>
+        <ZIndex>50</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO" AND First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ")="EXT" AND LEN(First(Fields!NumeroCuentaDestino.Value, "DSConstitucion_VencimientoDPZ")) &gt; 0 AND First(Fields!EntidadFinanciera.Value, "DSConstitucion_VencimientoDPZ")="BBH",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox35">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Por medio del presente, les solicitamos se sirvan realizar las siguientes Operaciones de Inversión</Value>
+                <Style>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>para el fondo </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!NombreCompletoPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>con RUC</Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!RUCPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>realizado con </Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>= First(Fields!Contraparte.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox30</rd:DefaultName>
+        <Top>4.72694cm</Top>
+        <Left>0.05127cm</Left>
+        <Height>1.02334cm</Height>
+        <Width>17.47405cm</Width>
+        <ZIndex>51</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ") = "EXT",True,IIF(First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="APERTURA DE DEPOSITO A PLAZO",True,iif(First(Fields!BancoPublico.Value, "DSConstitucion_VencimientoDPZ") ="",True,False)))</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox53">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Por medio del presente, les solicitamos se sirvan realizar la siguiente Operación de Inversión para el Fondo </Value>
+                <Style>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!NombreCompletoPortafolio.Value, "DSConstitucion_VencimientoDPZ")</Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>realizada con </Value>
+                <Style>
+                  <FontWeight>Normal</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>= First(Fields!Contraparte.Value, "DSConstitucion_VencimientoDPZ") &amp; ":"</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox30</rd:DefaultName>
+        <Top>4.69736cm</Top>
+        <Height>1.02334cm</Height>
+        <Width>17.52532cm</Width>
+        <ZIndex>52</ZIndex>
+        <Visibility>
+          <Hidden>=IIF(First(Fields!Origen.Value, "DSConstitucion_VencimientoDPZ") = "EXT" AND First(Fields!TituloCarta.Value, "DSConstitucion_VencimientoDPZ")="VENCIMIENTO DE DEPOSITO A PLAZO",False,True)</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>9.9113in</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="Firma1">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Firma2">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>6.96013in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.95792cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="Image2">
+          <Source>Embedded</Source>
+          <Value>logo</Value>
+          <Left>13.44539cm</Left>
+          <Height>1.95792cm</Height>
+          <Width>4.23333cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>2.08821cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox5">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>FONDOS SURA SAF S.A.C</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>Silver</Color>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>
+Lima Canaval y Moreyra 532, piso 1 , San Isidro
+Provincias: Arequipa: Av. Ejército 107-C, Yanahuara
+Contact Center: Lima: 572-7777 / Provincias: 0800-117800 (Línea Gratuita)</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <Color>Silver</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>www.sura.pe/fondos  |  Encuéntranos como SURA Perú en:</Value>
+                  <Style>
+                    <Color>Silver</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox5</rd:DefaultName>
+          <Top>0.03903cm</Top>
+          <Left>0.05107cm</Left>
+          <Height>2.04918cm</Height>
+          <Width>9.78535cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Image Name="Image47">
+          <Source>Embedded</Source>
+          <Value>redes_sociales1</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>1.29446cm</Top>
+          <Left>9.57547cm</Left>
+          <Height>0.55562cm</Height>
+          <Width>1.77271cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>1.5cm</LeftMargin>
+    <RightMargin>1.5cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>1cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="P500273">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAATsAAADICAIAAAAYz9GTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAEsfSURBVHhe7Z11vFXVuv5BBFTgGCgtId1ISUpId0hJs9nEBkSkQ2JLh3RLl3RJiaCAelBCEJFQQWmkzXvPPff6+7Ke7fubZ+3NVjHWXovx/DE/Y445ao73fd6Ya6614v3s4OAQPHCMdXAIJjjGOjgEExxjHRyCCY6xDg7BBMdYB4dggmOsg0MwwTHWwSGY4Bjr4BBMCGLG/s///I8Kt27dUuHatWsq/Pd///ePP/5I4aeffuL473//21ft4BD0CGLGwkOR1ktIKLpr1679+/dHnf/88//93/9xdKR1CA0Ed1SMLzUq/td//RfHrVu3FixYsE2bNpTle//3f//39mUHh5BAcDMWNv7rX/9S4YcffqDQuXPnePHiFS5c+Pr16+KwKA23OTo4BDuC/smTZbPgypUrxYoVS5AgQfHixXG2UbU+96vY2MEh2BHEjFW4y9EC4+XLl6dNm7Z69epdunTp06cP9XKt8sMODiGAoPexQIT86aefWrRokT59+n379h07dqx9+/a6Clwq6xAyCHofS7iriBfGlihRomTJkjqtWbMmqSwxs3tK7BBKCGLGKuK1R0p79uzJkiVL69atKeN1mzRpsmbNGuddHUIMQcxYc55ys6NHj86QIcO4ceNgKadNmzYdNmyYrjreOoQMgpixUNEeKX377beVK1fOli3bwYMH9fQ4PDy8bdu2uuoY6xAyCBHGHj169KmnnipTpgyVqunXr1/nzp1VdnAIGQT9kyfFxosXL06XLp09H+bS5MmTx44dq5coHBxCBkHMWEGc7NatGz525syZCompXLFixYwZM/QiFI7XfK+DQ1AjuBmLL5WnrV27do4cOY4cOfLTTz+Jnzt27Bg8eLA8MEfHWIfQQHAzVi4U
+lC9fPnfu3LAXZup7dh9++GFYWJiuitUODiGAADBWjBLsExpvwQhGy9h9oz6MPXToUP78+evWrWufzTLIpUuXOnXqRPlfPnhfP3ZwCF4EzMdCRVjk9X7ff/+96EqBU3LRX/WNUJEua9asyZYtW8uWLY3edDx79qz3RUUHh9BAwBgL0+7kP1WvR0qxk5ar3333XWRkZKZMmfS+hEA2e+LEiWbNmln3XyW/g0NQIDCMhT9ef2hR640bNyjom+iqgdi3G8UEI2GTJk2yZs26a9cuympPfgtjmzZtanEyU6jg4BDUCABj4arX43Fq7MVhqgCU7tqzpeiwQQoVKpQrVy5iaS8tr1y50qFDh6gTB4dQQWAYq6NfYBwREUEcu3jxYlWae4wdly5dSpkyZalSpSgTDHNUdwjfrVu32y0cHEIIgWSscRJvefny5fTp0ydKlAjS2otKBMZeSvtBlzZt2pQiRQr9sJN8rI445y5dujCyXHEs4zg4BBECwFglqMBy1OvXr3/wwQcFChSIFy9e9uzZT548SQ31sbtZXX3ttdeyZMkyatQoOAkYU4z99ttvcdrGeR0dHIIdgXnyJBDEygFyHD16dIUKFZInT/7YY49NmzZN9b8FHTt2TJYs2ebNmynbO4kq64djbjfyJL0ODkGNQDLWnC2Ffv36hYeH16lT5/HHH+/fv79d+lWUK1eOPPbIkSOULTHmePHixZ49ezrGOoQYApnH6hTcunWrdevW06dPX7ZsGT62fv36VIpssTPtxx9/fOKJJwik7ZGyQmUIf/jw4e7du3uNggoODkGNgDFWFFL5888/r1y58t69e69cuUKI+/TTT1P5Wxj71VdfJUqUSA+KBSWx8Hbbtm34WMdYhxBDwKJiIyRc2r59e4kSJb755htqHn744TRp0lAQmWNhLCO8/fbbRNEvvPCCmtnnsYyJux44cKBFxY6xDqGBQOax0AzApZkzZ5KOilSZMmVKkiSJPUMSb2ME7SdN
+mvTUU08NHz5cHwgZY8GcOXPGjh1LQSMYdR0cghqBYaz4o5wTRg0aNEi5Kyhbtmy8ePEOHDjwq14RtkdERGTIkGHTpk2c2qe41HOcNWvW66+/TkHjxMJ8B4cgQmAYK67a1+66desWFhYGqWBX48aNYezKlSuNgbEAnhMVHz16lPLNmzc5MrLMwezZs5csWaIaR1eHkEHAnjwJolOnTp26dOnCKWQbOnQojO3Xr5+IF7unTZcuHUmvt4357QkTJpw6dUpxMqfAd93BIbgRAMbCIvgjLsnNtmzZsm/fvhQIaMk/YWzbtm3FsVjyz2vXrsHYnDlz+n0vT4WJEydevXrVKh0cQgMBe/IkLom39erVwyVSgJ979uyJHz9+hQoVOPW5xjv6xk8//TRz5sx16tShTDN5VyCXO2nSJEdXh9BDwBgriJDlypWbP38+Bch27ty5pEmT5siRw3c9Nixbtix9+vQ9e/bUKWyXQ9aYkydPVhmo3sEhBBAAxuL6RCSAYyR2zZ8/v54SwVhC3CxZsjzxxBP6XnssINdNnjz5+PHjKTMUR41M4fvvv581axYF+XCGdf7WITQQGMYqglXh8OHDhQsX3rhxo2o4VqpU6aGHHjp48ODt1ndGly5dMmbMuHnzZlyoPXACDHLhwoV169ZRKcY6ujqEDAITFYtgwrvvvluzZk3vB7AdO3ZMkCDBwoUL5TDvhJYtW+bJk+fkyZOUjZnC119/TZbLLBpTVx0cQgCBYax+LELYtGkT3Pvqq6+sctCgQfHixYuMjIydaaVLlyaPPX/+PGVju3D27FmCagivDFY/zujgEAIIAGONXbefFP3736tXr65atapeKgbffffdtm3bYGyTJk04VWPzyd7XKqBrzpw5KVglDMfBquwQXEATkLVFVZyqIFCP2dW7qxKxvX6D9FVjXShIJehlA4YMAslY4Y033iAqlhuUSK5evRo/fvwiRYpQ1o4bY60v5MyXL1/x4sUpIzA1c3QN
+RviR04CshahznzJIEyjQS0GZdUf6ENVSIXCnkYMaAWCsn9mbOXNmtWrVtMv2NdfMmTMnT5789OnTOjXGGicvXLhQokQJfRgLnHcNdkh8qAE6ALxE5ZKdKlHSqbSCo7lZYAEXamblUEJg8lgDGz18+PDnnnsOcyiLiEgoNG3aNHHixPrIB0hCNOYSR/D+++8XKlQoLCyMMpfUy9fWIfiA+LyPNgwSLuCquCpI1hyh5ZYtWzD6O3bsMHMvcNXbJWQQMMbK03Ls379/xYoVKYuWhMdgyJAhCRIkeOWVV243/UVCEgDNOCWWzpQpE30lJyo1oMnYIYgg2QmUkS9A3AiXguopIGXJV+3xrvv3769QocIjjzxSo0aNbdu2SYV0DFVNCFhUbELq16+fN7hVQW8Xh4eHa/clNl1Vx8mTJ6dOnXrevHlKgE08JmCHoAMM/O677ywDElAA6QAgyjW1AQh9woQJxGKoSpo0aYYOHapfqEcHuCSVsL4hgwAw1kilPYWxDRs2VI0lHocOHUqaNGnJkiXVWEfJUjIbOHAgua59imuC8UrUIShgZtqE+OOPPx49evTKlSs61fcogZHZWjZu3DhlypQ42NKlSzdv3vzChQuqB2oTY7Ad1AgkYyWqXr16NWjQQDWASjE5Q4YMSZIkEQN11O7DaoTRpUuXggUL3rhxgxpORXUb2SGI4Ce1q1evjhkzJnv27JMmTdKbqpagGv2sJk+ePIUKFSJFCgsLK1GiBBYc/ZG2SLvMHIQMApPHegkG9+yHmgB2VNaxcuXKiRIlWrFiBTW0VAOzss8880zWrFnVUkddcqT1gk2zsMXvwUxcg2iGEElzBgwYQKBbpUoV1UumJmtuStTdu3dvkSJFGjVqxK2tXbu2QIECs2bNkhoYUR1j/xxoHyWJzp07N23a1JhGQcKjHrFhaCkbn9E/9cWyYl9V9vLWWjqIorgpsjto4Gfy4g4kbjsix8jISERfrlw5rVlHr87ouG3b
+tsKFC2PuKZ88eRILTkeR2YgaevoQGMZqx7WbHTt2JAMxxhqWLl2K2CIiIiijZ2IyXVQoXrw4UZD0zyvX0JPQXUOb4/27QBm1uAakCaJOfKdDhgwhvCpatKiMjq5q8SojZWz3smXLCLX0bhw1GTNmRJfULLo6hQwCw1jbd45t27Zt2bJl9C3+4osvEiRIUKZMGcpcRRLW5ubNm8WKFatZs6ZCPq+8HWO9MI967do1jkERGCPB3r17J0yYMHfu3Hr4pHpZahU44kXnzZtXsWJF+29+GNuiRQtr7y2EEgLAWJGKoza0tQ/RGUtNlixZ0qdP/+2333JKY2tz4MCBHDlyQHVppFcwISmkP4ihQ4e2a9dOZeNwnIJUQvJFgi+++CI+NnPmzGfPnrWr1Pv5z6lTp9atW5fGavDkk0/qLw6tgRVCCQFgrPaR3Re7mjVrFhYWRiWnqpEAAAFP0qRJd+7cSRmbKoGBVatWwdgBAwaohvbqYiM4GC5cuJA2bdrs2bOLq/YgKk5BKmHJJ8Htgw8+iM8kzuLU5K5bMP1BAapVq9avXz9Or1+/niJFih49elC2e7SOoYQAMFb7aMYeWoaHh3vNoRpwnDRpEpJDMJxKDGLm9OnTSXLGjx+vU44SNgXHWC/YjfXr1ydOnBgfG2fVl0X6qQTBLQkRjD1+/Li3Xk+V1PjHH39EbUiaIiMjGeHQoUOpUqWaPHmylEFqYB1DCQFgrNhlhrBx48boU3TGEgxv3rw5SZIkTZs2VT1Q3+HDh5cqVWrmzJmqpK9ZX8dYg/Zq9OjR8eLF0xvacdPBAiMhR5Zdr1491pwpU6Zjx45RY8u2z2MBsiaZKlu27JgxYzh96623MmTIsHr1asqmA3H2fv8IAvPkyYsGDRrox4oN9tXHmzdvkpzkzZuXsoQqGfTu3btYsWIbNmyQCOVpQUhK6I+ADWzVqlX69Ol/+OEHdumu98d22LxW9KEQkDm3u4CZbEauWLEijC1RooS3
+HjA4s3BUZfPmzStUqLB8+XIUBvPt/VNSX/MQfOEJBICxtu8iYd26dclb7BJH0wb0DF9KfvLVV1+pRhrTs2dPErP9+/dLk+RMQEhGQXcNNhNUrlyZ0PGP7AybLEkBOGC7jXQocwl5WQMvwX47JHfh+++/L1KkCIwNCwvjVNPpKHFz1Cma8+yzz65YsYLZMeJPPfXUmTNnqLfFhKQ+BMbH2tZzrF+/fqdOnXzVUZKT1Nl3GnTt2jVRokRz5871XY+SHO1z5MihTyyAmVJddRDYDfYT0+Z9THB3jPKCMeFqdB8rad4FGNBWxbBkQ8S39913H86TGg1rAfPtRj7dAFiiZ555hlCLGiI1eK5mGo3GtLndOrQQGMaKmTpGZ6wgA7ls2bLEiRO3aNFCu48wKLRs2VKf0wJOTZCOsV6wgV988QURyqBBg4wSd8ErkZN9tmzFQM2tW7eYiGH/CD1McMyFIX744YcfffRR+yEhoKnNTKAndClcuDDJ0Y4dO6ghobVvgEmLaHzXRiQuIwCMZR/Zbh3ZXDa6Q4cOxlUriLFHjx79xz/+UbRoUQlV/GzSpEmtWrV8rf6/0/iDShN6YEOWLFmSLl26KVOmaJfubn+088AIQ1ATo5tlfH14/nuhKRA9OHXq1IMPPpgnTx5qjHJq4BflkuiS8e7evfvChQsFChTo1atX1AUf6GLdQwmB8bFSIB3r1aunVxEF22WpFxqQJUuWzJkzX758mVNJDrdMDkOBEYzhlENSQn8EJPy5c+fesmWLTv+4RYOr27ZtQ14lS5Ykbxw/fvz169cRgbnfuxOBNEF9d+7cSVRVs2ZNygyrNasBYC6zIKToaMJbb721ePFisiRF0aYPwHqFEgLDWC/sWbH22kRuW9+0adPHHnts8+bNOkWEzz33XPPmzVVWJfCKykFg655++ulz585Rvuv9oSMelQJ0hRt4tiRJkhC4kjfOmzdP8oJFd20OGEFrE8GICBImTIhRoJ4x/Ybl
+1BhbrVq1559/fsWKFe3atcOCnD592pRH3tgx9k+DdlZHy2N1yi776dbkyZPjx48/ZMgQPWG6cuUKIdDLL79M2Wt6VQhJId012Nv8+fNTYH+k6H6B5W8BJNGuXrx4UZ+UtmzZUhxmWNt5QMu7GN+ia81CcJsgQYL+/fv7cVXqYeNTqFChAskRVgNn27hxYyqti36ZxG+E0EAgfawkRPyj10HvhAMHDuBjq1atShn9+PTTT9OmTav/wnOIBexVoUKF8ISU2eroaefvxYkTJ1L58PHHH3PK+LDIGEuBWUQSrIOEC5jXS2Mvi0RCOlIpc0wS1LBhQ/JY/b9+jFAvUKNGDXxs9+7dSXq7du2qypBH4BmLmWzbtq1qYsR3332XKVMmsll9k4M86sknn7SfWXSIBc8880zp0qVVFm2MSL8d8ldwaeHChZjOOnXqGGcEToFRV1NAVK+N8Ps1CV2iJdxWR4UANCDluf/++/U/TLGA26lYsSJBBLFxzpw59RnPvYBAMlbmFkvZqlUr1dwJaEmiRIl2796NdOfOnZsvX779+/dHXXO4M3Cw+ideIEr8kUCxd+/ehMS4NcpQVI5UdAVqY4Dnoq7XRoj8wMhsjLVmCBfG6o3iWEBHPXnKmDEjt2kjhzwCxljkhJnkWKVKlaZNm0qf7oRp06YlTJhw7NixtJ8+fXr58uXv7lOEewqw6Omnn8YF6VQ7LHr8LphoevToAWNr164dnfbwDVCPTL3shXiTJ0+eNGmSPRby4zbr0ZKMsRkyZEiWLJnXP0eHutStWxdTnjp16vDwcNXfCwgAY5GZdlyCr169eosWLfwE6QWXDh06hBT1lYBZs2ZVqlRJlxxiB4xt0KCByOBNJn8XEJM82IgRI4iKX3jhBYaCxhoWUdJAAjVImqtWrUK4jzzyiHi+dOlSXZXc9YGQmQNV3rx5kylIlVV5JyjpbdSo0bPPPss93jshMQgAY5GNJGqW8ldt5PXr17Nnz16yZMmL
+Fy9isC3Sc4gdaHPLli2122KsH7V+F6ZMmQL37N0VE6K5Rwr6dUsAySdMmNC6deuIiIhcuXLRsUSJEp9//rmu0ldeVNwDov2HH35I+pMjR47Y7YssSMOGDbNmzUqMRvYrwt8LCIyPjSr5AGNjf/Ik0CZv3rxLliwZPHgwxjWq1uHOQK2zZcsGZ6TN8mbGrt8OC3RXrFgB8XBrlDUOY54/f57Q9+zZszayvU0BkdRxz549BQsWJK/p2bOnPhw2HfAqA4ydO3duggQJyHpiZ6D43KRJk5QpU+onF+/ivoIUgXzyJGmRaDVr1iwWmyozvHjx4pw5c4aFhb3sgy45xAJYhEKzt/Zg1o6/F4gA+pGbPPHEE0WKFDly5MjKlSshDG6TIPaBBx6gQL769ddfR3X45WfBIaGJ7/7773/00UfpaH5ej44tMAZDhw6F2Pp5xF9FmzZtuEGvBbkXEDDGQldJDh9bv359r631gySK5cbHEgXRODIyUpd+F5jC5GrTSbHiIHAy6Loptwre5200iF1NP/vss8cff7xDhw46lddiG+l1+vTpbt26DRgw4M0339SPLYpXRh4rYEltDfRKnz49eWmZMmVSpEiROHFiuIpEkidPju+977777HN1utvazF4QJdFMDyNsTGByobJ79+742FdffVWXvD8ECWTWdeR2cufOTcZbtGhR73cGQh4BYKzEY5zBVP9Gm4o1xaYSXw0bNkwadndQ2BaLVw8s/B6TSqFR0GvXrjVu3LhQoUKdO3feunUrl2jpVX0/fPLJJzhAOKANt/v94IMPKlSoAHmSJUv2zDPPYAWIn0VR5YcmGgbX+OwYhZ07dz711FN0TJIkCR1JT4iT8atHjx4dNWoUZOaSfhECyEAAzc5xw4YNiI9A/b333tOwqjfGsgZiKPLYqVOn6qqaMZREZjtDe1x6xowZixUrVrx48QsXLth0IY/AM7ZVq1aQVuU7QV26dOmCgU+XLp19XfZ3QVIH0kv0
+Q2oa12DaDCibLsI0EYYd0BtgIBa7QxALYwcNGiRfrT3kKFbg6/Lly5cmTRqGtZ2RT0M04oaiVkCDvXv3hoeHE9n+4x//aNmy5Y4dOzSgQHuEgsutWLGiAgH2ViLW7dCYNnrJsU+fPrf7+EA9DdSGddaoUYPx8fy65GsSFRdQUDOOONVy5cplypSJjLdWrVrM5Rj7l0My4Ni6dWs2PZYdR/Ci1qpVq0iE0MI33nhDl/4gkL0pa5yCOGNGTZrKFsGx1KlTE17C2FOnTsVucXB9pJ3eL8eCd955hw2ErnjssWPHZsiQwWv+GJB5P/zwQ3zmrVu3ZNpoOWPGDBya/kUO76p81Vgkq3H9+nXCH0zAwYMHNZSuavHCpEmTGEEfEXvrBRhLkowf1o+/qAHjmIzYAc3FmjFezz//PAaCAO3KlSuxb0UoIcCMRUgkWlWqVIklyjXFPXv2LAqBmR89enR0ef8W7Nq16+2336ZgCaENHnfArXlXJfaitdSTF+BYSApQeiJS6qMaxYSTJ0+mTZu2d+/elLVdN27caNasGdzbt28fww4ZMgT+6O0xxpfSQ9QGDRpQr42Ch4zAthMJww3SVxJXMdlr7FRu3rw52axMgOTLLECzc2QuXGj+/PlN3F5rwu3AQ0zS+fPn1QWwKkagAFdpQPubN2/myZOHYBhX3LBhQ9zysmXLYtGfEEOAGYsMevTowaZLKjFCl9S+ZMmS8ePHb9++/V1EQdh+xEwKd/XqVfTAdCKuwXtrXoWmvlOnTjA2IiKiW7du+vphLJqKjyV+1ivy7CFDrVu3jiAFBytyElLi0CyuViXZL3QFcnTDhw9nw2lGX8icJUuWpEmT6icOAeJjAYws24HTfvDBB3v27ElZKxdd7S5oTLqbKlUq/RAxENVpwN2xAOhKXHD58mVOrRdgkRaiDxw4EKs9b948RibCL1WqVP/+/XXpXkBgGGtSRBIIoHbt2qqPETQG4i0qixW33wf5Xdi+fbt0
+UWkSOqGRdTUOAhqIRUDPtKWsuDIUXSSJBQQUuEQYq62jfatWrYhs8YGU2X+4QWJJuOHlhhyvXpPAJULRHDlyECRro/CB+u4O7GUQjSwgyokTJ7I8/ZWGDIF6eW1Q9uzZcddy4ECXGEemh6Dg8ccfv3Tpkjhs49vNfvbZZyy7bNmyGh+uEqWTYMdlOf65CDBjkQQqoh8ciAUmOf36Lp5Wp78LaAD6lzBhQqJKnao+boJbNiLhLaEZtMG1Jk+eHB1VPSGrCjGCtJ8QtHv37iID95szZ04SVz1ewmfCLr/fnYW95KIkukzEaZ8+fZIlSzZu3DhdZUmwN0GCBIcOHdIpRySo7+UAotOHHnpI/9/tjZlN1hwJaGmzdOlSVmViBVokFgHG6vdGAHoim6XRWB5pOTc1ePBgTunCOCyYbFb/93EvIACMlZyQogr4Db22EgsQmCRKkAZjCxQo4FUIcU81ZoxjRIkSJXDRZM7ogayylMnYq4JetTOzbY5OjTk1Ltn/iHMv6kuBjmLFpEmTWPA777zja3Ib8gyCLdVGsxnhALej/ZkwYUKhQoWIRWEL6o6+4qbQXYaK/WbXrFkDve3Xj7Zu3cq9w3bNgupzunbtWk61Ko4LFy5kewm8qV+8eDERbOXKlX29b+8M6yGRJkg+c+aM38sPei7AFHQnDVYl8LtfBiE+IjKfP3++7g4gWWv25JNPEsl//vnnVNrgAu0/+ugjrAlhMKcSN9wm0ylWrNiCBQs0CDm29tPGDzEEgLHaUI7a01deecX+KfROMEZFRkY+8MAD+fLlk02VUNVXlDbtjw4aYxpQqcaNG3t1ne4QzKtbAI2kvVWi1jSzZXBJT18A83oZbou5du1a/vz5mQ6XjnpJw4BWaOpow9KdSo7SfsBpu3btEiVKRHZHQEtGoE93CAvhhiaKBfhY9Lt3794a/4033mCo559/no6AJJarJ0+e5JINhSygMQbx/PnzUJq5OBKjarWsHG5gMg4f
+PqwN5Ma9O7ly5Uq6eL/co6t0tJ0kDscikOtCWn2qLNCFe8cqsUj7YSp7v4XdI6DAe+Pz9WRLI7PPSLN06dL69x2g7dVRW+qrDh0EjLFoiVQcEmIm7blCdJj4aY/WEjXhcLCp1MiVaZxflQ3zRkREoFIoqxRIHQ2oBfHegQMHTIMZ01tWQWqErsyaNYuokiOnDE4DlmqqiaJnzJiR6V566SXVcNX02+yL11LYznDct28fyg2pyNneffddOmICKlSoQGqKI4Javh5R48QIKAG79P4QY+LwMXa4XMqs5JFHHilSpIjdndC5c2eCXiIRyiNHjmTx9vqR1vbcc8/hIfHAqvQCCeKW8erksXabNj5bzfaydWw+w7IzWJ+Wvn8h9UoBl84Cpk6dqt3WpLLOr732Gkk4OTw7xrC6BFhnpUqVmjRpgjKYqihQp5l3e0MDAYuK2VyJasyYMVhuc1nRQUt1QYpNmzYlJkTkFKgRz03kJrA7YcqUKSgErk/y1hEmSAOmT59euHBhHPjs2bN9zW8v1VRHBZuLofSWj75IZJqh1UKkDz74APUF8iRffvkl0Tiu8uOPPzaFppdpHh2trFfnYaZ+F99AeMyA+Njq1aurRquKEagyGSM3pVNIjvsaO3YsW60HwgzOjNpbjiwAl0591apVKWO8yHvZDUUHOhINJUmSRJ+H6y5YADxkHLoQVGNM8eq2G+wDDXDF586dQ9A1a9bEanBfEA9aXrx40UtXGrOZCIi95VTC1fKwWbly5UqTJo0eMtv4XN2+fXvdunVx7Dt37rTRTJ1sS0MGAWCstlWqxo6jUjBWChEjaI82UODYrFkzPA9ai+5iR03bfA1jU19h06ZNCRMmxLrrVMMKiJagC30FTEGN1+0zhbwZXdSLuICWxKuMtmvXLqmsr+1toM0KEVEyyui0yACIKRhNazZ9QgXVnZvdv39/hgwZMEyWgir4hPPMlTlzZhirf0PWIHcCvv3BBx9csWIFZSbq
+2LEjES9kYCg8JyshvOSmbBDqYRT1+CstZubMmXhponqJjEoSaRzd7t27OVUlvTgKiBIb0b17d4wgp7THbA0cOJDsN23atCSoHBkfR2qTsjDGsUEIcRHQqFGjdKoYis3Bi95///2TJ0/m1DRHR+Zq3759jRo1MEnaT++2aJGhhAAwVtC+s8XozdNPPx37Y0/JFR0lDRswYABO4OGHH7YsyCSEisQiIZqhQJhw9EY1EjBAJ9577z1IQqBIlpUqVSosty7BWzWTXWcKjAtTk3FBwv79+2fJkkU+mQbMbmMSOuLT9Jhk/fr1kPCZZ57B1sgcSBe9K1fhwoULFStWhGlDhgxRDdBe4UMYAe0sWbIkt7Bx40Yt6U4gDIE/27ZtY0ncBcGqGMsl8nmC21OnTqmlEQZBwCj9LowmZbenTZvmu3i7hgWwgR999JGXFYC8F7rSka1jW/CfPXr0oLFek0qZMiU3xR0RVLNdeksRiTOv5GULgN4wluBcp5qFAakkhKbMGtRYyxNgMlaA2b0eWILwW2cIIGCM1Yay7zAWv2Hfdb4T0OkjR47A1eXLl+tlN/1mKpBUGDB28TDC4cOH0SGiWU5prPYoDTImTUKZNmzYgI7CNPk3wja0Yd26dcYodcFpFChQAOsO8cj6LNkDDCXnTH7LIgnYvv32227dutEFPcbl4idNmWwBt3v+/PPXX389aNAgaEZgqTbMK24zFz6ESRctWkR0jevzvswUI/BLyZIlIx9mKEAMTEQ6btw4HD7BPzFCVDufFBiHKVgba9aje6WCHMUQ7BRtYAWD6I8z7E4JQYcPH/7444/jBkmPsQsYJsrQjFgAS8EGMgWAe+z/+PHj6QWo4ajxuVNG088DQWwuMT6XCOMZmQXLbxu8N45YsYO4WZlODcstm9RCCQFjrIBU2GXCPMx2VFU02L7v3buXsO348ePQGxdBYIxUdAkQ4MWivgI2GCXOmjUrZYYVZyTgnj17MiAFSIvSoJro
+KAoEN0gaT58+fbu/j2ZkcSlSpOjbt69qYGybNm3QNo0DtKqJEyeiuxERESSucGDJkiWsEKOAw9GvhxpoT1+0EzcFYaK/T8KkHJmlaNGi3Du2gNuvX78+lbHk/zSGP3oaDAiSufehQ4di8khQ1V2UExiWIB9rheqrxlIVkYp14rdZ/9tvv6171IZjUzBwdGTxRAfYX/aE/GXBggVXr16lpcmFoJpEl5wWuXMJgdKReW3ryAj0RiQ5BWsj9UU3sLAER1zVMz8gKyaoHB4ezh3p637MqB3TskMMgWEsIhQP2dmlS5fiOmS2YwHtiUUJMmX70YnHHnuMArLniMg1oMk+OmgA0ICMGTOqxiSKKiDyfPnySb1Q3HLlysEr1A4tRMnwbPCN7lwlIWSQZcuWoSusH0Uh5GMQKTE1gALJGB3RIaJBEnX6UlmmTBlMgF66Al6VojJXrlxQkfhcNwXoRRvcKVNwiTSPWQ4ePIjJICzX50AaWWB5yrcZgTgcG2SuiWXgQvFy5JmklCNHjqSlCG9Kz5biQjGLtgDdlD16pQ0N9MfKuqTpmGX06NEYAqbYvHnzpUuXqAR2gxTgJ74X/6lKFoAHJrshUJdp0L6xvew5VjVv3rwUENbixYtvD/Gfz6KAyZrp3n33XZz5Cy+8QLKgJdk++JqEDgIcFXNctWoVjH3rrbdUfyew9XAbokrJiAyJr8gPJTaUQBIyFYkOtJnpSLRQZdWoL0dsOfUksaqHOdmyZcPBwjRMPp6KCJzuXGKEOnXqQBi9F0ElcW/BggUZxDRJQIMhQMOGDSFb8+bNxStSUILeOXPmUNYOCMTDZcuWRUGZ1Ktk3A75MDSgF5MSGDMjO4CvxmpAck2qwRlQiwSffvops5u3BIyDJSJTBfg6C2roBWFw3dCbLrhKvQJhDtaIAciiyWO9P/9tzSAtt0CC7X0kwcJsScQmWKvy5cuvWbMG5uM58dgQjNuxrWM0alg2WwEYkNjEPCpLBdbY
+a6pu3LgBY8mc9fskUgMa+y6GFALGWAmSTcck58+ff9OmTaqPEQiJ3ScHK126tOQEz5GovWSnSlOOO4EGKAoeRhKV7LH9aDCj6ZkQQxHEQlRcDVREfcmj0GYcmmbBzxNe6nkpaN26NXGgeSFVslp8LAxB57Jnz04gqktEvPSNjIzUUqVSaCQxNqEgqSb04BKNLdwl+8U1wSXGISFUZaNGjViwfdIrUnlvf968eQSoeoQjE3Dq1CkCWjwkR+J84yG9uK/+/ftjETCIOD19+ZYFaHkyhSoPHjwYShNaq6Nm1CWAmbP4RfdLA90R5YEDBxImsCdEB9xOnz597B4tONeq4PzkyZNJl+yfvtl8DeKF7bZAF9wyi7cfr/FrEBoIAGO9+4iuvP/++zAWBkZVxQRJi5zHfvf0woULOBk9orCXhMwY3wmMQ7iFypJE6RTg1ghf77//fvQbJmPmX3zxRVwu3CabxcYTvNFl165dGh8PgHsn0RLt0XUa6xexjQZoObSE9kyHlcEDiO04SYhkv65CJepOfIEbZxPMXwHqdYqdgkt4J8bRs1BmwV/Fjx8f28Ea/PSSO+LYrVs3FjlhwgROxVgWj2GCbzB/+PDh1NBRU5w9e5Z7rFChwmuvvUYAQnZALy3Y2Eh35iKogdIEONTQXSPTkvs9duwYRoRwiRpagtvdfM0ABZw820gbYplhw4YpKdUOWFjhjS8MVMpqAK1H9yhQwyDUoBJExbVq1Zo4cSL1Zg5CDAFmLNv92WefoawLFy6MqooJklDbtm2939qBTij6vn370GAJ0uR6JzAOZhgD/+WXX+qUjqg1fi9hwoT23y0EyXJrRLOXL1/Gk0MzfYkMQGyRQZ5hxIgRuEdF9aZwMAEfAtNYoZ7xcIkb37BhAyqrj3y0ZgZp1aoVRIJFrId70c0C0cke6nC/qCaDQIaLFy8S3LIMIkxxA0apIw0YGfrhTrEyDKINpy8BPF0gpG6feg3I1ESzJB0nTpzA
+xEBaW4MKDMj6AU4P1vn9arnWSdBx3333EYxoOi80Ed3h0oABA1iV6i1sATYjQsTAMTI7QwOvTLVjtDSJ+wFDRqBEJmIfPdj4IYMAMNYUS+VLly7BWByd72LMUGMC1CZNmlCWtFavXo0e48ooUyPFNdN+J5Dq4CU+/vhj08Xp06fjYxmqR48e1FBPPIaDhbTEtNS8++67cFLeAw1Av2ncvXt3rYp8FcLDHF3VCKgUjpogEIZAe1Ov06dP48yffPJJfYWAlmfOnMmUKROr0miMIO7ZUHQndWQx+GdqFFDQGDfFMsqVKwd7qRF5hH/+858YC4gnP8YgqsfW0KVo0aKUaa8uBw8ehK5U4pQgFRE+967FiC0sXpwEbC+OGods3YEs186dO9kl7sVIYnehMoOrbJXGRmo0o8EGF1iDt4bROPXrQht2tWXLluiJ3sFQTBRiCFge6xUbZLCvdEUH4pFsSCzJ9KR/1Fy7dg39IPWSYDSgqcWdUL58eRhLKG4sgp9QDo/Ur18/Bkf/8ISkZFTq8x5q8Euc7t+/n1nefPNNKIS/UncYq0fHlLUGrVafmj700EMMa6tC4xkKj62X3anHLeDMyW+1Hj8tPHnyJFyCZuR++oRDWk5H3Aj3zrLJD+0r5gKBOl3s9+7sTjt16kQ9lMOXwk/m4kj8THwxduxYtcmZMyeGRqmgzB/NjFqUmzVrhvlgdjOO4htmgvvCGHHKNgJIpQ0RmEunVhDVAStkBE7xrnSkhlPrS8FuwQqA8dkH9aWNzMrrr7/euHFj4pEjR47Y+KGEgDGWvZZsAIwdOXKkyrGgevXq9taExNmuXTvs+saNG3WK8EzMd0KVKlWIVHGb1hKyUaP3FiTjAwcOkJoS49mXilACQlO9h3T9+nVUlshWPNTLA1OnTqWltEdd2rdvD8kZec6cOdyprjKpHhoxlLqHh4dDeHJjXCgJAjVyJlxlMfBZuR9OmEpzGig9xylTprBsrkJR1atB5cqV
+Wa3e6WNGG1CvPUFyInbd/qZNm1h8wYIFuapmMhD26F6L5JKowpGUgcG3bdumq2oASB8wPdgjnfpBstaktkWMBjSvrRMojjD18EMsYRTDErdXqlQJKSv4Cj0EhrHISQWJEFemiDQWnD9/HsOJP4k690kUhcPdkWcyjsa8k5gFrurZLyFcVNXPP+PuiIrRY4JGaRLWWq8Niydg0KBBOCKcPGUmwk3BRrwKp2gwLRcvXixNYiV4JNoQFRMAw219zQj6aYVwFY03F02Wy9S4Jr1p5AXjEOMxEeNb6sgKNY62DtIyC5uAgZATxgBxO8QIrEccoAsF7p07LV26NDeCFSD9xsrgThl/4cKF2je6kMwzHfNyX+SEM2fOpF5XNa+e0utxMbCAGTz11FNE1OZC6SU+q+NfDe0/iQBuljS+Tp062GVd0nqAGQWrCToEhrEiBtAu28doMULqgv+BMHrICWyEIkWK0F2+8bdEQaSFsMjeYQC7d+9Ga2ERHNOwyBU3hTtKly6davC6qCmZ4TfffMN6oD2nM2bM4JKeMHl/lgGgo6Tc8ePHR4n37NkjleUqhY8++oiwnOCTGtSdxUMhJsLZynPSRm8gMD71eGCia2JR0zZBjujWrVuQhzasB/oRrSgnJxRnOotmBRrDN6IDGgD8P3EstlK80oBoOYNYA5J8U26ascNbt25lH/Q7HgIN4AlXuS/WYN/yF9guGkiIfzX04xUoFRkB5oagSZtms5uAgheBYax2kKM2lNzSPlqMDnYZvP3228899xwKpL6oNXpAPcEPgbG+pMpoFqTdCR07doQAS5Ysoa9qSMnQeL1RqDGpxMmgsuTJTKQaMklcmd6/wbejzWXLliVqLVasWO7cuaXWesEIHuLoCBxw5ngzckIxVpc44gEYHN9L4IArILLFiMybNw+C2fopo3PMkjFjRhaMjdAyOIqHtDQOL126lHEIShk2re/3E9VYBhFoeYAu5IqwlJaYg0WLFmkQFmaL
+ZHNIB7gvpSoaygtYra22KF19MU+sgT3RbWpSySv6IH8FNC9Yu3YtORRGk5TEFsmajbpWCDoE2McKtWrVgi1RJ9HA5qIQ8+fPL1myJJIwxnLEtJ85cwadxm+o3lTzTujevTvulICQ9uoCAbJmzYoG60+ltLaePXtSkytXLn0QAnDvymxFKnw1DQhls2fPri/rqh4vNGDAAD0TwueQ18nn6E0gLY97oS/Rwfjx45/2fV0GekAkLnFf8nWzZ8/GlTE4a8NtwlgjsxoAdJH2iiy4ivfGUmDaNBSw3eAexXOBEVasWGGBhr1UePXqVZsFUKYXU6DrdOFUL4qI5N4C4GqWLFm4l27duokk6qs1SF5/KWSeODI7Quzbty+kbdiw4ccff6zZ2ShTPO9tBhcCwFh2zTZOwJk0btw46iQmQC0IU7Ro0X379olmOgqEQPio7du3exUoOuiC5PT7RvIe1GgcCIaqedcwePBgPCoeAxuhGgQPf2imyPzChQuEBhgLUlB0FL0E6ASmh17t2rXTIxxoKS3XOxsAlcIVV61alfHz5s1LRI1d0If+5gTgHqaBCJN0FDLD/Bo1aniV3nunXioalEwCnWpYgKbCZxuKtZkfNiAdxrS+Xtg45s1kLwDWs3PnzmyIvcOoxlre38BYLckmOn78OJ4AmSIv+3hWisfCYry7oEAAGMt+SZbaXMp169Yl4vVdvCNgReHChS9evGgi0aZj+9evX4/eExaiNLFIgo7MNXny5Pvvv19PsJCfVkJfHC+5q6/hbYwbNw6+Ubl8+XLT6VGjRiVOnJhYlyAcSuBL06dPTyoIqfCWJLQwENfavn171CUsLIwRCBRZUnR93bBhA72IS2lDTI7PZxYpN3eBt8dfZc6cOU+ePESw8BZPq466weguAu7RnUG8+8PdcerdE6M69V67iV+S62Zku18tiUG4KmbaaBTUTO5UIJogYJZtMkrTzLuAvw6sUxPZdFhbZEoOQlCjuwNctS0K
+RgQmKhakdugNhrB06dKqjA6Rqk2bNjCW7fa6F7YeTaUB9EiVKpX3VwujQ4Jc5ftNUH251ASs7xXgQi9fviw9hqj4QNhI4oqyqiUa2atXLzhJYxwjvjRZsmSpU6fmFOJBvzRp0mALtMhq1apRCYdRWa2Z1ZquQHhiUYJYuWLSZj12IniG8IyMg2VAMrH33nuvVatWBMY4XtYmjy0wGiN7OSNQb5T2zRk1qQq6BKO0Ko7m/wUuMRHN1MAgSthogrXRFpkVUBRNwYj0t0FpiBZGElS2bNm2bduuWbMGU0iNbz8cY38nREK5FADfYvGx2l9CXxhLQVafgpRDVwmJ0WlcJeU7QSLcuXNnypQpESRlUylynoQJE8JPQl9R4v3338dvwyV9BosSayJ49eqrr+bPn/+hhx6Cn9iaadOmTZky5eWXX547d673ayv4SbrjHsUH6br8ktEJYEGIJGmJYuEQChUqhMvlSLANafG92AviAtaGzVJ3gWUbPUQJI4b8Gw28bZjU2x2wIbYSyYLG1obVcgq4xFE1ukQbvxqgMmuwESiYiP8e0nodKUf2gQWwb6QYnTp1Qri6yuL/nvX8FQgAY6UltmVIGsbqk0+pGuAq24rCUdaxYcOGlSpVMhWh0vRSaoEjwnkuWrTIrpr5t16Mef78eSjRvHlz6ZzazJs3DxcNbRYsWKDG8BbO4Ov0VjDKp3o5NG5h9+7dmAndhSJGPyXu0qULQXXatGn1MSltNJcptNZPPUmsMuQkSZIQZmMR5POxYjIBcJ5EHdJOmjTJOtpeOcQOYhN8bL58+Ro0aKD0nkoK0iuD137FZQSAsdJpNkhbxg5GRESIsUZj0dX2FJ7oDW+r8dKDSk6hkL5sZY6OSjUD+twFbkOYDBky6Atl5gFu3LhBxnjfffeFh4dzKsnpW5rM62tyu1Kza5GYc/vg0cYBtxfta0YSBQOhmf4gx6DGWhh01S18+eWXEyZMwKMePXqUmo0bN5YvX37Q
+oEG3O/i6YI9YHi6drTCu0tI7tUOMYKsXLlxYs2ZNdq+b778OvMaOq0jWauL+fgbmyRNHGCut5UhQWrx4cdX7QQp9+PDhihUr2ndr6KLG5q/kvkaOHEkkSRyrQNTPZGooQEyrF4YB9FMCOWDAgCxZssiJyZroH0O8r3ZoOnlUA8OqnlXZFICRn/L9bNL8+fO1PN2vrdlCuBhh/zuuj15QKVaoN41sFgbUmA6xA02YPXt2iRIl4O0rr7wim4uITUOMqH7CjYMIGGNRO6Mo3ChatKg3CTSwuWDJkiX69JIuQGoqGniB/6lSpUqmTJnsp8Ok3CKJUaVFixbwX92pRFqMefbsWVwcNTYsaU/nzp1x3SZXMQRI5MAW4+UqIyB4LmEXYOyGDRukB+rlZ0foDnVNUViPFmBTCHICojFdvNM5/BawyegPURi5FezVUygvbuvZf+553ERgnjx5gfJNnjw5W7Zseg+eU6kjGs+RTUSDIyMjCxQosGXLltt0+U8Hq8ZAT4wIQdP53viTBzM/JiNKF/q2a9dOv8zEUL6LUbB5TXJ6680bKWlSWAfobrNT0KqAdZ8+ffqLL77o9ySWltbL+AkYTWT2mnk5WOqtCxB7NYtN6hALTCJt2rSpUKHCc889N3HiRD2SYNvNVUi4cRyBZCzaxn6xTdi8NGnS7Ny5UxzQ/uoohcbX4YRPnz5NAz8dVTMpMUeuEmM/8MAD+vszP4h7+fLle/zxxykYDZhF0oL2KnsnUtjM4FSqxltQM47eZRuMftTbgLopMwQMYiux7mKvoI5mPrwe21bicCdoo2S7kWyzZs3y5MlTrFixefPm2XPE2+3+0zTHWQSGsablwtq1azNmzLh69WrpHzUcRSEpd9OmTUuVKiUy66qOVtCmSyr4tGeffTZ37tz6rYMbN25IMEYGZKb/RwV0FD8p+2k/vagBYgjNxCs/LrFC4xvQCpG91i9QSTM6Rl+8bhBgETSy+nq7+83oV3CIHbbn
+yilOnDhRv3792rVrk9PiKiwCYpMRE9BpnEVgGOtVcbBnzx6CXpLVqHMfZPC0j2yufmnFjwYqqNLUneNbb7315JNPNmrUSJVIixklOQq0J42BkLCFSo0jnqgNzFfB6KQF05IBRWzr6AXNdFVL0qTeQWw9Gkr11gBQqak5MhTN7JSjxW+KKRx+Iyw5UrjEJr/88stkRkTIM2bMUKXglUXcRMCiYqk7SgxVCHdTpEhhP4MgqIE0tUiRIs2bN/dV34YqYwHDTvP9OPiIESM4tfaiE7AaWqrgcK+hS5cuJLRly5YdNmyYeQKZwhhtcVQp0AgAY7UdRh4264svvnjsscfIPLFwRlSzdqdOnSpdunSY71/erPJXSUsw3L59e4Jtvbpojxl8F6NcN4VfHcchVIGGdO/evWjRovXq1evfv7/90iowNSOoUdkCooAjAIyVuTLycHr+/PkMGTL06dOH3QFcAtopsGXLlho1augLtGYLY7F5trmffPJJ3rx5yVp1ShfjJ4W4YzUdAohevXoV9qFr1672I4+AQFpWHlghLiBgUbEIKd4SihQrVkxv5wPoBPCBHDmdO3cuGane74VmIp4uxQK4zRRz5sxJmzbtmDFjmEhdrODgoGeKJFAEcQUKFGjZsuW8efOosahY+gnMfwQcAWassahcuXL2SpNVar/IRevUqaNvkAJc6K+6Rz0AJEMGuO5UqVLZ//owpj1pYByTjcO9BnTDFAnvWr169apVqxYqVGjq1Kn2eR5HtJH42dcqTiBgeayXdexd8eLFW7RooVOzZ2JsREREqVKlVq1aJSbjPGN3kjRQR3tCWKVKlWrVqhF76xR5qAHH2IdyCGHYgwwVLly4EBYWVqFChTJlyrRq1crvbfC4gwAwVoT0Y2yJEiVwpCKSJas6rV27dv78+Y8cOSJ2eZ1zLMAuMqyEsdb3Z1OvvvrqiRMnONWw3oLDPQhpoNRJH5vdunVr7NixNWrUyJcvH0Hf/PnzyWCJ
+6e71PFZkYyMgjNm5SpUqsVNeTgLtafny5dlBe3lINIv9A0n7WJzx9SCK/CR16tSkxNBYlwBlR9p7FuiG9M2CXpQBldu4cSPhXo4cOYoWLdq9e/cPP/yQS6aTAUfAGOvdAnaqefPm+sKdrlIjpmHenn32WdysxbpAPP+9mDFjRtKkSevXry8JaXyHexZeYw1RjcAAfzBs2DDivpw5cxInv/LKK143q29u0t28yN+JADBWO6XdYacA7G3Tpg2O1GjMVdGSYJj4RF9bVT1Huuj0dwHOR0ZGJkyYsE+fPpQ1vvd9F4d7CmgROuCnS9hxfaUETVuxYgWZWsqUKbNnz96oUSMsvrgKrJeR/G9DwPJYwG1bbNy1a1dSzXPnzukSYC9ouWTJEkydvdYvmt0dYCljTpgw4b333uPUdt/hHgdKhVOVeqiGAlAUNmvWrOd9aNKkSatWrQYOHCh/e/PmzYCY+wAw1sJRdsr2CE6SZypnsEpa9u3bl4zC/kvC+lqbuwazYyz++DgOQQr45nUAaAKnciewl6OFzZcuXRo5cmT58uXr1auH/2jWrNmQIUOI/nRJbf42BICxuFbxxOtsx48fnyJFitWrV+vU6hs3bpwxY0b9ExywLbY2vwv6nRdEZR/83N04DiEDP5PNqX0KiHtA3/Coy5cvf/nll/PmzZsmTZp4PiRLlsz7Z/B/JwLAWCDimcP86aefli5dio+dMmUKp0ZLtq9s2bK5cuXSf5OrRgVj+29H9MfLdzGIQ8hAjlT44YcfSF9VQ7q0cOHCLl26tG/fPmvWrGnTpk2XLl369OnRT5wHOW2qVKny5ctHHmd2/+9EYBgrroqZHAk/9u3bx77oVURFIxwBW1OsWDGoJWcoxuoShbsAvNUHPMxL+a7HcQgNoAa4ys2bN48ePbpDhw7EdES/jRo1qlSpUu7cufPnz1+9evWIiIgJEyYsWrRo2bJl69evf/PNN/fu3asHxeZ1/jYEhrFe8ybeYtgy
+ZMhgrxYDWAoyZ85cpkwZTuUhaQx1745msF1zMYIK5rEd7kGsXbv21Vdfff7554lvmzZt2q5dO4gKXTt27DhgwICVK1fiRdATKZschuVQUmC7+nciMIyNEUS/tWvXhqWU2QvotGLFioIFC7700kvGcDEN2N45hACQtZLGqPNfAB8kaDWITg8qgVleytIfgM4omJLyEMG+8847Y8aMIZoNCwtr1qwZzISiVapUqVevXr9+/SDw559/Hqdeb4oRcYixNWvWLF26tDlA0KBBA7KIESNGWI3J7O+3bQ5/EfzePJMCeNXAC0It+EkXyBlV9QusPRmpeH79+vWtW7eOGjWqefPmMLNJkyYtWrRAzerWrUugO27cOK7a63GM+f3333ujv7iJOMRYEn0yh7NnzyoAJk5+8MEHEydOrO8AmB21gkNoQOwC8BYPaaeG29mR76cOOKIb3gZ0gbrQDIixMHDLli0DBw6EnLVq1apYsWLJkiUrV66MXyVTJQs9evSoPkeVBxY0RdRJ3EYcYmzfvn0zZcrEnkokhw4dihcvXsKECT/55BNOkYe4ipAcaUMPCN1Yp1Ngp15I+lw1yp07dw6W9u/fHy8KRfGiZKfEuq1btyYjxZHqbRnae18h5sgg3kkp6IWnuIw4xFhy/dSpU2MItZswFromT55c36ugUjvLLjvGhhIQaFTpF1Bj+SQu1IJV5K4CvPr4448XLVoEIaElvrRcuXL169eHqLjWwYMHb9u2TSylu3d8tAjIV0dV+abztonjiEOMhZnp06fv2bMntpBtPXbsWIIECfLnz09ZDRS3BNHmOvwW+JEnqhTTK98XLlzYuHFjeHg45KxevTq+lHCXBLVr164LFiyAw9bFL8T1o6iAUfD6cMwBzaKnx3ENcYixAEvZrFkzdg2Wrlu3jqiYOId6kdYxNiThtcgSLgU9EPrhhx/eeeed4cOHw9JWrVrhTpv7QMTbtm3bOXPmfPbZZ99++y3tGcQv8sIb
+w1J0yZuv0kbNvJPS0pTK6uMs4hBj2bj27dtDWp326tULH0tyQllc1THG3MYh2GGcQcoffPDBxIkTGzVqVLVq1WrVqsHPChUqlCxZMiwsbN68eWfPnhXraGnfd5NWUE/Ba9PVkqN3fFV6AVHjPleFOMRYzOGUKVNIZTGcWMcePXokTZp0/fr1UZcdAgq03BSdgle/vWWzp17a+OgQ1YZ6xVA6NVv85Zdfrlq1CjNdt25drPazzz5LxFu7du0uXbosWbIElqq9reGeRRxiLCw9ceJEypQpn3/++Y8++qhIkSIFCxaMnsw4/M2AYNAsOlWQl9GSAqyDrlBRsajqAZeMn2qgMnHvu++++/rrrw8ZMqRDhw6kPyRETZs2bdGiRd++fYl4jx079s0336h99GHvWcStPBa1KFq06KOPPlqrVq3kyZMjv6gLDnED8pBAvhFAwhjjTEHtjdi4yk2bNo0bN65Tp07YZVwoxzp16pCajhkzBjN969YtAl1v5mkwqt/jiFuMRfbTp0/PmDFjvHjx0qdPP2zYMEtUHOIa/DJGTmEantDLYcT3ySefLF++/LXXXuvYsSPMbNy4MUcy0pdeemnSpElvvvmmqEj76JyE7d95/pMeeGe8NxGHGCthIJ5SpUolTpw4bdq0+rEIh4AD0YiNcphw8raf/c/Ql/yFesrnz5/fvXs3bMSRNmzYsEGDBuHh4T179iQj5ThjxowDBw54kx3KojdHFYCXpUCTOjcL4hBjTVoESIkSJcqWLZs0wCHOAgHBt5s3b37++edr166NjIxs3749RO3VqxfxEaSdO3cuYTBXYxSlUl+VzdNiGqQJkFZGHIixKt/jiFtRMUBOZ86cIbcZOXKkTlXvEChYygrEKFgK/vnPf0JIyAlFcZ6DBw/G1E6ZMuWNN97YtWsXKSs0oz0SpLE+8+QUUP7W9682lDWsLqkMM/1mjCr54Nxs3PKxkgfJj17v9MZdDoEF0oGEW7dunThxYt++
+fbt16zZkyJARI0ZA0UWLFq1atWrHjh32GQwMhKhe4hm4FFXyAVmblGGy1+V6uSrd8GPvvYk452MdfiNQX7QfPYYYv8vz+DEBknhrGM2YduPGjcOHDy9evHj48OEvvvgiLB06dKgoum7duo0bNx48eFBvfQMG8Y7j8BfBMTaYACVgKRyL0eFQr0s6Jb3Eg1FDSyqtHjCI3zNYOTrC1+PHj5ORQtEuXbp07tyZoHf06NFTp05dsGABjvTtt9/+9NNPr169ygiMj1dUd8D4jrF/AxxjgwwQwy+wJCeElirjHmFRjMyhUvW0sfbg2rVrO3funDVrFrHuSz6Qkb722muzZ8/GkZKswmHISUs6Qmkv8wW5+qgTh78YjrFBgxh5KBcadfKfuB3d+mB0oiBfSsIJG2Fmu3btOnTo0K9fPxzp/Pnz4e2SJUs++ugjUTQWyLvCVQb08t/hr4ZjbNDAQlARD7bAVflbOAPHcLYiJ0fvmyecXr58ec+ePdOmTevdu3dERESPHj30aHf69OkrVqzYvXu3fi/bICtARyJnjrhWrycXYrQUdzIfDn8WHGODBmIjwG16E0hI5eUJzaAWTN6yZQtuMzIysmvXrsS6FODn0qVL16xZQxh84sQJ+9Y47SkTHov/DOj96MUPNAZRJ7+AxrY8h78UjrHBB/FKgFqiCiw6efLkG2+8MWjQoM6dO+NIBwwYMGrUKNJRPTE6ePDgmTNnFO5CsBiJFx20wUDYjBQwFnh4JmUQgTL1jrF/DxxjgwYwJ4oiv3i/69evf/LJJxMnTsR/EuiCYcOGzZw5c9myZStXrsSRHj9+3MJjuqvgpZZ4awPSRoku8EtQafOT50cPY+QnlTaLw18Ex9g/DV79Rnc59VNrlN7PF8EKaBB18kts6dfLCxoTzW7atIkU9MUXXyTcJR0dOXKkwt2NGzfu37/ffs7TISThGPunAb7BUpyMH+WgJZXeUDZGWAMa4xjtw1L9uBG0DA8P79Ch
+Q+/evceOHYsjXbBgwfr16/fs2WMdiVctv/WaD4dQgmPsnwz5SY4ALlmQCVSvshWohF04T1iqkJJLn3322eLFiwcOHNixY0eI+vLLLxP3EuuuXr169+7dp0+fpvGvmgCHkIRj7J8GbwoHD41ReEt46+d4AQ2szc2bN/fu3Tt16tSXXnqpdevW+NK+ffuOGjWKHBXq6qMXxtdQ6gI0C5UcxXybxUZ2CDE4xv5pEGEAbIFXBKh+wTDOkxqgU7zlkiVLBg0a1K5du/bt2xPujhgxYvz48bNnz8aXfvrpp6IfvfDAvzfKVV+H0INj7J8MP+dmzKH+0qVL77333owZM3CkjRs37tGjB3EvjhTXunLlyoMHD37r+T9SCC8T4PWcgpiPURCNiZCtsRo4hDAcY/9MwCVxDAp99913169fv3z58ty5c8eNG9erV6+IiIiuXbviVCdMmDBr1qwNGzbA0mvXrvkxDTZCb4YCFIDqfyMhaebt5RBicIz90yCSEMES0C5cuJBEFIp27NhxpA84Uih6/Pjx730/kgLUC4jkVlYBeMuWvtKRenXnqBj79nCeAR1CGPcWY1FruSAYEiNJAPVe7aexTmnGJfNdnNpHqTdv3vzwww8nTZo0ZMgQIt7OnTsPGDBg2rRpa9as2b59u9o4OPwpuLcYC9+McgAqKnWkEvoBXBllUZSY1j4U9cI+8zx58uTMmTNxpG3atOnUqRPl+fPnr1279v333z99+jQje5nv4PCn4B5irDlV8RPiiVFeDhvsia4Bp3rq1KmdO3fOmzevX79+YWFhPXr0mDJlit4HJCPV45+o1j5wGiPnHRzuGvdcHusXA3sZBUtxjOSZXuJdvXp18+bNJKK9e/fu06cPXMWRbtu27dy5c2qgr7lRoBeDYwUEXXVw+HNxDzHWWIRTxR96XStctVgX6Nukr7zySmRk5Kuvvjp69Ojly5cfPXr0xo0b9g01yAkYBKJG5yc1BNgguq92cPgjuIcY
+SyQcVfKw1wq4yh07dowZM6Zv376wdOLEiRs2bDhx4oSI7UdpQYy1sp8VcHD4K3BvRcXwE95a0Eteqpfshw8fPmrUKMLdQ4cOxc46uU25Vm9LrzngEuylGTSOqnJw+JNwz+Wx5Jzbt28fMWIEvpRw9/XXXz927Jh+HhlAaQDTYCancE/EA34UFagEVqaZyoboNQ4OfwTBxFgIA3+AMQc+cArHdKoCNV6eQCR9p3TKlCmzZs1atWrV/v37yUh11fo6OAQFgoCxd0eqc+fObd68efz48QS9EHXt2rXQGKp7yczp9+7/aR2CCkHjY3GVyiEpcCRR/PHHH/XOgxpQOHDgwIIFC6ZOnTpt2rTly5cfOXLEvLEVBIW+zsE6BB2CgLGQzRsJ++HSpUtEvKSj69atO378uL3DpG+Nqqw4WWzXKYSH4Y6xDkGHIHvy9MMPP5w6dWr37t2rV6+eM2cOTlU+1ss9uAonVaY+xp+xF7jq7ejgEPcRBIyFb36UIxjWr3gKeM6oku9RsApw2z5xgZZwWK4V3MldOzjEfQRTHgsD4Zuxl7IKQGyUw7xx4wanqhfE2KgTDxjKy3YHh7iPIGAsZPOLXTkVbyl4KWf1gmgcdeLjp8ZRMzt1cAgiBFke6+Bwj8Mx1sEhmOAY6+AQTHCMdXAIJjjGOjgEExxjHRyCCY6xDg7BBMdYB4dggmOsg0MwwTHWwSGY4Bjr4BBMcIx1cAgmOMY6OAQTHGMdHIIJjrEODsGDn3/+fxxaqjlaZsjGAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="logo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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
+/wAc/wCpsrca7MznMdWKMdrWjItAh9xjf9n9T/uOzd+k/wC21pta1rQ1oDWtEADQABOkopSJodA2oYxEyO5kbJ/7lSSSSavf/9P1VJJJJSkkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJT//Z/+0TpFBob3Rvc2hvcCAzLjAAOEJJTQQlAAAAAAAQAAAAAAAAAAAAAAAAAAAAADhCSU0EOgAAAAAA3wAAABAAAAABAAAAAAALcHJpbnRPdXRwdXQAAAAGAAAAAENsclNlbnVtAAAAAENsclMAAAAAUkdCQwAAAABObSAgVEVYVAAAABEAQQBkAG8AYgBlACAAUgBHAEIAIAAoADEAOQA5ADgAKQAAAAAAAEludGVlbnVtAAAAAEludGUAAAAAQ2xybQAAAABNcEJsYm9vbAEAAAAPcHJpbnRTaXh0ZWVuQml0Ym9vbAAAAAALcHJpbnRlck5hbWVURVhUAAAADgBMAGUAeABtAGEAcgBrACAAWAA5ADQANQBlAAAAOEJJTQQ7AAAAAAGyAAAAEAAAAAEAAAAAABJwcmludE91dHB1dE9wdGlvbnMAAAASAAAAAENwdG5ib29sAAAAAABDbGJyYm9vbAAAAAAAUmdzTWJvb2wAAAAAAENybkNib29sAAAAAABDbnRDYm9vbAAAAAAATGJsc2Jvb2wAAAAAAE5ndHZib29sAAAAAABFbWxEYm9vbAAAAAAASW50cmJvb2wAAAAAAEJja2dPYmpjAAAAAQAAAAAAAFJHQkMAAAADAAAAAFJkICBkb3ViQG/gAAAAAAAAAAAAR3JuIGRvdWJAb+AAAAAAAAAAAABCbCAgZG91YkBv4AAAAAAAAAAAAEJyZFRVbnRGI1JsdAAAAAAAAAAAAAAAAEJsZCBVbnRGI1JsdAAAAAAAAAAAAAAAAFJzbHRVbnRGI1B4bEBSAAAAAAAAAAAACnZlY3RvckRhdGFib29sAQAA
+AABQZ1BzZW51bQAAAABQZ1BzAAAAAFBnUEMAAAAATGVmdFVudEYjUmx0AAAAAAAAAAAAAAAAVG9wIFVudEYjUmx0AAAAAAAAAAAAAAAAU2NsIFVudEYjUHJjQFkAAAAAAAA4QklNA+0AAAAAABAASAAAAAEAAgBIAAAAAQACOEJJTQQmAAAAAAAOAAAAAAAAAAAAAD+AAAA4QklNBA0AAAAAAAQAAAB4OEJJTQQZAAAAAAAEAAAAHjhCSU0D8wAAAAAACQAAAAAAAAAAAQA4QklNJxAAAAAAAAoAAQAAAAAAAAACOEJJTQP1AAAAAABIAC9mZgABAGxmZgAGAAAAAAABAC9mZgABAKGZmgAGAAAAAAABADIAAAABAFoAAAAGAAAAAAABADUAAAABAC0AAAAGAAAAAAABOEJJTQP4AAAAAABwAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAADhCSU0EAAAAAAAAAgABOEJJTQQCAAAAAAAEAAAAADhCSU0EMAAAAAAAAgEBOEJJTQQtAAAAAAAGAAEAAAACOEJJTQQIAAAAAAAQAAAAAQAAAkAAAAJAAAAAADhCSU0EHgAAAAAABAAAAAA4QklNBBoAAAAAA0kAAAAGAAAAAAAAAAAAAABKAAAAoAAAAAoAVQBuAHQAaQB0AGwAZQBkAC0AMQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAoAAAAEoAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAAAAAAG51bGwAAAACAAAABmJvdW5kc09iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAAAAAAAAExlZnRs
+b25nAAAAAAAAAABCdG9tbG9uZwAAAEoAAAAAUmdodGxvbmcAAACgAAAABnNsaWNlc1ZsTHMAAAABT2JqYwAAAAEAAAAAAAVzbGljZQAAABIAAAAHc2xpY2VJRGxvbmcAAAAAAAAAB2dyb3VwSURsb25nAAAAAAAAAAZvcmlnaW5lbnVtAAAADEVTbGljZU9yaWdpbgAAAA1hdXRvR2VuZXJhdGVkAAAAAFR5cGVlbnVtAAAACkVTbGljZVR5cGUAAAAASW1nIAAAAAZib3VuZHNPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAAAAAAABMZWZ0bG9uZwAAAAAAAAAAQnRvbWxvbmcAAABKAAAAAFJnaHRsb25nAAAAoAAAAAN1cmxURVhUAAAAAQAAAAAAAG51bGxURVhUAAAAAQAAAAAAAE1zZ2VURVhUAAAAAQAAAAAABmFsdFRhZ1RFWFQAAAABAAAAAAAOY2VsbFRleHRJc0hUTUxib29sAQAAAAhjZWxsVGV4dFRFWFQAAAABAAAAAAAJaG9yekFsaWduZW51bQAAAA9FU2xpY2VIb3J6QWxpZ24AAAAHZGVmYXVsdAAAAAl2ZXJ0QWxpZ25lbnVtAAAAD0VTbGljZVZlcnRBbGlnbgAAAAdkZWZhdWx0AAAAC2JnQ29sb3JUeXBlZW51bQAAABFFU2xpY2VCR0NvbG9yVHlwZQAAAABOb25lAAAACXRvcE91dHNldGxvbmcAAAAAAAAACmxlZnRPdXRzZXRsb25nAAAAAAAAAAxib3R0b21PdXRzZXRsb25nAAAAAAAAAAtyaWdodE91dHNldGxvbmcAAAAAADhCSU0EKAAAAAAADAAAAAI/8AAAAAAAADhCSU0EFAAAAAAABAAAAAM4QklNBAwAAAAACxIAAAABAAAAoAAAAEoAAAHgAACKwAAACvYAGAAB/9j/7QAMQWRvYmVfQ00AAf/uAA5BZG9i
+ZQBkgAAAAAH/2wCEAAwICAgJCAwJCQwRCwoLERUPDAwPFRgTExUTExgRDAwMDAwMEQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwBDQsLDQ4NEA4OEBQODg4UFA4ODg4UEQwMDAwMEREMDAwMDAwRDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDP/AABEIAEoAoAMBIgACEQEDEQH/3QAEAAr/xAE/AAABBQEBAQEBAQAAAAAAAAADAAECBAUGBwgJCgsBAAEFAQEBAQEBAAAAAAAAAAEAAgMEBQYHCAkKCxAAAQQBAwIEAgUHBggFAwwzAQACEQMEIRIxBUFRYRMicYEyBhSRobFCIyQVUsFiMzRygtFDByWSU/Dh8WNzNRaisoMmRJNUZEXCo3Q2F9JV4mXys4TD03Xj80YnlKSFtJXE1OT0pbXF1eX1VmZ2hpamtsbW5vY3R1dnd4eXp7fH1+f3EQACAgECBAQDBAUGBwcGBTUBAAIRAyExEgRBUWFxIhMFMoGRFKGxQiPBUtHwMyRi4XKCkkNTFWNzNPElBhaisoMHJjXC0kSTVKMXZEVVNnRl4vKzhMPTdePzRpSkhbSVxNTk9KW1xdXl9VZmdoaWprbG1ub2JzdHV2d3h5ent8f/2gAMAwEAAhEDEQA/APVUkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklKSVO/quFj5rMK9/pW2MD2OdowyXM27/wB/2K4iQRVjfZbGcZEiJBMTUq/RPipJJJBcpJJJJT//0PVUklj/AFs61Z0Pod+fS0OvG1lIdq3e87dzv6jfenQiZyERvI0EEgAk9HYSXkHSegfWr6312dRdnfo2vLN99j9XABzhVVW1zWNbv/kLVxv8V3WTez7X1JjaJ9/pGxz48G7wxqtS5XFAkTzxEhuBEyYhlmdRjJB62+lJLnPr/NX1OzvTJbtFIaQTIHrUjlV/8WvUcvP+rpOVY61+Pe+lj3mX
+bA2q1u5x/d9XaoBhJwnNeglwV+1fx+vgrpxPVpLjf8adttX1fxn1PdW4ZjIc0kH+byO4Wx9TM+/qH1ZwMrJcbLnMc173cuNb30bnfyv0aRwkYY5b0lLgpQn6zCthbtJLyfrPXvrB9bOuv6V0ix7MVrnNqrrca2uaz6WRk2D83/X+dV3F/wAV3Wzaz7X1KttMj1PSdY50fnBnqNrapjykYRBy5RjkRxcFcUlnvEk8EDIDS7p9LSXnn12+umbRmfsDoTnMtYRXddXrYXn2tx6P5X7z2/pPUVCn/Fx9bMusZGVmsqts1cyy2x7xP+kc1r27v7aEeUHAJ5cgxCXygjikR5JObUiETOt+z6kkvC/rD0nqPQM8YOTk+rYa22bq3OiHFzY9+39xe6JvMcuMQhIT4xkujXD8qceQzMgY8Ji8717J6LflnA6oyyh7ADRlNGkOH8nd+f7fcxCwz1jpdYfiWN6v00cCszY0fyfpf9t/pP8Ara0frDdgUUV2Z+Gcqgktc9oBLJ45LXN3/wBdYFZ+rRs9XBzcjplx4kOLf7Ubv/Pyfj9WMCpcPYj3If8AN/WQczmDwcxI8cBk3Eoy+75+E/LGXufqM8Xqun9Uw+oMLsd/vb/OVO0e0/y2K2uWaL7nts9XG6jY36GRj2CjKHx/wb/+LsWthdRsDhTmzW7819rfScf5Lv8AAWO/lY9v/Wq1DPFWsfs6tzBzXFQyCj+/VRl/0of4mTI6aSSSibb/AP/R9VWX9Zeit650e/pxf6b3w6qw8Ne07mbv5P5rlqIOXl42FjvysqwU0VCX2O4AJ2/9UU6BkJRMfmBHD5oIBBB26vlOI/68/Us2VMxnOxC7e8FhuoJiPU9WqHV7m/8ACVLe6R/jWxLrGVdVxTjbtDfUd7B5vrcBYxn9X1V0T/rv9VGCT1Koz+6HO/6hrl55/jD6t0DqmbjW9I2vsa1/2q9rCwPkt9FvuDN72fpPetHGPvEqzcuYyP8AlY8UPta0
+j7YuGSwP0D6nu/8AGA5r/qZnPYQ5rhQWuGoIN1EELO/xUf8AidyP/Dj/APz1jonWMLLP+LP7M5p9evDx3PYeQKnU3WA/8XXWsT/Fx9aej9LwMjp3UbhjPdcb67Hg7XBzK63M3NB2ub6P5yjjAnlMkI+oxy9O3p1XGQGaJOlw6uv/AI1//E7j/wDhxn/nrIWl/i8/8R/T/wDr3/n+5cr/AIx/rV0jqmDj9O6db9pcy4X2WNB2Da2ytrNztu9zvW/NXX/UXGtxvqn0+q0Fryx9kHTSyyy+v/oWNTckZR5KAkDEnJdHeqkmJBzyIN+l4n/FMB+28sxqMUgH42Vr1ReWf4pv+Wsz/wALf+jK16mm/EP90Hyinlv5seZfH/qEG9Q+ujMrIG583ZOuvvId7v7LrN69gXjbbLfqb9dnPuY40VWu0H5+Pbu2uZP0trHf9u17F6WPrj9Vzi/av2lRsidpdFn/ALD/AM//AOBqTnoSnOE4RMoSgOHh1W8vIREoyIEgTdvnn+NL/wAUzf8AwtX/ANVavXF4X9bOuN671u/OrBbRpXQHc7GaBzv67t1i90Q52Jjh5eMtCIyv/mJwEGeQjqR+1YgEEESDyCsTq1eVVeG43ScfMpeB7i1sg/uvaQtxMRII4nTRU4S4TdX4f7y/Ni9yPDZif3gIk/8APjJ5g4OW9pff0bCx28lz3taP/ApU8RlRd6eOKiRoW4duQ9v9Vz2vpx2/9cehZeD07FzBTcb+sdRfrVRY47Wg/RdY76LWrZ6ZizW3Iueyxwn066htpr/Nihn5/wDxysTnUb112+aP/SlJzsOIyycNC4/NftzlH+9LHjxQjP8Aq/rW7RWaqmsLi4juf9u5ESSVV1AKFDo//9L1VU+rdMo6t067p2S57KcgAPdWQHCCH+0va9v5v7quJIgkEEaEahRFii8V/wCNR9Xf+5GZ/n1f+860Olf4vfq30y9uQ2p+VdWZY7IcHAEfnemxtdX+cxdKkpZc
+1nkKOSVHxWDFjBsRCxAIg6g8hcn1H/Fn9Xc2511Xq4bnGXMpcNmv7tdjX7P7C61JMx5Z4zcJGN9kyhGXzC3lOmf4tfq5g3NvtFma9hlrb3AsBH/BVtr3/wDXN66oAAQOE6SWTLPIbnIy81RjGOkRTgfV76l9L+r2VZlYVt9j7Wem4XOY4RIfp6dVX7q30kkJzlM8UjxHuUxiIigKDl9d+rfSevUtq6hUS5k+lcw7bGT+4/X/ADH+xc1V/im6M23dZl5D6gZ9MbGk+Tn7D/1K7lJPhzGaEeGMyB2WyxwkbMQS851H6g/VzPxsfG9F2M3FaWVPocGu2k7iHmxtvqe73e9bebnY+DULb92wmJYxz4/rbA7arCSackpUJkyEb6/vfMkxoHgqMj1qx/i+lyB9ZcSw7cbHycl3hXUfx3lqiet5LrBV6LKbDxUXC63+1TTsrpb/AMJfkVqxldFry7XPuysk1uMmhtm2v+rta3d/0kKr6v01v2CzZiBwcMapuwOj6P2m0ustyP7SkBw1t9urUI5wmrFXXp4Yf831S/8AHP8AqbK3GuzM5zHVijHa1oyLQIfcY3/Z/U/7js3fpP8AttabWta0NaA1rRAA0AATpKKUiaHQNqGMRMjuZGyf+5Ukkkmr3//T9VSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklKSSSSU//2ThCSU0EIQAAAAAAVQAAAAEBAAAADwBBAGQAbwBiAGUAIABQAGgAbwB0AG8AcwBoAG8AcAAAABMAQQBkAG8AYgBlACAAUABoAG8AdABvAHMAaABvAHAAIABDAFMANQAAAAEAOEJJTQQGAAAAAAAHAAgAAQABAQD/4Q3WaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHht
+bG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxMi0wMS0yNVQwOTozMDoxMC0wNTowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxMi0wMS0yNVQwOTozMDoxMC0wNTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTItMDEtMjVUMDk6MzA6MTAtMDU6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDg4MDExNzQwNzIwNjgxMTg3MUZBOUU1QzE3NzZEMDIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDc4MDExNzQwNzIwNjgxMTg3MUZBOUU1QzE3NzZEMDIiIHhtcE1NOk9yaWdp
+bmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNzgwMTE3NDA3MjA2ODExODcxRkE5RTVDMTc3NkQwMiIgZGM6Zm9ybWF0PSJpbWFnZS9qcGVnIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3ODAxMTc0MDcyMDY4MTE4NzFGQTlFNUMxNzc2RDAyIiBzdEV2dDp3aGVuPSIyMDEyLTAxLTI1VDA5OjMwOjEwLTA1OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MDg4MDExNzQwNzIwNjgxMTg3MUZBOUU1QzE3NzZEMDIiIHN0RXZ0OndoZW49IjIwMTItMDEtMjVUMDk6MzA6MTAtMDU6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+/+IMWElDQ19QUk9GSUxFAAEBAAAMSExpbm8CEAAAbW50clJHQiBYWVogB84AAgAJAAYAMQAAYWNzcE1TRlQAAAAASUVDIHNSR0IAAAAAAAAAAAAAAAEAAPbWAAEAAAAA0y1IUCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARY3BydAAAAVAAAAAzZGVzYwAAAYQAAABsd3RwdAAAAfAAAAAUYmtwdAAAAgQAAAAUclhZWgAAAhgAAAAUZ1hZWgAAAiwAAAAUYlhZWgAAAkAAAAAUZG1uZAAAAlQAAABwZG1kZAAAAsQAAACIdnVlZAAAA0wAAACGdmlldwAAA9QAAAAkbHVtaQAAA/gAAAAUbWVhcwAABAwAAAAk
+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</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="redes_sociales1">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportID>a89097dd-f6e0-41b1-86a3-dee9d20d45e2</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

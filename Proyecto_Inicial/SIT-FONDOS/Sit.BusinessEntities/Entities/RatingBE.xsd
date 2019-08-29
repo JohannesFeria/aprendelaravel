@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RatingBE" targetNamespace="http://tempuri.org/RatingBE.xsd" xmlns:mstns="http://tempuri.org/RatingBE.xsd" xmlns="http://tempuri.org/RatingBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RatingBE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RatingBE" msprop:Generator_UserDSName="RatingBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RegistroRating" msprop:Generator_TableClassName="RegistroRatingDataTable" msprop:Generator_TableVarName="tableRegistroRating" msprop:Generator_TablePropName="RegistroRating" msprop:Generator_RowDeletingName="RegistroRatingRowDeleting" msprop:Generator_RowChangingName="RegistroRatingRowChanging" msprop:Generator_RowEvHandlerName="RegistroRatingRowChangeEventHandler" msprop:Generator_RowDeletedName="RegistroRatingRowDeleted" msprop:Generator_UserTableName="RegistroRating" msprop:Generator_RowChangedName="RegistroRatingRowChanged" msprop:Generator_RowEvArgName="RegistroRatingRowChangeEvent" msprop:Generator_RowClassName="RegistroRatingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Rating" msprop:Generator_ColumnVarNameInTable="columnRating" msprop:Generator_ColumnPropNameInRow="Rating" msprop:Generator_ColumnPropNameInTable="RatingColumn" msprop:Generator_UserColumnName="Rating" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="RatingInterno" msprop:Generator_ColumnVarNameInTable="columnRatingInterno" msprop:Generator_ColumnPropNameInRow="RatingInterno" msprop:Generator_ColumnPropNameInTable="RatingInternoColumn" msprop:Generator_UserColumnName="RatingInterno" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="RatingFF" msdata:Caption="RatingInterno" msprop:Generator_ColumnVarNameInTable="columnRatingFF" msprop:Generator_ColumnPropNameInRow="RatingFF" msprop:Generator_ColumnPropNameInTable="RatingFFColumn" msprop:Generator_UserColumnName="RatingFF" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="LineaPlazo" msdata:Caption="RatingInterno" msprop:Generator_ColumnVarNameInTable="columnLineaPlazo" msprop:Generator_ColumnPropNameInRow="LineaPlazo" msprop:Generator_ColumnPropNameInTable="LineaPlazoColumn" msprop:Generator_UserColumnName="LineaPlazo" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="TipoNegocio" msprop:Generator_ColumnVarNameInTable="columnTipoNegocio" msprop:Generator_ColumnPropNameInRow="TipoNegocio" msprop:Generator_ColumnPropNameInTable="TipoNegocioColumn" msprop:Generator_UserColumnName="TipoNegocio" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Clasificadora" msprop:Generator_ColumnVarNameInTable="columnClasificadora" msprop:Generator_ColumnPropNameInRow="Clasificadora" msprop:Generator_ColumnPropNameInTable="ClasificadoraColumn" msprop:Generator_UserColumnName="Clasificadora" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="FechaClasificacion" msprop:Generator_ColumnVarNameInTable="columnFechaClasificacion" msprop:Generator_ColumnPropNameInRow="FechaClasificacion" msprop:Generator_ColumnPropNameInTable="FechaClasificacionColumn" msprop:Generator_UserColumnName="FechaClasificacion" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

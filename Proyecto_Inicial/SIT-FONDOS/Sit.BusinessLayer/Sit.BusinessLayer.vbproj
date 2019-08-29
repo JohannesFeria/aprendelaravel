@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19787595-8471-4CD0-8FC0-68B3E9FAAD7D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Sit.BusinessLayer</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Sit.BusinessLayer</RootNamespace>
+    <StartupObject>Sit.BusinessLayer.%28Ninguno%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Sit.BusinessLayer/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Sit.BusinessLayer.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Sit.BusinessLayer.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MotorTransaccionesProxyPhantom">
+      <HintPath>..\SITSolution\IN-SIT\DLL\MotorTransaccionesProxyPhantom.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnexoIDI3ABM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnexoIDI3BBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnexoIDI6BM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnexoIDI7BM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnexoIDI8BM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnexoIDI9BM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AperturaCierrePortafolioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AplicacionContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AprobacionCartaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AprobadorCartaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AprobadorDocumentoBM.vb" />
+    <Compile Include="ArchivoPlanoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArchivoPlanoEstructuraBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArchivosVAXBCOSBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArchivoVAXBMIDASBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AsientoContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AumentoCapitalBM.vb" />
+    <Compile Include="BalanceContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CabeceraMatrizContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalificacionInstrumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaracteristicaGrupoBM.vb" />
+    <Compile Include="CaracteristicaLimiteBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CargoBM.vb" />
+    <Compile Include="CargoFirmanteBM.vb" />
+    <Compile Include="CarteraBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarteraIndirectaBM.vb" />
+    <Compile Include="CarteraTituloValoracionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CentroCostosBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClaseCuentaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClaseInstrumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodigoPostalBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodigoValorBM.vb" />
+    <Compile Include="ConceptoAsientoContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConceptoIdiBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConceptoOperacionContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsultasBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContactoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlForwardBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CronogramaPagosBM.vb" />
+    <Compile Include="CorreccionDepositoPlazoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CotizacionVACBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaEconomicaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaPorTipoInstrumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentasPorCobrarBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentasPorPagarBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaTercerosBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuponeraBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustodioAjusteBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustodioArchivoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustodioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustodioKardexBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetalleCuponeraEspecialBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetalleCuponeraNormalBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetalleEstructuradosBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetalleMatrizContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DistribucionLibBM.vb" />
+    <Compile Include="DividendosRebatesLiberadasBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmisorBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EncajeBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EncajeDetalleBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntidadBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntidadExternaArchivoPlanoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventoAutomaticoBM.vb" />
+    <Compile Include="FactorBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FeriadoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FirmaDocumentoBM.vb" />
+    <Compile Include="FirmaDocumentoDetBM.vb" />
+    <Compile Include="FondoBM.vb" />
+    <Compile Include="FrecuenciaDividendoBM.vb" />
+    <Compile Include="GapsBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GenerarAccessBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoCategoriaInstrumentoBM.vb" />
+    <Compile Include="GrupoEconomicoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoInstrumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoLimiteTraderBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoPortafolioBM.vb" />
+    <Compile Include="GrupoTipoInstrumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoTipoRentaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HechosImportanciaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistorialCambiosBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ILimiteBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImportadorExcelBM.vb" />
+    <Compile Include="ImpuestosComisionesBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImpuestosComisionesOrdenPreOrdenBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IndicadorBenchmarkBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IndicadorBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InstrumentosCompuestosBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InstrumentosEstructuradosBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InterfaseBloombergBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IntermediarioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IntermediarioContactoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InventarioCartasBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JobBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KardexCarteraBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LimiteBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LimiteEvaluacionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LimiteInstrumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LimiteIntermediarioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LimiteParametriaBM.vb" />
+    <Compile Include="LimiteTradingBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineasContraparteBM.vb" />
+    <Compile Include="LineasContraparteFWDBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineasCreditoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineasSettlementBM.vb" />
+    <Compile Include="LiquidezAccionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocacionBBHBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MatrizContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MercadoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MesBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MnMenuAccesoBM.vb" />
+    <Compile Include="MnRolBM.vb" />
+    <Compile Include="ModalidadPagoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModeloCartaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModeloCartaEstructuraBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MonedaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MontoNegociadoBVLBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MotivoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MovimientoBancarioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MovimientoPersonalBM.vb" />
+    <Compile Include="MovimientosCartaInstruccionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Negociacion\Constantes.vb" />
+    <Compile Include="Negociacion\CuponRentaFija.vb" />
+    <Compile Include="Negociacion\NegociacionRentaFija.vb" />
+    <Compile Include="Negociacion\Utiles.vb" />
+    <Compile Include="Negociacion\ValorRentaFija.vb" />
+    <Compile Include="NegocioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NivelesCoberturaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NivelLimiteBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObligacionTecnicaBM.vb" />
+    <Compile Include="OperacionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperacionCartaInstruccionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperacionContableBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperacionesCajaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperacionFuturoBM.vb" />
+    <Compile Include="OrdenInversionDatosOperacionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrdenInversionFormulasBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrdenInversionTMPBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrdenInversionWorkFlowBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrdenPreOrdenInversionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PagoFechaComisionBM.vb" />
+    <Compile Include="PaisBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParametriaReportesBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PatrimonioEmisorBM.vb" />
+    <Compile Include="PatrimonioTerceroBM.vb" />
+    <Compile Include="PortafolioCajaBM.vb" />
+    <Compile Include="PortafolioPorcentajeComisionBM.vb" />
+    <Compile Include="PrevisionAprobacionBM.vb" />
+    <Compile Include="PrevisionCuentasCorrientesBM.vb" />
+    <Compile Include="PrevisionMemoBM.vb" />
+    <Compile Include="PrevisionPagoBM.vb" />
+    <Compile Include="PrevisionPagoDetalleBM.vb" />
+    <Compile Include="PrevisionParametroBM.vb" />
+    <Compile Include="ParametrosGeneralesBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParametrosMigracionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PatrimonioFideicomisoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PatrimonioValorBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodicidadBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoLiborBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PersonalBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlanDeCuentasBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlazaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PorcentajeNivelRatingBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PortafolioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PortafolioDirectorioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrecioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PreLiquidacionDivisasBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrevisionCierreBM.vb" />
+    <Compile Include="PrevisionParametriaBM.vb" />
+    <Compile Include="PrevisionPersonalBM.vb" />
+    <Compile Include="PrevisionUsuarioBM.vb" />
+    <Compile Include="PrevOrdenInversionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RatingBM.vb" />
+    <Compile Include="ReporteCalculoInteresBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReporteContabilidadBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReporteGestionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReporteGipsaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReporteLimitesBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportePromedioTasasBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportesInversionesBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReporteVLMidasBM.vb" />
+    <Compile Include="RiesgosBM.vb" />
+    <Compile Include="RolAprobadoresTraderBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rol_MenuBM.vb" />
+    <Compile Include="SaldoNoAdministradoBM.vb" />
+    <Compile Include="SaldosBancariosBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SectorEmpresarialBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SolicitudReversionBM.vb" />
+    <Compile Include="TasaEncajeBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TasasBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TercerosBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoAgrupacionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoAmortizacionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoBursatilidadBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoCambioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoCambioDI_BM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoCuponBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoDocumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoEntidadBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoInstrumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoInstrumentoCuentaBCRBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoOperacionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoRentaBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoTerceroBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoTituloBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoValorizacionBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TraspasoInstrumentoBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilDM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValorCuotaBM.vb" />
+    <Compile Include="ValoresBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValorizacionAmortizadaBM.vb" />
+    <Compile Include="VaxCajaSITBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VaxInterfazBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VaxRegauxBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VaxRegedBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VaxTitcusBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VectorForwardSBSBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VectorPrecioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VectorPrecioSBSBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VectorSwapBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VectorTipoCambioBM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\MotorTransaccionesProxyPhantom.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sit.BusinessEntities\Sit.BusinessEntities.vbproj">
+      <Project>{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}</Project>
+      <Name>Sit.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sit.DataAccessLayer\Sit.DataAccessLayer.vbproj">
+      <Project>{F6531B51-3F08-4DB8-BB12-D85FB7F5D663}</Project>
+      <Name>Sit.DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

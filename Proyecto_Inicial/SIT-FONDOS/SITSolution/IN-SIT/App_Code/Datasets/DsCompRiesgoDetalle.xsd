@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsCompRiesgoDetalle" targetNamespace="http://tempuri.org/DsCompRiesgoDetalle.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsCompRiesgoDetalle.xsd"
+	xmlns:mstns="http://tempuri.org/DsCompRiesgoDetalle.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsCompRiesgoDetalle" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RiesgoDetalle">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TipoRenta" type="xs:string" minOccurs="0" />
+							<xs:element name="CategoriaRiesgo" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoNemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+							<xs:element name="PrecioVector" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TIRVAL" type="xs:decimal" minOccurs="0" />
+							<xs:element name="VariacionVector" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unidades" type="xs:decimal" minOccurs="0" />
+							<xs:element name="VANCartera" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PorcentajeFondo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="EntidadSinonimo" type="xs:string" minOccurs="0" />
+							<xs:element name="Temporal1" type="xs:string" minOccurs="0" />
+							<xs:element name="Temporal2" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

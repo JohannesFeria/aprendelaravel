@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsMatrizContable" targetNamespace="http://tempuri.org/DsMatrizContable.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsMatrizContable.xsd"
+	xmlns:mstns="http://tempuri.org/DsMatrizContable.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsMatrizContable" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="MatrizContable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoMatrizContable" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="MatrizContable" type="xs:string" minOccurs="0" />
+							<xs:element name="ClaseInstrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="Operacion" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoInstrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="ModalidadPago" type="xs:string" minOccurs="0" />
+							<xs:element name="SectorEmpresarial" type="xs:string" minOccurs="0" />
+							<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+							<xs:element name="Fondo" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoCabeceraMatriz" type="xs:int" minOccurs="0" />
+							<xs:element name="NumeroCuentaContable" type="xs:string" minOccurs="0" />
+							<xs:element name="DebeHaber" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoContabilidad" type="xs:string" minOccurs="0" />
+							<xs:element name="Glosa" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTercero" type="xs:string" minOccurs="0" />
+							<xs:element name="Tercero" type="xs:string" minOccurs="0" />
+							<xs:element name="Aplicar" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoCentroCosto" type="xs:string" minOccurs="0" />
+							<xs:element name="CentroCosto" type="xs:string" minOccurs="0" />
+							<xs:element name="Secuencia" type="xs:int" minOccurs="0" />
+							<xs:element name="SituacionCabecera" type="xs:string" minOccurs="0" />
+							<xs:element name="SituacionDetalle" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSectorEmpresarial" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoTipoInstrumento" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

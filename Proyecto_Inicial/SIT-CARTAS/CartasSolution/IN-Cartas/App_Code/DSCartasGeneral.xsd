@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DTSCartasGeneral" targetNamespace="http://tempuri.org/DTSCartasGeneral.xsd" xmlns:mstns="http://tempuri.org/DTSCartasGeneral.xsd" xmlns="http://tempuri.org/DTSCartasGeneral.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DTSCartasGeneral" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DTSCartasGeneral" msprop:Generator_UserDSName="DTSCartasGeneral">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Cartas" msprop:Generator_TableClassName="DT_CartasDataTable" msprop:Generator_TableVarName="tableDT_Cartas" msprop:Generator_TablePropName="DT_Cartas" msprop:Generator_RowDeletingName="DT_CartasRowDeleting" msprop:Generator_RowChangingName="DT_CartasRowChanging" msprop:Generator_RowEvHandlerName="DT_CartasRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_CartasRowDeleted" msprop:Generator_UserTableName="DT_Cartas" msprop:Generator_RowChangedName="DT_CartasRowChanged" msprop:Generator_RowEvArgName="DT_CartasRowChangeEvent" msprop:Generator_RowClassName="DT_CartasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NombrePortafolio" msprop:Generator_ColumnVarNameInTable="columnNombrePortafolio" msprop:Generator_ColumnPropNameInRow="NombrePortafolio" msprop:Generator_ColumnPropNameInTable="NombrePortafolioColumn" msprop:Generator_UserColumnName="NombrePortafolio" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDDMMYY" msprop:Generator_ColumnVarNameInTable="columnFechaDDMMYY" msprop:Generator_ColumnPropNameInRow="FechaDDMMYY" msprop:Generator_ColumnPropNameInTable="FechaDDMMYYColumn" msprop:Generator_UserColumnName="FechaDDMMYY" type="xs:string" minOccurs="0" />
+              <xs:element name="CorrelativoCarta" msprop:Generator_ColumnVarNameInTable="columnCorrelativoCarta" msprop:Generator_ColumnPropNameInRow="CorrelativoCarta" msprop:Generator_ColumnPropNameInTable="CorrelativoCartaColumn" msprop:Generator_UserColumnName="CorrelativoCarta" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreCompletoPortafolio" msprop:Generator_ColumnVarNameInTable="columnNombreCompletoPortafolio" msprop:Generator_ColumnPropNameInRow="NombreCompletoPortafolio" msprop:Generator_ColumnPropNameInTable="NombreCompletoPortafolioColumn" msprop:Generator_UserColumnName="NombreCompletoPortafolio" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCarta" msprop:Generator_ColumnVarNameInTable="columnFechaCarta" msprop:Generator_ColumnPropNameInRow="FechaCarta" msprop:Generator_ColumnPropNameInTable="FechaCartaColumn" msprop:Generator_UserColumnName="FechaCarta" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreBanco" msprop:Generator_ColumnVarNameInTable="columnNombreBanco" msprop:Generator_ColumnPropNameInRow="NombreBanco" msprop:Generator_ColumnPropNameInTable="NombreBancoColumn" msprop:Generator_UserColumnName="NombreBanco" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCadena" msprop:Generator_ColumnVarNameInTable="columnFechaCadena" msprop:Generator_ColumnPropNameInRow="FechaCadena" msprop:Generator_ColumnPropNameInTable="FechaCadenaColumn" msprop:Generator_UserColumnName="FechaCadena" type="xs:string" minOccurs="0" />
+              <xs:element name="BancoCargo" msprop:Generator_ColumnVarNameInTable="columnBancoCargo" msprop:Generator_ColumnPropNameInRow="BancoCargo" msprop:Generator_ColumnPropNameInTable="BancoCargoColumn" msprop:Generator_UserColumnName="BancoCargo" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoCuentaCargo" msprop:Generator_ColumnVarNameInTable="columnTipoCuentaCargo" msprop:Generator_ColumnPropNameInRow="TipoCuentaCargo" msprop:Generator_ColumnPropNameInTable="TipoCuentaCargoColumn" msprop:Generator_UserColumnName="TipoCuentaCargo" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroCuentaCargo" msprop:Generator_ColumnVarNameInTable="columnNumeroCuentaCargo" msprop:Generator_ColumnPropNameInRow="NumeroCuentaCargo" msprop:Generator_ColumnPropNameInTable="NumeroCuentaCargoColumn" msprop:Generator_UserColumnName="NumeroCuentaCargo" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroCuentaCargoCCI" msprop:Generator_ColumnVarNameInTable="columnNumeroCuentaCargoCCI" msprop:Generator_ColumnPropNameInRow="NumeroCuentaCargoCCI" msprop:Generator_ColumnPropNameInTable="NumeroCuentaCargoCCIColumn" msprop:Generator_UserColumnName="NumeroCuentaCargoCCI" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorOperacion" msprop:Generator_ColumnVarNameInTable="columnValorOperacion" msprop:Generator_ColumnPropNameInRow="ValorOperacion" msprop:Generator_ColumnPropNameInTable="ValorOperacionColumn" msprop:Generator_UserColumnName="ValorOperacion" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

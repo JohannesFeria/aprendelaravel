@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsRptPrecios" targetNamespace="http://tempuri.org/DsRptPrecios.xsd" xmlns:mstns="http://tempuri.org/DsRptPrecios.xsd" xmlns="http://tempuri.org/DsRptPrecios.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsRptPrecios" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="DsRptPrecios" msprop:Generator_UserDSName="DsRptPrecios">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Precio_" msprop:Generator_TableClassName="Precio_DataTable" msprop:Generator_TableVarName="tablePrecio_" msprop:Generator_TablePropName="Precio_" msprop:Generator_RowDeletingName="Precio_RowDeleting" msprop:Generator_UserTableName="Precio_" msprop:Generator_RowChangingName="Precio_RowChanging" msprop:Generator_RowEvHandlerName="Precio_RowChangeEventHandler" msprop:Generator_RowDeletedName="Precio_RowDeleted" msprop:Generator_RowEvArgName="Precio_RowChangeEvent" msprop:Generator_RowChangedName="Precio_RowChanged" msprop:Generator_RowClassName="Precio_Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoMnemonico" msprop:Generator_ColumnVarNameInTable="columnCodigoMnemonico" msprop:Generator_ColumnPropNameInRow="CodigoMnemonico" msprop:Generator_ColumnPropNameInTable="CodigoMnemonicoColumn" msprop:Generator_UserColumnName="CodigoMnemonico" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="EntidadExt" msprop:Generator_ColumnVarNameInTable="columnEntidadExt" msprop:Generator_ColumnPropNameInRow="EntidadExt" msprop:Generator_ColumnPropNameInTable="EntidadExtColumn" msprop:Generator_UserColumnName="EntidadExt" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripción_x0020_del_x0020_Valor" msprop:Generator_ColumnVarNameInTable="columnDescripción_del_Valor" msprop:Generator_ColumnPropNameInRow="Descripción_del_Valor" msprop:Generator_ColumnPropNameInTable="Descripción_del_ValorColumn" msprop:Generator_UserColumnName="Descripción del Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="Precio_x0020_Fecha_x0020_Anterior" msprop:Generator_ColumnVarNameInTable="columnPrecio_Fecha_Anterior" msprop:Generator_ColumnPropNameInRow="Precio_Fecha_Anterior" msprop:Generator_ColumnPropNameInTable="Precio_Fecha_AnteriorColumn" msprop:Generator_UserColumnName="Precio Fecha Anterior" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Fecha_x0020_Precio_x0020_Anterior" msprop:Generator_ColumnVarNameInTable="columnFecha_Precio_Anterior" msprop:Generator_ColumnPropNameInRow="Fecha_Precio_Anterior" msprop:Generator_ColumnPropNameInTable="Fecha_Precio_AnteriorColumn" msprop:Generator_UserColumnName="Fecha Precio Anterior" type="xs:string" minOccurs="0" />
+              <xs:element name="Precio_x0020_Fecha_x0020_Seleccionada" msprop:Generator_ColumnVarNameInTable="columnPrecio_Fecha_Seleccionada" msprop:Generator_ColumnPropNameInRow="Precio_Fecha_Seleccionada" msprop:Generator_ColumnPropNameInTable="Precio_Fecha_SeleccionadaColumn" msprop:Generator_UserColumnName="Precio Fecha Seleccionada" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Precio" msprop:Generator_TableClassName="PrecioDataTable" msprop:Generator_TableVarName="tablePrecio" msprop:Generator_TablePropName="Precio" msprop:Generator_RowDeletingName="PrecioRowDeleting" msprop:Generator_UserTableName="Precio" msprop:Generator_RowChangingName="PrecioRowChanging" msprop:Generator_RowEvHandlerName="PrecioRowChangeEventHandler" msprop:Generator_RowDeletedName="PrecioRowDeleted" msprop:Generator_RowEvArgName="PrecioRowChangeEvent" msprop:Generator_RowChangedName="PrecioRowChanged" msprop:Generator_RowClassName="PrecioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoMnemonico" msprop:Generator_ColumnVarNameInTable="columnCodigoMnemonico" msprop:Generator_ColumnPropNameInRow="CodigoMnemonico" msprop:Generator_ColumnPropNameInTable="CodigoMnemonicoColumn" msprop:Generator_UserColumnName="CodigoMnemonico" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="EntidadExt" msprop:Generator_ColumnVarNameInTable="columnEntidadExt" msprop:Generator_ColumnPropNameInRow="EntidadExt" msprop:Generator_ColumnPropNameInTable="EntidadExtColumn" msprop:Generator_UserColumnName="EntidadExt" type="xs:string" minOccurs="0" />
+              <xs:element name="Precio_x0020_Fecha_x0020_Anterior" msprop:Generator_ColumnVarNameInTable="columnPrecio_Fecha_Anterior" msprop:Generator_ColumnPropNameInRow="Precio_Fecha_Anterior" msprop:Generator_ColumnPropNameInTable="Precio_Fecha_AnteriorColumn" msprop:Generator_UserColumnName="Precio Fecha Anterior" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Fecha_x0020_Precio_x0020_Anterior" msprop:Generator_ColumnVarNameInTable="columnFecha_Precio_Anterior" msprop:Generator_ColumnPropNameInRow="Fecha_Precio_Anterior" msprop:Generator_ColumnPropNameInTable="Fecha_Precio_AnteriorColumn" msprop:Generator_UserColumnName="Fecha Precio Anterior" type="xs:string" minOccurs="0" />
+              <xs:element name="Precio_x0020_Fecha_x0020_Seleccionada" msprop:Generator_ColumnVarNameInTable="columnPrecio_Fecha_Seleccionada" msprop:Generator_ColumnPropNameInRow="Precio_Fecha_Seleccionada" msprop:Generator_ColumnPropNameInTable="Precio_Fecha_SeleccionadaColumn" msprop:Generator_UserColumnName="Precio Fecha Seleccionada" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Descripción_x0020_del_x0020_Valor" msprop:Generator_ColumnVarNameInTable="columnDescripción_del_Valor" msprop:Generator_ColumnPropNameInRow="Descripción_del_Valor" msprop:Generator_ColumnPropNameInTable="Descripción_del_ValorColumn" msprop:Generator_UserColumnName="Descripción del Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

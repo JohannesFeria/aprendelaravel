@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TmpOperacionesEPUBE" targetNamespace="http://tempuri.org/TmpOperacionesEPUBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TmpOperacionesEPUBE.xsd"
+	xmlns:mstns="http://tempuri.org/TmpOperacionesEPUBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TmpOperacionesEPUBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TmpOperacionesEPU">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TrdDate" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SetDate" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NumberUnits" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SharesPerUnit" type="xs:decimal" minOccurs="0" />
+							<xs:element name="EstimatedCash" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FinalCash" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CashInLieu" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CommissionRate" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CreationCost" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

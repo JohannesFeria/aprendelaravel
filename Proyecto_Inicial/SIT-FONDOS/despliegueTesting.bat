@@ -1,0 +1,1 @@
+xcopy SITSolution\\PrecompiledWeb\\IN-SIT \\STPEAPP00006\Aplicaciones\SIT-FONDOS-IN /E /R /Y

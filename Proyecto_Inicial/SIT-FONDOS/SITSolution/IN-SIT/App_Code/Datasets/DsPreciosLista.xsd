@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsPreciosLista" targetNamespace="http://tempuri.org/DsPreciosLista.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DsPreciosLista.xsd" xmlns:mstns="http://tempuri.org/DsPreciosLista.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsPreciosLista" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DsPreciosLista">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoTipoInstrumentoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoInstrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="Empresa" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Precio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Variacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Soles" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Vac" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Dolar" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Euro" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Yen" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Libra" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DolCan" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Real" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PesoMex" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SignoVariacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

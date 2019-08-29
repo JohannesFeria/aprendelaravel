@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AprobadorCartaBE" targetNamespace="http://tempuri.org/AprobadorCartaBE.xsd" xmlns:mstns="http://tempuri.org/AprobadorCartaBE.xsd" xmlns="http://tempuri.org/AprobadorCartaBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AprobadorCartaBE" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="AprobadorCartaBE" msprop:Generator_UserDSName="AprobadorCartaBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AprobadorCarta" msprop:Generator_TableClassName="AprobadorCartaDataTable" msprop:Generator_TableVarName="tableAprobadorCarta" msprop:Generator_TablePropName="AprobadorCarta" msprop:Generator_RowDeletingName="AprobadorCartaRowDeleting" msprop:Generator_RowChangingName="AprobadorCartaRowChanging" msprop:Generator_RowEvHandlerName="AprobadorCartaRowChangeEventHandler" msprop:Generator_RowDeletedName="AprobadorCartaRowDeleted" msprop:Generator_UserTableName="AprobadorCarta" msprop:Generator_RowChangedName="AprobadorCartaRowChanged" msprop:Generator_RowEvArgName="AprobadorCartaRowChangeEvent" msprop:Generator_RowClassName="AprobadorCartaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoInterno" msprop:Generator_ColumnVarNameInTable="columnCodigoInterno" msprop:Generator_ColumnPropNameInRow="CodigoInterno" msprop:Generator_ColumnPropNameInTable="CodigoInternoColumn" msprop:Generator_UserColumnName="CodigoInterno" type="xs:string" minOccurs="0" />
+              <xs:element name="Rol" msprop:Generator_ColumnVarNameInTable="columnRol" msprop:Generator_ColumnPropNameInRow="Rol" msprop:Generator_ColumnPropNameInTable="RolColumn" msprop:Generator_UserColumnName="Rol" type="xs:string" minOccurs="0" />
+              <xs:element name="Firma" msprop:Generator_ColumnVarNameInTable="columnFirma" msprop:Generator_ColumnPropNameInRow="Firma" msprop:Generator_ColumnPropNameInTable="FirmaColumn" msprop:Generator_UserColumnName="Firma" type="xs:string" minOccurs="0" />
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioCreacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioCreacion" msprop:Generator_ColumnPropNameInRow="UsuarioCreacion" msprop:Generator_ColumnPropNameInTable="UsuarioCreacionColumn" msprop:Generator_UserColumnName="UsuarioCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCreacion" msprop:Generator_ColumnVarNameInTable="columnFechaCreacion" msprop:Generator_ColumnPropNameInRow="FechaCreacion" msprop:Generator_ColumnPropNameInTable="FechaCreacionColumn" msprop:Generator_UserColumnName="FechaCreacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HoraCreacion" msprop:Generator_ColumnVarNameInTable="columnHoraCreacion" msprop:Generator_ColumnPropNameInRow="HoraCreacion" msprop:Generator_ColumnPropNameInTable="HoraCreacionColumn" msprop:Generator_UserColumnName="HoraCreacion" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioModificacion" msprop:Generator_ColumnVarNameInTable="columnUsuarioModificacion" msprop:Generator_ColumnPropNameInRow="UsuarioModificacion" msprop:Generator_ColumnPropNameInTable="UsuarioModificacionColumn" msprop:Generator_UserColumnName="UsuarioModificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaModificacion" msprop:Generator_ColumnVarNameInTable="columnFechaModificacion" msprop:Generator_ColumnPropNameInRow="FechaModificacion" msprop:Generator_ColumnPropNameInTable="FechaModificacionColumn" msprop:Generator_UserColumnName="FechaModificacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HoraModificacion" msprop:Generator_ColumnVarNameInTable="columnHoraModificacion" msprop:Generator_ColumnPropNameInRow="HoraModificacion" msprop:Generator_ColumnPropNameInTable="HoraModificacionColumn" msprop:Generator_UserColumnName="HoraModificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Host" msprop:Generator_ColumnVarNameInTable="columnHost" msprop:Generator_ColumnPropNameInRow="Host" msprop:Generator_ColumnPropNameInTable="HostColumn" msprop:Generator_UserColumnName="Host" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoFirmante" msprop:Generator_ColumnVarNameInTable="columnTipoFirmante" msprop:Generator_ColumnPropNameInRow="TipoFirmante" msprop:Generator_ColumnPropNameInTable="TipoFirmanteColumn" msprop:Generator_UserColumnName="TipoFirmante" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6531B51-3F08-4DB8-BB12-D85FB7F5D663}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Sit.DataAccessLayer</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Sit.DataAccessLayer</RootNamespace>
+    <StartupObject>Sit.DataAccessLayer.%28Ninguno%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Sit.DataAccessLayer/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Sit.DataAccessLayer.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Sit.DataAccessLayer.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>DLL\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>DLL\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>DLL\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlForwardDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AumentoCapitalDAM.vb" />
+    <Compile Include="Transaction\BaseDAM.vb" />
+    <Compile Include="Transaction\CaracteristicaGrupoDAM.vb" />
+    <Compile Include="Transaction\CodigoValorDAM.vb" />
+    <Compile Include="Transaction\DistribucionLibDAM.vb" />
+    <Compile Include="Transaction\EventosAutomaticosDAM.vb" />
+    <Compile Include="Transaction\FrecuenciaDividendoDAM.vb" />
+    <Compile Include="Transaction\GrupoPortafolioDAM.vb" />
+    <Compile Include="Transaction\ImportadorExcelDAM.vb" />
+    <Compile Include="Transaction\LimiteParametriaDAM.vb" />
+    <Compile Include="Transaction\MnMenuAccesoDAM.vb" />
+    <Compile Include="Transaction\MnRolDAM.vb" />
+    <Compile Include="Transaction\MovimientoPersonalDAM.vb" />
+    <Compile Include="Transaction\PatrimonioEmisorDAM.vb" />
+    <Compile Include="Transaction\PatrimonioTerceroDAM.vb" />
+    <Compile Include="Transaction\PortafolioPorcentajeComisionDAM.vb" />
+    <Compile Include="Transaction\PrevisionAprobacionDAM.vb" />
+    <Compile Include="Transaction\PrevisionCuentasCorrientesDAM.vb" />
+    <Compile Include="Transaction\PrevisionMemoDAM.vb" />
+    <Compile Include="Transaction\PrevisionPagoDAM.vb" />
+    <Compile Include="Transaction\PrevisionPagoDetalleDAM.vb" />
+    <Compile Include="Transaction\PrevisionParametroDAM.vb" />
+    <Compile Include="Transaction\AnexoIDI3ADAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AnexoIDI3BDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AnexoIDI6DAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AnexoIDI7DAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AnexoIDI8DAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AnexoIDI9DAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AnioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AperturaCierrePortafolioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AplicacionContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AprobacionCartaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AprobadorCartaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AprobadorDocumentoDAM.vb" />
+    <Compile Include="Transaction\ArchivoPlanoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ArchivoPlanoEstructuraDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ArchivosVAXBCOSDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ArchivosVAXBMIDASDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\AsientoContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\BalanceContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CabeceraMatrizContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CalificacionInstrumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CaracteristicaLimiteDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CaracteristicaLimiteNivelDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CargoFirmanteDAM.vb" />
+    <Compile Include="Transaction\CarteraDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CarteraTituloValoracionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CentroCostosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ClaseCuentaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ClaseInstrumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CodigoPostalDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ConceptoAsientoContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ConceptoIdiDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ConceptoOperacionContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ConsultasDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ContactoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CorreccionDepositoPlazoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CotizacionVACDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CuentaEconomicaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CuentaPorTipoInstrumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CuentasPorCobrarDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CuentasPorPagarDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CuentaTercerosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CuponeraDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CustodioAjusteDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CustodioArchivoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CustodioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\CustodioKardexDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\DataUtility.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\DetalleCompuestosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\DetalleCuponeraEspecialDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\DetalleCuponeraNormalDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\DetalleEstructuradosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\DetalleMatrizContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\DividendosRebatesLiberadasDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\EjecucionesDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\EmisorDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\EncajeDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\EncajeDetalleDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\EntidadDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\EntidadExternaArchivoPlanoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\FactorDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\FeriadoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\FirmaDocumentoDAM.vb" />
+    <Compile Include="Transaction\FirmaDocumentoDetDAM.vb" />
+    <Compile Include="Transaction\GapsDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\GenerarAccessDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\GrupoCategoriaInstrumentoDAM.vb" />
+    <Compile Include="Transaction\GrupoEconomicoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\GrupoInstrumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\GrupoLimiteTraderDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\GrupoTipoInstrumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\GrupoTipoRentaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\HechosImportanciaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\HistorialCambiosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ImpuestosComisionesDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ImpuestosComisionesOrdenPreOrdenDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\IndicadorBenchmarkDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\IndicadorDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\InstrumentosCompuestosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\InstrumentosEstructuradosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\InterfaseBloombergDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\IntermediarioContactoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\IntermediarioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\InventarioCartasDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\JobDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\LimiteDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\LimiteInstrumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\LimiteIntermediarioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\LimiteTradingDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\LineasContraparteDAM.vb" />
+    <Compile Include="Transaction\LineasContraparteFWDDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\LineasCreditoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\LineasSettlementDAM.vb" />
+    <Compile Include="Transaction\LiquidezAccionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\LocacionBBHDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\MatrizContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\MercadoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\MesDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ModalidadPagoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ModeloCartaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ModeloCartaEstructura.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\MonedaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\MontoNegociadoBVLDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\MotivoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\MovimientoBancarioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\MovimientosCartaInstruccionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\NegocioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\NivelesCoberturaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\NivelLimiteDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OperacionCartaInstruccionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OperacionContableDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OperacionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OperacionesCajaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OperacionFuturoDAM.vb" />
+    <Compile Include="Transaction\OrdenInversionDatosOperacionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OrdenInversionFormulasDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OrdenInversionTMPDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OrdenInversionWorkFlowDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\OrdenPreOrdenInversionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PaisDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ParametriaReportesDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ParametrosGeneralesDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ParametrosMigracionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PatrimonioFideicomisoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PatrimonioValorDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PeriodicidadDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PeriodoLiborDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PersonalDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PlanDeCuentasDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PlazaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PorcentajeNivelRatingDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PortafolioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PortafolioDirectorioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PrecioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PreLiquidacionDivisasDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\PrevisionCierreDAM.vb" />
+    <Compile Include="Transaction\PrevisionParametriaDAM.vb" />
+    <Compile Include="Transaction\PrevisionPersonalDAM.vb" />
+    <Compile Include="Transaction\PrevisionUsuarioDAM.vb" />
+    <Compile Include="Transaction\PrevOrdenInversionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\RatingDAM.vb" />
+    <Compile Include="Transaction\ReporteCalculoInteresDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReporteGestionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReporteGipsaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReporteInversionesDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReportePromedioTasasDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReportesContabilidadDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReportesLimitesDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReporteVLMidasDAM.vb" />
+    <Compile Include="Transaction\RiesgosDAM.vb" />
+    <Compile Include="Transaction\RolAprobadoresTraderDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\Rol_MenuDAM.vb" />
+    <Compile Include="Transaction\SaldosBancariosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\SectorEmpresarialDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TasaEncajeDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TasasDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TercerosDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoAgrupacionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoAmortizacionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoBursatilidadDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoCambioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoCambioDI_DAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoCuponDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoDocumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoEntidadDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoInstrumentoCuentaBCRDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoInstrumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoOperacionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoRentaDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoTerceroDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoTituloDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TipoValorizacionDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\TraspasoInstrumentoDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\UtilDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ValorCuotaDAM.vb" />
+    <Compile Include="Transaction\ValoresDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\ValorizacionAmortizadaDAM.vb" />
+    <Compile Include="Transaction\VaxCajaSITDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VaxInterfazDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VaxRegauxDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VaxRegedDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VaxTitcusDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VectorForwardSBSDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VectorPrecioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VectorPrecioSBSDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VectorSwapDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transaction\VectorTipoCambioDAM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLL\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sit.BusinessEntities\Sit.BusinessEntities.vbproj">
+      <Project>{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}</Project>
+      <Name>Sit.BusinessEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

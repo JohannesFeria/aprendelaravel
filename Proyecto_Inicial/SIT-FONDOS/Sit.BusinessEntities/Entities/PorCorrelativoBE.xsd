@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PorCorrelativoBE" targetNamespace="http://tempuri.org/PorCorrelativoBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/PorCorrelativoBE.xsd"
+	xmlns:mstns="http://tempuri.org/PorCorrelativoBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="PorCorrelativoBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PorCorrelativo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Portafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Operacion" type="xs:string" minOccurs="0" />
+							<xs:element name="MonedaOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoRenta" type="xs:string" minOccurs="0" />
+							<xs:element name="Instrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Emisor" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoOperacionDivisa" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoLiquidacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Ptasa" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ValorTOperTasa" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ValorTOperMonto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MonedaDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="MontoOperacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Contraparte" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaLiquidacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

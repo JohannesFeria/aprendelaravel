@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PatrimonioTerceroBE" targetNamespace="http://tempuri.org/PatrimonioTerceroBE.xsd" xmlns:mstns="http://tempuri.org/PatrimonioTerceroBE.xsd" xmlns="http://tempuri.org/PatrimonioTerceroBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PatrimonioTerceroBE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PatrimonioTerceroBE" msprop:Generator_UserDSName="PatrimonioTerceroBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PatrimonioTercero" msprop:Generator_TableClassName="PatrimonioTerceroDataTable" msprop:Generator_TableVarName="tablePatrimonioTercero" msprop:Generator_TablePropName="PatrimonioTercero" msprop:Generator_RowDeletingName="PatrimonioTerceroRowDeleting" msprop:Generator_RowChangingName="PatrimonioTerceroRowChanging" msprop:Generator_RowEvHandlerName="PatrimonioTerceroRowChangeEventHandler" msprop:Generator_RowDeletedName="PatrimonioTerceroRowDeleted" msprop:Generator_UserTableName="PatrimonioTercero" msprop:Generator_RowChangedName="PatrimonioTerceroRowChanged" msprop:Generator_RowEvArgName="PatrimonioTerceroRowChangeEvent" msprop:Generator_RowClassName="PatrimonioTerceroRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoTercero" msprop:Generator_ColumnVarNameInTable="columnCodigoTercero" msprop:Generator_ColumnPropNameInRow="CodigoTercero" msprop:Generator_ColumnPropNameInTable="CodigoTerceroColumn" msprop:Generator_UserColumnName="CodigoTercero" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoMnemonico" msprop:Generator_ColumnVarNameInTable="columnCodigoMnemonico" msprop:Generator_ColumnPropNameInRow="CodigoMnemonico" msprop:Generator_ColumnPropNameInTable="CodigoMnemonicoColumn" msprop:Generator_UserColumnName="CodigoMnemonico" type="xs:string" minOccurs="0" />
+              <xs:element name="PatrimonioMN" msprop:Generator_ColumnVarNameInTable="columnPatrimonioMN" msprop:Generator_ColumnPropNameInRow="PatrimonioMN" msprop:Generator_ColumnPropNameInTable="PatrimonioMNColumn" msprop:Generator_UserColumnName="PatrimonioMN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PasivoMN" msprop:Generator_ColumnVarNameInTable="columnPasivoMN" msprop:Generator_ColumnPropNameInRow="PasivoMN" msprop:Generator_ColumnPropNameInTable="PasivoMNColumn" msprop:Generator_UserColumnName="PasivoMN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ActivoMN" msprop:Generator_ColumnVarNameInTable="columnActivoMN" msprop:Generator_ColumnPropNameInRow="ActivoMN" msprop:Generator_ColumnPropNameInTable="ActivoMNColumn" msprop:Generator_UserColumnName="ActivoMN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PatrimonioME" msprop:Generator_ColumnVarNameInTable="columnPatrimonioME" msprop:Generator_ColumnPropNameInRow="PatrimonioME" msprop:Generator_ColumnPropNameInTable="PatrimonioMEColumn" msprop:Generator_UserColumnName="PatrimonioME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PasivoME" msprop:Generator_ColumnVarNameInTable="columnPasivoME" msprop:Generator_ColumnPropNameInRow="PasivoME" msprop:Generator_ColumnPropNameInTable="PasivoMEColumn" msprop:Generator_UserColumnName="PasivoME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ActivoME" msprop:Generator_ColumnVarNameInTable="columnActivoME" msprop:Generator_ColumnPropNameInRow="ActivoME" msprop:Generator_ColumnPropNameInTable="ActivoMEColumn" msprop:Generator_UserColumnName="ActivoME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TipoInformacion" msprop:Generator_ColumnVarNameInTable="columnTipoInformacion" msprop:Generator_ColumnPropNameInRow="TipoInformacion" msprop:Generator_ColumnPropNameInTable="TipoInformacionColumn" msprop:Generator_UserColumnName="TipoInformacion" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionTercero" msprop:Generator_ColumnVarNameInTable="columnDescripcionTercero" msprop:Generator_ColumnPropNameInRow="DescripcionTercero" msprop:Generator_ColumnPropNameInTable="DescripcionTerceroColumn" msprop:Generator_UserColumnName="DescripcionTercero" type="xs:string" minOccurs="0" />
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

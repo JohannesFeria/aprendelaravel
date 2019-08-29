@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sit.BusinessEntities", "..\Sit.BusinessEntities\Sit.BusinessEntities.vbproj", "{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sit.DataAccessLayer", "..\Sit.DataAccessLayer\Sit.DataAccessLayer.vbproj", "{F6531B51-3F08-4DB8-BB12-D85FB7F5D663}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sit.BusinessLayer", "..\Sit.BusinessLayer\Sit.BusinessLayer.vbproj", "{19787595-8471-4CD0-8FC0-68B3E9FAAD7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{470064C1-989F-4AF9-ACB2-2A169E94DCD1}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "IN-SIT", "IN-SIT\", "{E597FDFC-30C4-4033-8ACB-94D17D0A2862}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}|Sit.BusinessEntities.dll;{19787595-8471-4CD0-8FC0-68B3E9FAAD7D}|Sit.BusinessLayer.dll;{F6531B51-3F08-4DB8-BB12-D85FB7F5D663}|Sit.DataAccessLayer.dll;{EC682E2F-E724-4945-AD5B-5204304851BB}|SistemaProcesos.BL.dll;{364A3FE1-3E55-461D-BCC0-AC734C668B5B}|SistemaProcesos.DA.dll;{6691D14E-4703-4E5B-B424-D44B4C0B54B9}|SistemaProcesos.TD.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/IN-SIT"
+		Debug.AspNetCompiler.PhysicalPath = "IN-SIT\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\IN-SIT\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "true"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/IN-SIT"
+		Release.AspNetCompiler.PhysicalPath = "IN-SIT\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\IN-SIT\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "true"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59555"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SistemaProcesos", "SistemaProcesos", "{F309C0DD-6E4E-44B0-90D0-73D50FADF669}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{C73FED51-D08D-4389-A3CC-4EA2BE8FBF8E}"
+	ProjectSection(SolutionItems) = preProject
+		SistemaProcesos\DLL\INGFondosConstants.dll = SistemaProcesos\DLL\INGFondosConstants.dll
+		SistemaProcesos\DLL\INGFondosDA.dll = SistemaProcesos\DLL\INGFondosDA.dll
+		SistemaProcesos\DLL\INGFondosSupport.dll = SistemaProcesos\DLL\INGFondosSupport.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.BL", "SistemaProcesos\SP.BL\SP.BL.csproj", "{EC682E2F-E724-4945-AD5B-5204304851BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DA", "SistemaProcesos\SP.DA\SP.DA.csproj", "{364A3FE1-3E55-461D-BCC0-AC734C668B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.TD", "SistemaProcesos\SP.TD\SP.TD.csproj", "{6691D14E-4703-4E5B-B424-D44B4C0B54B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0EA93A5-440E-4992-AF90-0D9FA59A74D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6531B51-3F08-4DB8-BB12-D85FB7F5D663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6531B51-3F08-4DB8-BB12-D85FB7F5D663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6531B51-3F08-4DB8-BB12-D85FB7F5D663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6531B51-3F08-4DB8-BB12-D85FB7F5D663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19787595-8471-4CD0-8FC0-68B3E9FAAD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19787595-8471-4CD0-8FC0-68B3E9FAAD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19787595-8471-4CD0-8FC0-68B3E9FAAD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19787595-8471-4CD0-8FC0-68B3E9FAAD7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E597FDFC-30C4-4033-8ACB-94D17D0A2862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E597FDFC-30C4-4033-8ACB-94D17D0A2862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E597FDFC-30C4-4033-8ACB-94D17D0A2862}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E597FDFC-30C4-4033-8ACB-94D17D0A2862}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EC682E2F-E724-4945-AD5B-5204304851BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC682E2F-E724-4945-AD5B-5204304851BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC682E2F-E724-4945-AD5B-5204304851BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC682E2F-E724-4945-AD5B-5204304851BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{364A3FE1-3E55-461D-BCC0-AC734C668B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{364A3FE1-3E55-461D-BCC0-AC734C668B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{364A3FE1-3E55-461D-BCC0-AC734C668B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{364A3FE1-3E55-461D-BCC0-AC734C668B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6691D14E-4703-4E5B-B424-D44B4C0B54B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6691D14E-4703-4E5B-B424-D44B4C0B54B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6691D14E-4703-4E5B-B424-D44B4C0B54B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6691D14E-4703-4E5B-B424-D44B4C0B54B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C73FED51-D08D-4389-A3CC-4EA2BE8FBF8E} = {F309C0DD-6E4E-44B0-90D0-73D50FADF669}
+		{EC682E2F-E724-4945-AD5B-5204304851BB} = {F309C0DD-6E4E-44B0-90D0-73D50FADF669}
+		{364A3FE1-3E55-461D-BCC0-AC734C668B5B} = {F309C0DD-6E4E-44B0-90D0-73D50FADF669}
+		{6691D14E-4703-4E5B-B424-D44B4C0B54B9} = {F309C0DD-6E4E-44B0-90D0-73D50FADF669}
+	EndGlobalSection
+EndGlobal

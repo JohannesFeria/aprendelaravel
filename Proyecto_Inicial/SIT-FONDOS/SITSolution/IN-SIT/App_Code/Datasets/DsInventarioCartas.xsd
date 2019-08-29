@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsInventarioCartas" targetNamespace="http://tempuri.org/DsInventarioCartas.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsInventarioCartas.xsd"
+	xmlns:mstns="http://tempuri.org/DsInventarioCartas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsInventarioCartas" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="InventarioCartas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoCarta" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionPortafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Instrumento" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionBanco" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionContacto" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionIntermediario" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuentaDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StockInicial">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Fecha" type="xs:string" minOccurs="0" />
+							<xs:element name="RangoInicial" type="xs:string" minOccurs="0" />
+							<xs:element name="RangoFinal" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

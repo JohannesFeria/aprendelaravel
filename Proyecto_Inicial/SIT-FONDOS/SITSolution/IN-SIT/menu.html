@@ -1,0 +1,512 @@
+﻿<!--289-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head id="Head1" runat="server">
+
+<title></title>
+<link rel="stylesheet" href="App_Themes/css/menu/zTreeStyle.css" type="text/css">
+    <style type="text/css" >
+        body
+        {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            height: 87%;
+            width: 100%;
+        }
+        html
+        {
+            height: 100%;
+            height: 100%;
+        }
+        div, p, table, th, td
+        {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            color: #0039A6;
+            font-weight:bold;
+            font-size: 10.5px;
+            font-family: dotum, Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+            height: 100%;
+        }
+        div.zTreeBackground
+        {
+            width: 100%;
+            height: 100%;
+            text-align: left;
+        }
+        ul.ztree
+        {
+            border-style: none;
+            margin-top: 10px;
+            background: #FFFFFF;
+            width: 100%;
+            height: 100%; /*360px;*/
+        }
+        
+        .GoLogin
+        {
+            height: 36px;
+            cursor: pointer;
+            border: 1px Solid Transparent;
+            margin: 0px; 
+            margin-left: 5px; 
+        }        
+        .GoLogin:hover
+        {           
+          -webkit-box-shadow: 0 1px 2px #89D8E8;
+          -moz-box-shadow: 0 1px 2px #89D8E8;
+          /*box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);*/
+          box-shadow: 0 1px 2px #89D8E8;
+
+          -webkit-border-radius: 19px;
+          -moz-border-radius: 19px;
+          border-radius: 19px;
+        }
+        .DatosUsuario
+        {
+            margin: 0px; 
+            /*height: 36px;*/
+            display:inline-block;
+            vertical-align:middle;
+        }
+    </style>
+    <script type="text/javascript" src="App_Themes/js/jquery.js"></script>
+    <script type="text/javascript" src="App_Themes/js/menu/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript">
+        // Entidad Menu: Representa datos de una opcion del menu
+        function EMenu(_id, _pId, _name, _file, _open, _estado, _DESC_ESTADO, __CodAplicativo, __Nivel, __Orden) {
+            this.id = _id;
+            this.pId = _pId;
+            this.name = _name;
+            this.file = _file;
+            this.open = _open;
+            this.estado = _estado;
+            this.DESC_ESTADO = _DESC_ESTADO;
+
+            this._CodAplicativo = __CodAplicativo;
+            this._Nivel = __Nivel;
+            this._Orden = __Orden;
+        }
+        // Nuevo Item para un ARRAY
+        function NewItem(lista, newItem) {
+            lista[lista.length] = newItem;
+        }
+        var nodos = new Array(); // Nuestra lista de NODOS del menu (Se trata de un Array que contendrá todas las opciones)
+        NewItem(nodos, new EMenu('1', '0', 'Sistema Integral de Tesoreria (Menu-Script)', '', 'true', 'A', 'Activo', 'IN-SIT', '1', '1'));
+        NewItem(nodos, new EMenu('16', '1', 'Inversiones', '', 'false', 'A', 'Activo', 'IN-SIT', '2', '1'));
+        NewItem(nodos, new EMenu('18', '16', 'Ordenes de inversión', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '1'));
+        NewItem(nodos, new EMenu('19', '18', 'Bonos', 'Modulos/Inversiones/InstrumentosNegociados/frmBonos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('290', '32', 'Intereses Cobrados', 'Modulos/Inversiones/Reportes/frmReporteInteresCobrado.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('290', '32', 'Precio de Instrumentos', 'Modulos/Inversiones/Reportes/frmPrecioInstrumento.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('33', '32', 'Límites', 'Modulos/Inversiones/Reportes/Limites/frmReporteLimitesV2.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('288', '32', 'Consolidación de Límites', 'Modulos/Inversiones/Reportes/Limites/frmReporteLimitesConsolidado.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('39', '38', 'Renta Variable', 'Modulos/Inversiones/frmIngresoMasivoOperacionRV.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('52', '51', 'Saldos de Bancos', '', 'false', 'A', 'Activo', 'IN-SIT', '2', '1'));
+        NewItem(nodos, new EMenu('60', '52', 'Registro de Saldos bancarios', 'Modulos/Tesoreria/OperacionesCaja/frmRegistroSaldosBancarios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '1'));
+        NewItem(nodos, new EMenu('287', '52', 'Reporte de Caja y Movimientos', 'Modulos/Tesoreria/Reportes/frmReporteCajaMovimientos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '1'));
+        NewItem(nodos, new EMenu('62', '53', 'Forward', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        // FUTUROS // carpeta
+        NewItem(nodos, new EMenu('5003', '53', 'Futuros', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('5004', '5003', 'Constitución de Futuros', 'Modulos/Tesoreria/Reportes/frmGenerarReporteFuturo.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('63', '62', 'Pre-liquidación FW Nom-Delivery', 'Modulos/Inversiones/frmVencimientoForwardNoDelivery.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('73', '54', 'Ingresos Cuentas por Cobrar', 'Modulos/Tesoreria/Cuentasxcobrar/frmIngresos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('76', '55', 'Ingresos Cuentas por Pagar', 'Modulos/Tesoreria/Cuentasxpagar/frmIngresos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('79', '56', 'Generación', 'Modulos/Tesoreria/OperacionesCaja/frmGeneracionCartasEmitidas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('82', '57', 'Flujo de Caja exterior', 'Modulos/Tesoreria/FlujoCajaEstimado/frmFlujoCajaExterior.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('87', '86', 'Tablas', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '1'));
+        NewItem(nodos, new EMenu('90', '87', 'Tablas de Entidades', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('91', '90', 'Custodios', 'Modulos/Parametria/Tablas/Entidades/frmBusquedaCustodios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('91', '90', 'Importar Patrimonios de Tercero', 'Modulos/Parametria/Tablas/Entidades/frmInterfasesPatrimonioTercero.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('91', '90', 'Importar Rating', 'Modulos/Parametria/Tablas/Entidades/frmImportarRating.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('100', '89', 'Clase de Cuenta', 'Modulos/Parametria/Tablas/Generales/frmBusquedaClaseCuentas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('125', '124', 'Límite', 'Modulos/Parametria/Tablas/Valores/frmBusquedaLimites.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('141', '140', 'Modificacion de Emision', 'Modulos/Parametria/Tablas/Valores/frm_ModificacionIsinNemonico.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('141', '140', 'Calificación de Instrumento', 'Modulos/Parametria/Tablas/Valores/frmBusquedaCalificacionInstrumentos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('163', '162', 'Precios y Tipos de Cambio', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '1'));
+        NewItem(nodos, new EMenu('168', '163', 'Mantenimiento de Precios', 'Modulos/ValorizacionCustodia/Valorizacion/frmMantenimientoPrecios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('170', '164', 'Procesos de Valorización', 'Modulos/ValorizacionCustodia/Valorizacion/frmValorizacionSBS.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('175', '165', 'Carga inf. de Custodia', 'Modulos/ValorizacionCustodia/Custodia/frmInterfasesInfCustodio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('183', '166', 'Recuperación de Archivos', 'Modulos/ValorizacionCustodia/Custodia/frmInterfasesInfoDivRebLib.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('197', '196', 'Aprobación de alta de instrumentos', 'Modulos/Riesgos/frmAprobarNuevoInstrumento.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '1'));
+        NewItem(nodos, new EMenu('201', '200', 'Archivos Planos', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '1'));
+        NewItem(nodos, new EMenu('203', '202', 'Reportes de Cartera', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('206', '204', 'Reportes Stock Forward', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=RDSDF', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('217', '203', 'Composicion Cartera Emisor', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCE', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('231', '201', 'Importar SBS', 'Modulos/Gestion/Archivos Planos/frmInterfasesSBSNet.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        //Nuevo menu
+        NewItem(nodos, new EMenu('240', '205', 'Reporte Comisiones', 'Modulos/Tesoreria/Reportes/frmReporteComisiones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('240', '205', 'Vector Variación', 'Modulos/Gestion/Reportes/frmVectorVariacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('240', '205', 'Valor Cuota Variación', 'Modulos/Gestion/Reportes/frmReporteValorCuotaVariacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('240', '205', 'Reporte de Dividendos y Liberadas', 'Modulos/Gestion/Reportes/frmReporteDividendo.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('240', '205', 'Reporte  de variación VL ', 'Modulos/Gestion/Reportes/frmReporteVariacionVL.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        //
+
+
+        NewItem(nodos, new EMenu('7009', '271', 'Reversión Valor Cuota', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+        NewItem(nodos, new EMenu('7010', '7009', 'Registrar Solicitud de Reversión', 'Modulos/ValorCuota/ReversionValorCuota/frmSolicitudReversion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '10'));
+        NewItem(nodos, new EMenu('7011', '7009', 'Aprobar Solicitud de Reversión', 'Modulos/ValorCuota/ReversionValorCuota/frmAprobacionSolicitudReversion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '11'));
+        NewItem(nodos, new EMenu('7012', '7009', 'Reversar Valor Cuota', 'Modulos/ValorCuota/ReversionValorCuota/frmReversionValorCuota.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '11'));
+
+        NewItem(nodos, new EMenu('240', '205', 'Posicion Cartera por Moneda', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=MON', 'false', 'A', 'Activo', 'IN-SIT', '5', '1'));
+        NewItem(nodos, new EMenu('272', '271', 'Plan de Cuentas', 'Modulos/Contabilidad/frmPlanDeCuentas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '1'));
+        NewItem(nodos, new EMenu('20', '18', 'Certificado de Suscripción', 'Modulos/Inversiones/InstrumentosNegociados/frmCertificadosSuscripcion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('32', '16', 'Reportes de Inversiones', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('34', '32', 'Órdenes de Inversión', 'Modulos/Inversiones/Reportes/Orden de Inversion/frmReporteOI_Estados.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('40', '38', 'Renta Fija', 'Modulos/Inversiones/frmIngresoMasivoOperacionRF.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('53', '51', 'Operaciones de Caja', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('61', '52', 'Consulta de Saldos bancarios', 'Modulos/Tesoreria/OperacionesCaja/frmConsultaSaldosBancarios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('64', '62', 'Inventario Forward', 'Modulos/Inversiones/frmInventarioForward.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('67', '53', 'Consulta de Movimientos bancarios', 'Modulos/Tesoreria/OperacionesCaja/frmConsultaMovimientosBancarios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('74', '54', 'Anulacion Cuentas por Cobrar', 'Modulos/Tesoreria/Cuentasxcobrar/frmExtornoCxC.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('77', '55', 'Anulación Cuentas por Pagar', 'Modulos/Tesoreria/Cuentasxpagar/frmExtornoCxP.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('80', '56', 'Impresión', 'Modulos/Tesoreria/OperacionesCaja/frmGeneracionCartasFirmadas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('83', '57', 'Flujo de Caja local', 'Modulos/Tesoreria/FlujoCajaEstimado/frmFlujoCajaLocal.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('89', '87', 'Tablas Generales', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('92', '90', 'Grupos Economicos', 'Modulos/Parametria/Tablas/Entidades/frmBusquedaGruposEconomicos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('101', '89', 'Modalidad de Pago', 'Modulos/Parametria/Tablas/Tesoreria/frmBusquedaModalidadesPago.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('126', '124', 'Universo de Limites', 'Modulos/Parametria/Tablas/Valores/frmBusquedaGrupoInstrumento.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('286', '124', 'Agrupaciones de Limites', 'Modulos/Parametria/Tablas/Limites/frmBusquedaLimiteParametria.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('142', '140', 'Impuestos y Comisiones', 'Modulos/Parametria/Tablas/Valores/frmBusquedaImpuestosComisiones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('155', '86', 'Administración de Valores', 'Modulos/Parametria/AdministracionValores/frmBusquedaValores.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('155', '86', 'Traspaso de Valores', 'Modulos/Parametria/AdministracionValores/frmTraspasoValores.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('164', '162', 'Valorización', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('169', '163', 'Mantenimiento de Tipo de Cambio', 'Modulos/ValorizacionCustodia/Valorizacion/frmConsultaTipoCambio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('171', '164', 'Reversión de Valorización', 'Modulos/ValorizacionCustodia/Valorizacion/frmExtornoDeValorizacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('176', '165', 'Conciliación inf. Custodios', 'Modulos/ValorizacionCustodia/Custodia/frmCargarConciliacionCustodios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('184', '166', 'Consulta de dividendos, rebates y liberadas', 'Modulos/ValorizacionCustodia/DividendosRebatesyLiberadas/frmConsultaDivRebatesLib.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('196', '1', 'Riesgos', '', 'false', 'A', 'Activo', 'IN-SIT', '2', '2'));
+        NewItem(nodos, new EMenu('198', '196', 'Limites Trading', 'Modulos/Parametria/Tablas/Valores/frmBusquedaLimiteTrading.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('202', '200', 'Reportes Gestión', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('204', '202', 'Otros Reportes', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('207', '204', 'Reporte Stock Certificados Depositos', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=RDSDCDD', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('218', '203', 'Composicion Cartera Sector', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCS', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('232', '201', 'Importar Bloomberg', 'Modulos/ValorizacionCustodia/Valorizacion/frmInterfaseBloomberg.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+        NewItem(nodos, new EMenu('241', '205', 'Vector de Precios', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=PRE', 'false', 'A', 'Activo', 'IN-SIT', '5', '2'));
+        NewItem(nodos, new EMenu('273', '271', 'Matriz Contable', 'Modulos/Contabilidad/frmMatrizContable.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('273', '271', 'Matriz Contable - Negocio ', 'Modulos/Contabilidad/frmMatrizContableFondoListar.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '2'));
+        NewItem(nodos, new EMenu('21', '18', 'Instrumentos Estructurados', 'Modulos/Inversiones/InstrumentosNegociados/frmInstrumentosEstructurados.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('35', '32', 'Operaciones Ejecutadas', 'Modulos/Inversiones/Reportes/Orden de Inversion/frmReporteOrdenesdeInversion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('38', '16', 'Ingreso masivo de operaciones', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+
+
+        NewItem(nodos, new EMenu('7006', '16', 'Pago de Comisión', 'Modulos/Inversiones/frmRegistrarPagoFechaComision.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+        NewItem(nodos, new EMenu('7007', '7006', 'Registrar Pago de Comisión', 'Modulos/Inversiones/frmRegistrarPagoFechaComision.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+        NewItem(nodos, new EMenu('7008', '7006', 'Confirmar Pago de Comisión', 'Modulos/Inversiones/frmConfirmarPagoFechaComision.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+
+
+        NewItem(nodos, new EMenu('41', '38', 'Operación Fx', 'Modulos/Inversiones/frmIngresoMasivoOperacionFX.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('41', '38', 'Operación DPZ', 'Modulos/Inversiones/frmIngresoMasivoOperacionDP.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        // FUTUROS
+        NewItem(nodos, new EMenu('5002', '38', 'Operación Futuros Masivo', 'Modulos/Inversiones/frmIngresoMasivoOperacionFT.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('51', '1', 'Tesorería', '', 'false', 'A', 'Activo', 'IN-SIT', '2', '3'));
+        NewItem(nodos, new EMenu('54', '51', 'Cuentas por Cobrar', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+        NewItem(nodos, new EMenu('65', '62', 'Constitución de Forwards', 'Modulos/Tesoreria/Reportes/frmGenerarReporteConstForward.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('68', '53', 'Consulta de Vencimientos', 'Modulos/Tesoreria/OperacionesCaja/frmConsultaVencimientos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('75', '54', 'Liquidaciones Cuentas por Cobrar', 'Modulos/Tesoreria/Cuentasxcobrar/frmLiquidaciones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('78', '55', 'Liquidación Cuentas por Pagar', 'Modulos/Tesoreria/Cuentasxpagar/frmLiquidaciones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('81', '56', 'Autorización', 'Modulos/Tesoreria/OperacionesCaja/frmAutorizacionCartas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('84', '57', 'Movimientos de Negociación', 'Modulos/Tesoreria/FlujoCajaEstimado/frmMovimientoNegociacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('93', '90', 'Terceros', 'Modulos/Parametria/Tablas/Entidades/frmBusquedaTerceros.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('102', '89', 'Centro de Costos', 'Modulos/Parametria/Tablas/Contabilidad/frmBusquedaCentroCostos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('124', '87', 'Tablas de Limites', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('127', '124', 'Factores por Emisor', 'Modulos/Parametria/Tablas/Valores/frmBusquedaFactor.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('143', '140', 'Periodicidad', 'Modulos/Parametria/Tablas/Valores/frmBusquedaPeriocidad.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('156', '86', 'Administración de Portafolios', 'Modulos/Parametria/AdministracionPortafolios/frmBusquedaPortafolio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+        NewItem(nodos, new EMenu('165', '162', 'Custodia', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+        NewItem(nodos, new EMenu('172', '164', 'Consulta de Valorización', 'Modulos/ValorizacionCustodia/Valorizacion/frmConsultaValoracion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('177', '165', 'Títulos asociados a Custodios', 'Modulos/ValorizacionCustodia/Custodia/frmConsultaTitulosCustodios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('185', '166', 'Registro de dividendos, rebates y liberadas', 'Modulos/ValorizacionCustodia/Custodia/frmRegistroDivRebLib.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('199', '196', 'Excepciones límites de negociación', 'Modulos/Riesgos/frmExcepcionLimiteNegociacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+        NewItem(nodos, new EMenu('199', '196', 'Historia de Rating', 'Modulos/Riesgos/frmHistoriaRating.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+        NewItem(nodos, new EMenu('199', '196', 'Reporte de Validación de Riesgos', 'Modulos/Riesgos/frmReporteValidacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+        NewItem(nodos, new EMenu('131', '196', 'Patrimonio Valor Fondo', 'Modulos/Parametria/Tablas/Valores/frmBusquedaPatrimonioValor.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+        NewItem(nodos, new EMenu('205', '202', 'Reportes Excel', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('285', '205', 'Reporte de Registro de Inversiones', 'Modulos/Gestion/Reportes/frmReporteRegistroInversiones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('285', '205', 'Reporte VL', 'Modulos/Gestion/Reportes/frm_reporteVL.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('208', '204', 'Reporte Composición BenchMark SBS', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=REPCOMPB', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('219', '203', 'Composicion Cartera Plazo - Resumen', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCP1', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('233', '201', 'Importar VAX', 'Modulos/Gestion/Archivos Planos/frmInterfasesVAX.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '3'));
+        NewItem(nodos, new EMenu('242', '205', 'Vector Variación', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=VECVAR', 'false', 'A', 'Activo', 'IN-SIT', '5', '3'));
+        NewItem(nodos, new EMenu('274', '271', 'Generar Asientos Contables', 'Modulos/Contabilidad/frmGeneracionDeAsientosContables.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+        NewItem(nodos, new EMenu('17', '16', 'Ingreso de órdenes DATATEC', 'Modulos/Inversiones/frmIngresoOrdenesDatatec.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '4'));
+        NewItem(nodos, new EMenu('22', '18', 'Depósito a plazo', 'Modulos/Inversiones/InstrumentosNegociados/frmDepositoPlazos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('36', '32', 'Consolidado de Posición de Fondos', 'Modulos/Inversiones/Reportes/Consolidado de Posiciones/frmReporteConsolidadoPosicionV2.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('289', '32', 'Reporte de Vencimientos', 'Modulos/Inversiones/Reportes/frmReporteVencimientos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '5'));
+        NewItem(nodos, new EMenu('289', '32', 'Resumen de Portafolio', 'Modulos/Inversiones/Reportes/frmReportePortafolio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '5'));
+        NewItem(nodos, new EMenu('55', '51', 'Cuentas por Pagar', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '4'));
+        NewItem(nodos, new EMenu('66', '62', 'Anexos SWAP y Renovaciones FWD', 'Modulos/Tesoreria/Reportes/frmAnexoSwapRenovacionFWD.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '4'));
+        NewItem(nodos, new EMenu('69', '53', 'Ingresos y Egresos varios', 'Modulos/Tesoreria/OperacionesCaja/frmOperacionCaja.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('69', '53', 'Movimientos de Caja', 'Modulos/Tesoreria/OperacionesCaja/frmOperacionesCajaIngresoEgreso.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('69', '53', 'Mentenimiento de Pendiente', 'Modulos/Tesoreria/OperacionesCaja/frmMontoPendienteListar.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('85', '57', 'Ingreso de Flujo', 'Modulos/Tesoreria/FlujoCajaEstimado/frmIngresosFlujoCaja.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('94', '90', 'Contacto', 'Modulos/Parametria/Tablas/Entidades/frmBusquedaContacto.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '4'));
+        NewItem(nodos, new EMenu('103', '89', 'Códigos Postales', 'Modulos/Parametria/Tablas/Generales/frmBusquedaCodigosPostales.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '4'));
+        NewItem(nodos, new EMenu('128', '124', 'Factores por Emisión', 'Modulos/Parametria/Tablas/Valores/frmBusquedaFactorEmision.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '4'));
+        NewItem(nodos, new EMenu('140', '87', 'Tablas de Valores', '', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('144', '140', 'Periodos Libor', 'Modulos/Parametria/Tablas/Valores/frmBusquedaPeriodosLibor.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '4'));
+        NewItem(nodos, new EMenu('157', '86', 'Apertura Negociacion', 'Modulos/Parametria/frmAperturaPortafolio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '4'));
+        NewItem(nodos, new EMenu('162', '1', 'Valorización y Custodia', '', 'false', 'A', 'Activo', 'IN-SIT', '2', '4'));
+        NewItem(nodos, new EMenu('166', '162', 'Dividendos, Rebates y Liberadas', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '4'));
+        NewItem(nodos, new EMenu('173', '164', 'Precio Promedio por instrumento', 'Modulos/ValorizacionCustodia/Valorizacion/frmCalculoPromedioDiario.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('178', '165', 'Registro de Faltantes', 'Modulos/ValorizacionCustodia/Custodia/frmIngresoCustodios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('186', '166', 'Reporte Cálculo Rebates', 'Modulos/ValorizacionCustodia/DividendosRebatesyLiberadas/frmCalculoRebates.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('209', '204', 'Consulta de Duraciones', 'Modulos/Gestion/frmConsultaDuraciones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '4'));
+        NewItem(nodos, new EMenu('220', '203', 'Composicion Cartera Plazo - Detalle', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCPD', 'false', 'A', 'Activo', 'IN-SIT', '5', '4'));
+        NewItem(nodos, new EMenu('234', '201', 'Reportes IDI', 'Modulos/Gestion/Reportes/frmReportesComposicionCartera.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '4'));
+        NewItem(nodos, new EMenu('243', '205', 'Unidades Negociadas', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=UNI', 'false', 'A', 'Activo', 'IN-SIT', '5', '4'));
+        NewItem(nodos, new EMenu('23', '18', 'Certificado de Depósito', 'Modulos/Inversiones/InstrumentosNegociados/frmCertificadoDeposito.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '5'));
+        NewItem(nodos, new EMenu('42', '16', 'Consulta de Pre Órdenes y Órdenes de Inversión', 'Modulos/Inversiones/ConsultasPreOrden/frmConsultasPreOrden.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '5'));
+        NewItem(nodos, new EMenu('56', '51', 'Cartas de Instrucción', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '5'));
+        NewItem(nodos, new EMenu('70', '53', 'Transferencias Internas', 'Modulos/Tesoreria/OperacionesCaja/frmTransferencias.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '5'));
+        NewItem(nodos, new EMenu('86', '1', 'Parametría', '', 'false', 'A', 'Activo', 'IN-SIT', '2', '5'));
+        NewItem(nodos, new EMenu('95', '90', 'Intermediario Contacto', 'Modulos/Parametria/Tablas/Entidades/frmBusquedaIntermediarioContacto.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '5'));
+        NewItem(nodos, new EMenu('104', '89', 'Cuentas Economicas', 'Modulos/Parametria/Tablas/Generales/frmBusquedaCuentasEconomicas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '5'));
+        NewItem(nodos, new EMenu('129', '124', 'Balance Contable', 'Modulos/Parametria/Tablas/Valores/frmBusquedaBalanceContable.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '5'));
+        NewItem(nodos, new EMenu('145', '140', 'Tipo de Bursatilidad', 'Modulos/Parametria/Tablas/Valores/frmBusquedaTipoBursatilidad.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '5'));
+        NewItem(nodos, new EMenu('158', '86', 'Cierre de IDI', 'Modulos/Parametria/frmCierrePortafolio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '5'));
+        NewItem(nodos, new EMenu('174', '164', 'Kardex de la Cartera', 'Modulos/ValorizacionCustodia/Valorizacion/frmConsultaskardex.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '5'));
+        NewItem(nodos, new EMenu('179', '165', 'Registro de Excedentes', 'Modulos/ValorizacionCustodia/Custodia/frmEgresoCustodios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '5'));
+        NewItem(nodos, new EMenu('210', '204', 'Seguimiento de Forwards', 'Modulos/Gestion/Reportes/frmSeguimientoForwards.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '5'));
+        NewItem(nodos, new EMenu('221', '203', 'Composicion Cartera Tipo Renta', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCTR', 'false', 'A', 'Activo', 'IN-SIT', '5', '5'));
+        NewItem(nodos, new EMenu('235', '201', 'Generar para VAX', 'Modulos/Gestion/Archivos Planos/frmInterfases.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '5'));
+        NewItem(nodos, new EMenu('244', '205', 'Unidades Valoradas', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=UNIVAL', 'false', 'A', 'Activo', 'IN-SIT', '5', '5'));
+        NewItem(nodos, new EMenu('276', '271', 'Operaciones no contabilizadas', 'Modulos/Contabilidad/frmOperacionesNoContabilizadas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '5'));
+        NewItem(nodos, new EMenu('24', '18', 'Operaciones de Reporte', 'Modulos/Inversiones/InstrumentosNegociados/frmOperacionesReporte.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '6'));
+        NewItem(nodos, new EMenu('43', '16', 'Aprobar Excesos por límite', 'Modulos/Inversiones/ExcesosLimite/frmExcesosxLimites.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+        NewItem(nodos, new EMenu('57', '51', 'Flujos de Caja estimada', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+        NewItem(nodos, new EMenu('71', '53', 'PreLiquidacion de divisas NoPH', 'Modulos/Tesoreria/OperacionesCaja/frmPreLiquidacionDivisas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '6'));
+        NewItem(nodos, new EMenu('96', '90', 'Tipo de Operación', 'Modulos/Parametria/Tablas/Tesoreria/frmBusquedaTipoOperaciones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '6'));
+        NewItem(nodos, new EMenu('105', '89', 'Feriados', 'Modulos/Parametria/Tablas/Generales/frmBusquedaFeriados.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '6'));
+        NewItem(nodos, new EMenu('130', '124', 'Patrimonio Fideicomiso', 'Modulos/Parametria/Tablas/Valores/frmBusquedaPatrimonioFideicomiso.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '6'));
+        NewItem(nodos, new EMenu('146', '140', 'Tipo de Amortización', 'Modulos/Parametria/Tablas/Valores/frmBusquedaTiposAmortizacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '6'));
+        NewItem(nodos, new EMenu('159', '86', 'Indicadores', 'Modulos/Parametria/CotizacionVAC/frmBusquedaCotizacionVAC.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+        NewItem(nodos, new EMenu('180', '165', 'Transferencias entre Custodios', 'Modulos/ValorizacionCustodia/Custodia/frmTransferenciaCustodios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '6'));
+        NewItem(nodos, new EMenu('200', '1', 'Gestión', '', 'false', 'A', 'Activo', 'IN-SIT', '2', '6'));
+        NewItem(nodos, new EMenu('211', '204', 'Lista Precios SAFP', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=SAFP', 'false', 'A', 'Activo', 'IN-SIT', '5', '6'));
+        NewItem(nodos, new EMenu('222', '203', 'Composicion Cartera Categoria Instrumento', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCCI', 'false', 'A', 'Activo', 'IN-SIT', '5', '6'));
+        NewItem(nodos, new EMenu('236', '201', 'Importar Benchmark Indicadores', 'Modulos/Gestion/Archivos Planos/frmInterfaseBenchmark.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '6'));
+        NewItem(nodos, new EMenu('245', '205', 'Composicion de Cartera', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=CAR', 'false', 'A', 'Activo', 'IN-SIT', '5', '6'));
+        NewItem(nodos, new EMenu('277', '271', 'Cierre Contable', 'Modulos/Contabilidad/frmCierreYPreCierreContable.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '6'));
+        NewItem(nodos, new EMenu('25', '18', 'Pagaré', 'Modulos/Inversiones/InstrumentosNegociados/frmPagares.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '7'));
+        NewItem(nodos, new EMenu('44', '16', 'Aprobar Excesos por Broker', 'Modulos/Inversiones/ExcesosLimite/frmExcesosxBroker.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '7'));
+        NewItem(nodos, new EMenu('72', '53', 'Extorno de Operaciones Caja', 'Modulos/Tesoreria/OperacionesCaja/frmExtornoOperacionesCaja.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '7'));
+        NewItem(nodos, new EMenu('97', '90', 'Operación', 'Modulos/Parametria/Tablas/Tesoreria/frmBusquedaOperacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '7'));
+        NewItem(nodos, new EMenu('106', '89', 'Matriz', 'Modulos/Parametria/Tablas/Contabilidad/frmBusquedaMatriz.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '7'));
+
+        NewItem(nodos, new EMenu('147', '140', 'Tipo de Cupón', 'Modulos/Parametria/Tablas/Valores/frmBusquedaTiposCupon.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '7'));
+        NewItem(nodos, new EMenu('160', '86', 'Reportes', 'Modulos/Parametria/Reportes/frmGenerarReportes.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '7'));
+        NewItem(nodos, new EMenu('181', '165', 'Saldos Custodio por Mnemonico', 'Modulos/ValorizacionCustodia/Custodia/frmVerificaSaldosCustodio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '7'));
+        NewItem(nodos, new EMenu('212', '204', 'Lista de Tipo de Cambio SAFP', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=SAFPM', 'false', 'A', 'Activo', 'IN-SIT', '5', '7'));
+        NewItem(nodos, new EMenu('223', '203', 'Duracion Cartera Detalle', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=DCD', 'false', 'A', 'Activo', 'IN-SIT', '5', '7'));
+        NewItem(nodos, new EMenu('237', '201', 'Importar Líneas de Crédito por Emisor', 'Modulos/Gestion/Archivos Planos/frmInterfaseLineasCredito.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '7'));
+        NewItem(nodos, new EMenu('246', '205', 'Cartera por VPN Local', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=FON3', 'false', 'A', 'Activo', 'IN-SIT', '5', '7'));
+        NewItem(nodos, new EMenu('271', '1', 'Interfase Contable SIT', '', 'false', 'A', 'Activo', 'IN-SIT', '2', '7'));
+        NewItem(nodos, new EMenu('278', '271', 'Generacion de Ristra Contable', 'Modulos/Contabilidad/frmGeneracionRistraContable.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '7'));
+        NewItem(nodos, new EMenu('26', '18', 'Forward de Divisas', 'Modulos/Inversiones/InstrumentosNegociados/frmOpcionesDerivadasForwardDivisas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '8'));
+        NewItem(nodos, new EMenu('45', '16', 'Ejecutar Ordenes de Inversión', 'Modulos/Inversiones/frmEjecutarOrdenesDeInversion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '8'));
+        NewItem(nodos, new EMenu('59', '51', 'Reportes de Tesorería', 'Modulos/Tesoreria/Reportes/frmGenerarReportes.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '8'));
+        NewItem(nodos, new EMenu('288', '51', 'Reportes Diarios de Operaciones', 'Modulos/Tesoreria/Reportes/frmReporteDiarioOperaciones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '8'));
+        NewItem(nodos, new EMenu('287', '51', 'Reporte de Inversiones', 'Modulos/Tesoreria/Reportes/frmReporteRegistroInversiones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '7'));
+        NewItem(nodos, new EMenu('98', '90', 'Broker/Comisiones', 'Modulos/Parametria/Tablas/Entidades/frmBusquedaBroker.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '8'));
+        NewItem(nodos, new EMenu('107', '89', 'Mercados', 'Modulos/Parametria/Tablas/Generales/frmBusquedaMercados.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '8'));
+        NewItem(nodos, new EMenu('132', '124', 'Acciones segun Liquidez', 'Modulos/Parametria/Tablas/Valores/frmBusquedaLiquidezAccion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '8'));
+        NewItem(nodos, new EMenu('148', '140', 'Tipo de Instrumento', 'Modulos/Parametria/Tablas/Valores/frmBusquedaTiposInstrumentos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '8'));
+        NewItem(nodos, new EMenu('161', '86', 'Generación de Vencimientos', 'Modulos/Parametria/frmGeneraVencimientosFuturos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '8'));
+        NewItem(nodos, new EMenu('400', '86', 'Cronograma de Pagos', 'Modulos/Parametria/frmCronogramaPagos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '8'));
+        NewItem(nodos, new EMenu('213', '204', 'Reporte de Flujo de Caja', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=RFC', 'false', 'A', 'Activo', 'IN-SIT', '5', '8'));
+        NewItem(nodos, new EMenu('224', '203', 'Duracion Cartera Resumen', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=DC', 'false', 'A', 'Activo', 'IN-SIT', '5', '8'));
+        NewItem(nodos, new EMenu('238', '201', 'Importar para Líneas por Contraparte para Forwards', 'Modulos/Gestion/Archivos Planos/frmInterfaseLineaxContraparteFWD.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '8'));
+        NewItem(nodos, new EMenu('247', '205', 'Ordenes de Inversion', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=OPE', 'false', 'A', 'Activo', 'IN-SIT', '5', '8'));
+        NewItem(nodos, new EMenu('279', '271', 'Reportes Contables', 'Modulos/Contabilidad/Reportes/frmReportesContables.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '8'));
+        NewItem(nodos, new EMenu('279', '271', 'Resumen Lotes por Clase Instrumento', 'Modulos/Contabilidad/Reportes/frmEvidenciaLoteClaseInstrumento.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '8'));
+        NewItem(nodos, new EMenu('27', '18', 'SWAP Divisas', 'Modulos/Inversiones/InstrumentosNegociados/frmSwapDivisas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '9'));
+        NewItem(nodos, new EMenu('46', '16', 'Confirmación de órdenes', 'Modulos/Inversiones/frmConfirmarOrdenesDeInversion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '9'));
+        NewItem(nodos, new EMenu('99', '90', 'Broker/Excesos', 'Modulos/Parametria/Tablas/Entidades/frmBusquedaEntidadExcesos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '9'));
+        NewItem(nodos, new EMenu('108', '89', 'Modelo de Carta', 'Modulos/Parametria/Tablas/Generales/frmBusquedaModeloCartas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '9'));
+        NewItem(nodos, new EMenu('133', '124', 'Montos Negociados BVL', 'Modulos/Parametria/Tablas/Valores/frmBusquedaMontoNegociadoBVL.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '9'));
+        NewItem(nodos, new EMenu('149', '140', 'Tipo de Título', 'Modulos/Parametria/Tablas/Valores/frmBusquedaTiposTitulos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '9'));
+        NewItem(nodos, new EMenu('214', '204', 'Reporte Auxiliar BCR', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=SIPE', 'false', 'A', 'Activo', 'IN-SIT', '5', '9'));
+        NewItem(nodos, new EMenu('225', '203', 'Composicion Cartera Riesgo - Detalle', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCR', 'false', 'A', 'Activo', 'IN-SIT', '5', '9'));
+        NewItem(nodos, new EMenu('239', '201', 'Importar Operaciones de Venta - Consitución EPU US', 'Modulos/Gestion/Archivos Planos/frmInterfaseOperacionesVentaEPU.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '9'));
+        NewItem(nodos, new EMenu('248', '205', 'Engrapado', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=ENG', 'false', 'A', 'Activo', 'IN-SIT', '5', '9'));
+        NewItem(nodos, new EMenu('280', '271', 'Reversión Contable', 'Modulos/Contabilidad/frmReversionRistraContable.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '9'));
+
+
+       
+        NewItem(nodos, new EMenu('284', '271', 'Valor Cuota', 'Modulos/ValorCuota/frmSeriesPortafolio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '9'));
+        NewItem(nodos, new EMenu('289', '271', 'Reporte de CXC Venta/Compra de Titulos', 'Modulos/ValorCuota/frmReporteCXC.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '9'));
+        NewItem(nodos, new EMenu('28', '18', 'Acciones', 'Modulos/Inversiones/InstrumentosNegociados/frmAcciones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '10'));
+        NewItem(nodos, new EMenu('47', '16', 'Corrección de Depósitos a Plazo', 'Modulos/Inversiones/frmCorreccionDepositoPlazo.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '10'));
+        NewItem(nodos, new EMenu('109', '89', 'Aprobador Carta', 'Modulos/Parametria/Tablas/Generales/frmBusquedaAprobadorCarta.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '10'));
+        NewItem(nodos, new EMenu('134', '124', 'Grupo por Tipo de Instrumento', 'Modulos/Parametria/Tablas/Valores/frmBusquedaGrupoTipoInstrumento.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '10'));
+        NewItem(nodos, new EMenu('150', '140', 'BCR Seriados y Unicos', 'Modulos/Parametria/Tablas/Valores/frmBusquedaTiposValorizacion.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '10'));
+        NewItem(nodos, new EMenu('215', '204', 'Reporte Gestor-HORA', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=GESHORA', 'false', 'A', 'Activo', 'IN-SIT', '5', '10'));
+        NewItem(nodos, new EMenu('226', '203', 'Composicion Cartera Riesgo - Resumen', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCRR', 'false', 'A', 'Activo', 'IN-SIT', '5', '10'));
+        NewItem(nodos, new EMenu('249', '205', 'Compra Venta', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=ACCCV', 'false', 'A', 'Activo', 'IN-SIT', '5', '10'));
+        NewItem(nodos, new EMenu('281', '201', 'Importar Líneas Contraparte', 'Modulos/Gestion/Archivos Planos/frmInterfaseLineasContraparte.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '10'));
+        NewItem(nodos, new EMenu('29', '18', 'Papeles Comerciales', 'Modulos/Inversiones/InstrumentosNegociados/frmPapelesComerciales.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '11'));
+        NewItem(nodos, new EMenu('48', '16', 'Extorno de Ordenes Ejecutadas', 'Modulos/Inversiones/frmExtornoOrdenesEjecutadas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '11'));
+        NewItem(nodos, new EMenu('110', '89', 'Moneda', 'Modulos/Parametria/Tablas/Generales/frmBusquedaMonedas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '11'));
+        NewItem(nodos, new EMenu('135', '124', 'Grupo por Tipo de Renta', 'Modulos/Parametria/Tablas/Valores/frmBusquedaGrupoTipoRenta.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '11'));
+        NewItem(nodos, new EMenu('151', '140', 'Cuentas por Tipo de Instrumento', 'Modulos/Parametria/Tablas/Valores/frmBusquedaCuentasporTipoInst.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '11'));
+        NewItem(nodos, new EMenu('227', '203', 'Composicion Cartera Exterior', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCEX', 'false', 'A', 'Activo', 'IN-SIT', '5', '11'));
+        NewItem(nodos, new EMenu('250', '205', 'Reporte Unidades por Fecha', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=UNIXFECHA', 'false', 'A', 'Activo', 'IN-SIT', '5', '11'));
+        NewItem(nodos, new EMenu('282', '201', 'Importar Líneas Settlement', 'Modulos/Gestion/Archivos Planos/frmInterfaseLineasSettlement.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '11'));
+        NewItem(nodos, new EMenu('283', '201', 'Importar ReporteVL Midas', 'Modulos/Gestion/Archivos Planos/frmInterfaseReporteVLMidas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '11'));
+        NewItem(nodos, new EMenu('284', '201', 'Comparar Reportes VL', 'Modulos/Gestion/Archivos Planos/frmInterfaseCompararVL.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '11'));
+
+        // INICIO | Proyecto SIT Fondos - Mandato | Sprint I | CRumiche | 2018-09-07 | Migrador
+        NewItem(nodos, new EMenu('5010', '201', 'Importar Portafolio', 'frmDataImporter.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '11'));
+        // FIN | Proyecto SIT Fondos - Mandato | Sprint I | CRumiche | 2018-09-07 | Migrador
+
+        NewItem(nodos, new EMenu('30', '18', 'Compra/Venta de Moneda Extranjera', 'Modulos/Inversiones/InstrumentosNegociados/frmCompraVentaMonedaExtranjera.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '12'));
+        NewItem(nodos, new EMenu('111', '89', 'Negocio', 'Modulos/Parametria/Tablas/Generales/frmBusquedaNegocios.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '12'));
+        NewItem(nodos, new EMenu('136', '124', 'Incremento o decremento', 'Modulos/Parametria/Tablas/Limites/frmBusquedaPatrimonio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '12'));
+        NewItem(nodos, new EMenu('152', '140', 'Fecha Libor', 'Modulos/Parametria/Tablas/Valores/frmLiborFecha.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '12'));
+        NewItem(nodos, new EMenu('228', '203', 'Composicion de Cartera por Moneda', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCM', 'false', 'A', 'Activo', 'IN-SIT', '5', '12'));
+        NewItem(nodos, new EMenu('251', '205', 'Vector Serie', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=VECSER', 'false', 'A', 'Activo', 'IN-SIT', '5', '12'));
+        NewItem(nodos, new EMenu('31', '18', 'Órdenes de Fondos', 'Modulos/Inversiones/InstrumentosNegociados/frmOrdenesFondo.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '13'));
+        // FUTUROS
+        NewItem(nodos, new EMenu('5001', '18', 'Operación Futuros', 'Modulos/Inversiones/InstrumentosNegociados/frmOperacionesFuturas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '14'));
+        NewItem(nodos, new EMenu('5001', '18', 'SWAP*', 'Modulos/Inversiones/InstrumentosNegociados/frmListarSwapPorcentaje.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '14'));
+        NewItem(nodos, new EMenu('5001', '18', 'Opciones', 'Modulos/Inversiones/InstrumentosNegociados/frmWarrantsListar.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '14'));
+        NewItem(nodos, new EMenu('50', '16', 'Negociación Dias anteriores', 'Modulos/Inversiones/frmNegociacionDiasAnteriores.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '13'));
+        NewItem(nodos, new EMenu('112', '89', 'País', 'Modulos/Parametria/Tablas/Generales/frmBusquedaPaises.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '13'));
+        NewItem(nodos, new EMenu('137', '124', 'Usuarios Notificados', 'Modulos/Parametria/Tablas/Valores/frmUsuariosNotifica.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '13'));
+        NewItem(nodos, new EMenu('153', '140', 'Notificaciones de Importancia', 'Modulos/Parametria/Tablas/Valores/frmBusquedaHechosImportancia.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '13'));
+        NewItem(nodos, new EMenu('229', '203', 'Reporte de Utilidad', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=RDU', 'false', 'A', 'Activo', 'IN-SIT', '5', '13'));
+        NewItem(nodos, new EMenu('252', '205', 'Auxiliar Mensual de Inversiones', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=AUXMEN', 'false', 'A', 'Activo', 'IN-SIT', '5', '13'));
+        NewItem(nodos, new EMenu('113', '89', 'Sector Empresarial', 'Modulos/Parametria/Tablas/Generales/frmBusquedaSectoresEmpresariales.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '14'));
+        NewItem(nodos, new EMenu('138', '124', 'Niveles de Cobertura', 'Modulos/Parametria/Tablas/Limites/frmBusquedaNivelesCobertura.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '14'));
+        NewItem(nodos, new EMenu('154', '140', 'Cálculo Rebates', 'Modulos/Parametria/Tablas/Valores/frmBusquedasParamCalculoRebates.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '14'));
+        NewItem(nodos, new EMenu('230', '203', 'Composicion de Cartera por Instrumento-Empresa', 'Modulos/Gestion/Reportes/frmReportesGestion.aspx?rpt=CCIE', 'false', 'A', 'Activo', 'IN-SIT', '5', '14'));
+        NewItem(nodos, new EMenu('253', '205', 'Dividendos - Rebates -Liberadas Decretadas', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=DIVREBLIB', 'false', 'A', 'Activo', 'IN-SIT', '5', '14'));
+        NewItem(nodos, new EMenu('114', '89', 'Tipo de Documento', 'Modulos/Parametria/Tablas/Generales/frmBusquedaTipoDocumentos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '15'));
+        NewItem(nodos, new EMenu('139', '124', 'Porcentajes por Rating', 'Modulos/Parametria/Tablas/Generales/frmBusquedaPorcentajeRating.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '15'));
+        NewItem(nodos, new EMenu('254', '205', 'Reporte Exterior', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=REPEXT', 'false', 'A', 'Activo', 'IN-SIT', '5', '15'));
+        NewItem(nodos, new EMenu('115', '89', 'Tipo de Renta', 'Modulos/Parametria/Tablas/Generales/frmBusquedaTipoRenta.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '16'));
+        NewItem(nodos, new EMenu('255', '205', 'RV/NFD', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=VEN', 'false', 'A', 'Activo', 'IN-SIT', '5', '16'));
+        NewItem(nodos, new EMenu('116', '89', 'Tipo de Cambio', 'Modulos/Parametria/Tablas/Generales/frmBusquedaTipoCambio.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '17'));
+        NewItem(nodos, new EMenu('256', '205', 'Liquidación de comisión Agente de Bolsa', 'Modulos/Gestion/Reportes/frmReporteComisionesAgente.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '17'));
+        NewItem(nodos, new EMenu('117', '89', 'Rating', 'Modulos/Parametria/Tablas/Generales/frmBusquedaRating.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '18'));
+        NewItem(nodos, new EMenu('257', '205', 'Calculo de Intereses', 'Modulos/Gestion/Reportes/frmReportesCalculoInteres.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '18'));
+        NewItem(nodos, new EMenu('118', '89', 'Motivo de Extorno', 'Modulos/Parametria/Tablas/Generales/frmBusquedaMotivoExtorno.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '19'));
+        NewItem(nodos, new EMenu('258', '205', 'Promedio de tasas', 'Modulos/Gestion/Reportes/frmReportePromedioTasas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '19'));
+        NewItem(nodos, new EMenu('119', '89', 'Medio de Transmisión', 'Modulos/Parametria/Tablas/Generales/frmBusquedaMedioTransmision.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '20'));
+        NewItem(nodos, new EMenu('259', '205', 'Conversion Acciones', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=LIBCONVER', 'false', 'A', 'Activo', 'IN-SIT', '5', '20'));
+        NewItem(nodos, new EMenu('120', '89', 'Grupo Límite Trading', 'Modulos/Parametria/Tablas/Generales/frmBusquedaGrupoLimiteTrader.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '21'));
+        NewItem(nodos, new EMenu('260', '205', 'Control de Forward', 'Modulos/Gestion/Reportes/frmReporteControlForward.aspx?rpt=LIBCONVER', 'false', 'A', 'Activo', 'IN-SIT', '5', '21'));
+        NewItem(nodos, new EMenu('121', '89', 'Autorizados Aprobaciones Trader', 'Modulos/Parametria/Tablas/Generales/frmBusquedaRolAprobadoresTrader.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '22'));
+        NewItem(nodos, new EMenu('261', '205', 'Reporte de Operaciones', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=REPOPE', 'false', 'A', 'Activo', 'IN-SIT', '5', '22'));
+        NewItem(nodos, new EMenu('122', '89', 'Límites de Intermediario Negociación', 'Modulos/Parametria/Tablas/Generales/frmBusquedaLimiteIntermediario.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '23'));
+        NewItem(nodos, new EMenu('262', '205', 'Líneas de Crédito por Emisor', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=LCRE', 'false', 'A', 'Activo', 'IN-SIT', '5', '23'));
+        NewItem(nodos, new EMenu('123', '89', 'Aprobador Documentos', 'Modulos/Parametria/Tablas/Generales/frmBusquedaAprobadorReporte.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '24'));
+        NewItem(nodos, new EMenu('263', '205', 'Reporte de control de límites por instrumento', 'Modulos/Gestion/frmReporteLimitesInstrumento.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '24'));
+        NewItem(nodos, new EMenu('264', '205', 'Reporte de control por parametría de límites', 'Modulos/Gestion/frmReporteLimitesporTipo.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '25'));
+        NewItem(nodos, new EMenu('265', '205', 'Reporte de fallas de ordenes de inversión', 'Modulos/Gestion/Reportes/frmReporteFallasDeNegociacionOI.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '26'));
+        NewItem(nodos, new EMenu('266', '205', 'Reporte Operaciones Negociadas por Trader', 'Modulos/Gestion/Reportes/frmOperacionesNegociadas.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '27'));
+        NewItem(nodos, new EMenu('267', '205', 'Detalle de Posición por Emisor', 'Modulos/Gestion/Reportes/frmDetallePosicionBancoxTipoInst.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '28'));
+        NewItem(nodos, new EMenu('268', '205', 'Líneas por Contraparte', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=LCNT', 'false', 'A', 'Activo', 'IN-SIT', '5', '29'));
+        NewItem(nodos, new EMenu('269', '205', 'Líneas Settlement', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=LSTL', 'false', 'A', 'Activo', 'IN-SIT', '5', '30'));
+        NewItem(nodos, new EMenu('270', '205', 'Trazabilidad de Operaciones', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=TRZOI', 'false', 'A', 'Activo', 'IN-SIT', '5', '31'));
+        NewItem(nodos, new EMenu('283', '271', 'Codigo Valor', 'Modulos/Gestion/Reportes/frmCodigoValor.aspx?rpt=TRZOI', 'false', 'A', 'Activo', 'IN-SIT', '5', '32'));
+        NewItem(nodos, new EMenu('284', '205', 'Reporte de Rentabilidad', 'Modulos/Gestion/frmReportesEspeciales.aspx?rpt=RENTABILIDAD', 'false', 'A', 'Activo', 'IN-SIT', '5', '33'));
+        NewItem(nodos, new EMenu('285', '205', 'Reporte Valor Cuota', 'Modulos/Gestion/Reportes/frmReporteValorCuota.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '34'));
+        NewItem(nodos, new EMenu('286', '205', 'Reporte de Custodia', 'Modulos/Gestion/Reportes/frmReporteCustodia.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '35'));
+        NewItem(nodos, new EMenu('287', '205', 'Reporte Cartera Forwards', 'Modulos/Gestion/Reportes/frmCarteraForward.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '36'));
+        NewItem(nodos, new EMenu('288', '205', 'Reporte Límite', 'Modulos/Gestion/Reportes/frmReporteLimite.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '37'));
+        NewItem(nodos, new EMenu('7003', '89', 'Parámetros SIT', 'Modulos/Parametria/Tablas/Generales/frmBusquedaParametrosSIT.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '25'));
+
+        NewItem(nodos, new EMenu('291', '164', 'Valorización de Portafolios Mensual', 'Modulos/ValorizacionCustodia/Valorizacion/frmValorizacionMensual.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '6'));
+        NewItem(nodos, new EMenu('292', '205', 'Reporte Comisiones de Inversiones', 'Modulos/Tesoreria/Reportes/frmReporteComisionInversiones.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '38'));
+        NewItem(nodos, new EMenu('293', '271', 'Valor Cuota FIRBI', 'Modulos/ValorCuota/frmSeriesPortafolioFirbi.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '10'));
+        // INICIO | RCE | Zoluxiones | Proy - Aumento Capital | 17092018 | Nuevo Menú
+        NewItem(nodos, new EMenu('50', '16', 'Aumento de Capital', 'Modulos/Inversiones/frmAumentoCapital.aspx', 'false', 'A', 'Activo', 'IN-SIT', '3', '15'));
+        // FIN | RCE | Zoluxiones | Proy - Aumento Capital | 17092018 | Nuevo Menú
+		NewItem(nodos, new EMenu('294', '200', 'Reportes Mandatos', '', 'false', 'A', 'Activo', 'IN-SIT', '3', '3'));
+        NewItem(nodos, new EMenu('295', '294', 'Valorización', 'Modulos/Gestion/Reportes/ReportesMandatos/frmReporteConsolidado.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '1'));
+        NewItem(nodos, new EMenu('296', '294', 'Operaciones, Vencimientos y OTC', 'Modulos/Gestion/Reportes/ReportesMandatos/frmReporteOperacionesMandatos.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '2'));
+
+        NewItem(nodos, new EMenu('300', '89', 'Personal', 'Modulos/Parametria/Tablas/Generales/frmBusquedaPersonal.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '22'));
+		NewItem(nodos, new EMenu('297', '18', 'Letras Hipotecarias', 'Modulos/Inversiones/InstrumentosNegociados/frmLetrasHipotecarias.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '15'));
+
+
+        NewItem(nodos, new EMenu('298', '18', 'Facturas Negociables', 'Modulos/Inversiones/InstrumentosNegociados/frmFacturasNegociables.aspx', 'false', 'A', 'Activo', 'IN-SIT', '4', '15'));
+
+        // INICIO | RCE | Zoluxiones | Proy - Obligacion Tecnica | - | Nuevo Menú
+        NewItem(nodos, new EMenu('7004', '124', 'Obligacion Tecnica', 'Modulos/Parametria/Tablas/Limites/frmBusquedaObligacionTecnica.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '16'));
+        // FIN | RCE | Zoluxiones | Proy - Obligacion Tecnica | - | Nuevo Menú
+        NewItem(nodos, new EMenu('7005', '124', 'Cartera Indirecta', 'Modulos/Parametria/Tablas/Limites/frmBusquedaCarteraIndirecta.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '17'));
+       
+        NewItem(nodos, new EMenu('7009', '124', 'Saldos no Administrados', 'Modulos/Parametria/Tablas/Limites/frmBusquedaSaldoNoAdministrado.aspx', 'false', 'A', 'Activo', 'IN-SIT', '5', '18'));
+
+        var zNodes = null;
+        $(document).ready(function () {
+            LoadMenu();
+        });
+        function Link(strPagina) {
+            window.parent.frames.basefrm.document.location.href = strPagina; /*("basefrm")*/
+        }
+        var setting = {
+            view: {
+                dblClickExpand: false,
+                showLine: false
+            },
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            },
+            callback: {
+                beforeClick: function (treeId, treeNode) {
+                    var zTree = $.fn.zTree.getZTreeObj("treeSIT");
+                    if (treeNode.isParent) {
+                        zTree.expandNode(treeNode);
+                        return false;
+                    } else {
+                        Link(treeNode.file);
+                        /*demoIframe.attr("src", treeNode.file + ".html");*/
+                        return true;
+                    }
+                }
+            }
+        };
+        function onClick(e, treeId, treeNode) {
+            var zTree = $.fn.zTree.getZTreeObj("treeSIT");
+            zTree.expandNode(treeNode);
+        }
+        var __LocalPage_Msj_Error1 = "Ha ocurrido un error inesperado. Se recomienda autenticarse nuevamente mediante el 'Sistema de Seguridad'";
+        function LoadMenu() {
+            zNodes = nodos;
+            $.fn.zTree.init($("#treeSIT"), setting, zNodes);
+        }
+        function GoToLogin() {
+            this.parent.location = $("#hiddenUrlLogin").val();
+        }
+    </script>
+</head>
+<body>
+    <input name="hiddenUrlLogin" type="hidden" id="hiddenUrlLogin" value="http://sdpeapp00024:9082/WebSeguridadGeneral/login.jsf">
+    <div class="content_wrap">
+        <div style="margin: 10px 10px 15px 10xp; padding-left:10px; padding-top: 10px;padding-bottom: 10px; height: 70px; width: 100%;">
+            <img alt="" src="App_Themes/img/LOGO.jpg" style="margin: auto; width: 187px; cursor: pointer;" onclick="GoToLogin();">
+        </div>
+        <div class="zTreeBackground left" style="height:38px;">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody><tr>
+                    <td>
+                        <img src="App_Themes/img/security.png" class="GoLogin" title="Salir del Sistema" onclick="GoToLogin();"></td>
+                    <td valign="middle" style="padding-left:7px">
+                        <span id="lblUsuario" class="DatosUsuario">ADMIN - Administrador SIT</span></td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="zTreeBackground left">
+            <ul id="treeSIT" class="ztree" style="margin-top: 0px;">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

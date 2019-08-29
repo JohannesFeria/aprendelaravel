@@ -1,0 +1,40 @@
+#!groovy
+
+pipeline {
+
+     agent any
+    
+    stages{
+        
+        stage('Generar desplegable') {
+            steps{
+                script{
+                    bat "cd codigo && compilacion.bat"
+                }
+            }
+        }
+        
+        stage('Copiar Fuentes a IIS Desarrollo') {
+            when {
+                branch 'develop'
+            }
+            steps{
+                script{
+                    bat "cd codigo && despliegue.bat"
+                }
+            }
+        }
+
+        stage('Copiar Fuentes a IIS Testing') {
+            when {
+                branch 'develop'
+            }
+            steps{
+                script{                  
+                    bat "cd codigo && despliegueTesting.bat"
+                }
+            }
+        }
+        
+    }
+}

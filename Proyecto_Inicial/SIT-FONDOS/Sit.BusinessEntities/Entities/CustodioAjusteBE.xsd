@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="CustodioAjusteBE" targetNamespace="http://tempuri.org/CustodioAjusteBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/CustodioAjusteBE.xsd"
+	xmlns:mstns="http://tempuri.org/CustodioAjusteBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="CustodioAjusteBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="CustodioAjuste">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoISIN" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMnemonico" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroTitulo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NumeroOperacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaAjuste" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraAjuste" type="xs:string" minOccurs="0" />
+							<xs:element name="CantidadUnidades" type="xs:float" minOccurs="0" />
+							<xs:element name="ValorOrigen" type="xs:float" minOccurs="0" />
+							<xs:element name="ValorLocal" type="xs:float" minOccurs="0" />
+							<xs:element name="TipoMovimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraModificacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Host" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

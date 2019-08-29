@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DatosOrdenInversionBE" targetNamespace="http://tempuri.org/DatosOrdenInversionBE.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DatosOrdenInversionBE.xsd"
+	xmlns:mstns="http://tempuri.org/DatosOrdenInversionBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DatosOrdenInversionBE" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DatosOrdenInversion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoClaseCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoClaseCuentaDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroCuentaDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoModelo" type="xs:string" minOccurs="0" />
+							<xs:element name="BancoOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="BancoDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoContacto" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoContactoIntermediario" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoModalidadPago" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

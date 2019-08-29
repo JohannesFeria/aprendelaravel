@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AnexoIDI9" targetNamespace="http://tempuri.org/AnexoIDI9.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/AnexoIDI9.xsd" xmlns:mstns="http://tempuri.org/AnexoIDI9.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="AnexoIDI9" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AnexoIDI9">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodigoPortafolio" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaProceso" type="xs:string" minOccurs="0" />
+							<xs:element name="Consecutivo" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraNegociacion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodigoMonedaVenta" type="xs:string" minOccurs="0" />
+							<xs:element name="Movimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="IndicadorForward" type="xs:string" minOccurs="0" />
+							<xs:element name="MontoForward" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrecioTransaccion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="PlazoVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="Modalidad" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoCambio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IndicadorCaja" type="xs:string" minOccurs="0" />
+							<xs:element name="Plaza" type="xs:string" minOccurs="0" />
+							<xs:element name="UsuarioCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraCreacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Host" type="xs:string" minOccurs="0" />
+							<xs:element name="DescripcionMoneda" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaEmision" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaLiquidacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Intermediario" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

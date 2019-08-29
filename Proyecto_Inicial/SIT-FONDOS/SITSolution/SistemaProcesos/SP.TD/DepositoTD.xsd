@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DepositoTD" targetNamespace="http://tempuri.org/DepositoTD.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DepositoTD.xsd" xmlns:mstns="http://tempuri.org/DepositoTD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DepositoTD" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Deposito">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="ID_FONDO" type="xs:decimal" />
+							<xs:element name="ID_BANCO" type="xs:int" />
+							<xs:element name="CODIGO_CUENTA" type="xs:string" />
+							<xs:element name="ID_RECEPCION" type="xs:int" minOccurs="0" />
+							<xs:element name="NUMERO_OPERACION_BANCO" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMERO_OPERACION_ING" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PARTICIPE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MONTO" type="xs:decimal" />
+							<xs:element name="FECHA_ABONO_CONTABLE" type="xs:dateTime" />
+							<xs:element name="FECHA_ABONO_DISPONIBLE" type="xs:dateTime" />
+							<xs:element name="ID_TIPO_PAGO" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMERO_CHEQUE" type="xs:string" minOccurs="0" />
+							<xs:element name="BANCO_CHEQUE" type="xs:int" minOccurs="0" />
+							<xs:element name="REFERENCIA" type="xs:string" minOccurs="0" />
+							<xs:element name="FLAG_ABONO_DISPONIBLE" type="xs:string" />
+							<xs:element name="FECHA_DISPONIBILIDAD" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="USUARIO_DISPONIBILIDAD" type="xs:string" minOccurs="0" />
+							<xs:element name="FLAG_ACREDITADO" type="xs:string" />
+							<xs:element name="FECHA_ACREDITACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="USUARIO_ACREDITACION" type="xs:string" minOccurs="0" />
+							<xs:element name="FLAG_CONCILIADO" type="xs:string" />
+							<xs:element name="FECHA_CONCILIACION" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="USUARIO_CONCILIACION" type="xs:string" minOccurs="0" />
+							<xs:element name="ID_PRECIERRE" type="xs:int" minOccurs="0" />
+							<xs:element name="NUMERO_CUOTAS" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FLAG_ELIMINADO" type="xs:string" />
+							<xs:element name="USUARIO_CREACION" type="xs:string" />
+							<xs:element name="FECHA_CREACION" type="xs:dateTime" />
+							<xs:element name="USUARIO_MODIFICACION" type="xs:string" />
+							<xs:element name="FECHA_MODIFICACION" type="xs:dateTime" />
+							<xs:element name="CERRADO" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DepositoPrecierre">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="ID_FONDO" type="xs:decimal" />
+							<xs:element name="MONTO" type="xs:decimal" />
+							<xs:element name="FECHA_ABONO_DISPONIBLE" type="xs:dateTime" />
+							<xs:element name="FLAG_ABONO_DISPONIBLE" type="xs:string" />
+							<xs:element name="ID_PRECIERRE" type="xs:int" minOccurs="0" />
+							<xs:element name="NUMERO_CUOTAS" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FLAG_ELIMINADO" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DepositoTDKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//Deposito" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="DepositoTDKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//DepositoPrecierre" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

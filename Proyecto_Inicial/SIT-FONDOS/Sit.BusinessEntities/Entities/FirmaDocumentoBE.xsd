@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FirmaDocumentoBE" targetNamespace="http://tempuri.org/FirmaDocumentoBE.xsd" xmlns:mstns="http://tempuri.org/FirmaDocumentoBE.xsd" xmlns="http://tempuri.org/FirmaDocumentoBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FirmaDocumentoBE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FirmaDocumentoBE" msprop:Generator_UserDSName="FirmaDocumentoBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FirmaDocumento" msprop:Generator_TableClassName="FirmaDocumentoDataTable" msprop:Generator_TableVarName="tableFirmaDocumento" msprop:Generator_TablePropName="FirmaDocumento" msprop:Generator_RowDeletingName="FirmaDocumentoRowDeleting" msprop:Generator_UserTableName="FirmaDocumento" msprop:Generator_RowChangingName="FirmaDocumentoRowChanging" msprop:Generator_RowEvHandlerName="FirmaDocumentoRowChangeEventHandler" msprop:Generator_RowDeletedName="FirmaDocumentoRowDeleted" msprop:Generator_RowEvArgName="FirmaDocumentoRowChangeEvent" msprop:Generator_RowChangedName="FirmaDocumentoRowChanged" msprop:Generator_RowClassName="FirmaDocumentoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodFirmaDocumento" msprop:Generator_ColumnVarNameInTable="columnCodFirmaDocumento" msprop:Generator_ColumnPropNameInRow="CodFirmaDocumento" msprop:Generator_ColumnPropNameInTable="CodFirmaDocumentoColumn" msprop:Generator_UserColumnName="CodFirmaDocumento" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FechaDocumento" msprop:Generator_ColumnVarNameInTable="columnFechaDocumento" msprop:Generator_ColumnPropNameInRow="FechaDocumento" msprop:Generator_ColumnPropNameInTable="FechaDocumentoColumn" msprop:Generator_UserColumnName="FechaDocumento" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CodigoOrden" msprop:Generator_ColumnVarNameInTable="columnCodigoOrden" msprop:Generator_ColumnPropNameInRow="CodigoOrden" msprop:Generator_ColumnPropNameInTable="CodigoOrdenColumn" msprop:Generator_UserColumnName="CodigoOrden" type="xs:string" minOccurs="0" />
+              <xs:element name="CodCargoFirmante" msprop:Generator_ColumnVarNameInTable="columnCodCargoFirmante" msprop:Generator_ColumnPropNameInRow="CodCargoFirmante" msprop:Generator_ColumnPropNameInTable="CodCargoFirmanteColumn" msprop:Generator_UserColumnName="CodCargoFirmante" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CodigoInterno" msprop:Generator_ColumnVarNameInTable="columnCodigoInterno" msprop:Generator_ColumnPropNameInRow="CodigoInterno" msprop:Generator_ColumnPropNameInTable="CodigoInternoColumn" msprop:Generator_UserColumnName="CodigoInterno" type="xs:string" minOccurs="0" />
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoPortafolioSBS" msprop:Generator_ColumnVarNameInTable="columnCodigoPortafolioSBS" msprop:Generator_ColumnPropNameInRow="CodigoPortafolioSBS" msprop:Generator_ColumnPropNameInTable="CodigoPortafolioSBSColumn" msprop:Generator_UserColumnName="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

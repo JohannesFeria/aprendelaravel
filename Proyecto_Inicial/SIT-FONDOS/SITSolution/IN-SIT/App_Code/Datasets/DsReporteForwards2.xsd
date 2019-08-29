@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsReporteForwards2" targetNamespace="http://tempuri.org/DsReporteForwards2.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsReporteForwards2.xsd"
+	xmlns:mstns="http://tempuri.org/DsReporteForwards2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsReporteForwards2" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReporteForwards">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FechaOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Correlativo" type="xs:integer" minOccurs="0" />
+							<xs:element name="Entidad" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaContrato" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaVencimiento" type="xs:string" minOccurs="0" />
+							<xs:element name="Monto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoCambioSpot" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoCambioFuturo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Modalidad" type="xs:string" minOccurs="0" />
+							<xs:element name="MonedaOrigen" type="xs:string" minOccurs="0" />
+							<xs:element name="MonedaDestino" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="Motivo" type="xs:string" minOccurs="0" />
+							<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+							<xs:element name="HoraOperacion" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaOperacionDecimal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaContratoDecimal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FechaVencimientoDecimal" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Valorizacion" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoOrden" type="xs:string" minOccurs="0" />
+							<xs:element name="MontoDestino" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodigoSBS" type="xs:string" minOccurs="0" />
+							<xs:element name="Diferencial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NumeroContrato" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

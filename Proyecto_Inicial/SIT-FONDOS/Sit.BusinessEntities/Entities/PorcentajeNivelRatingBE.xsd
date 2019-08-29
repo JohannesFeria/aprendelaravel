@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PorcentajeNivelRatingBE" targetNamespace="http://tempuri.org/PorcentajeNivelRatingBE.xsd" xmlns:mstns="http://tempuri.org/PorcentajeNivelRatingBE.xsd" xmlns="http://tempuri.org/PorcentajeNivelRatingBE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PorcentajeNivelRatingBE" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="PorcentajeNivelRatingBE" msprop:Generator_UserDSName="PorcentajeNivelRatingBE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PorcentajeNivelRating" msprop:Generator_TableClassName="PorcentajeNivelRatingDataTable" msprop:Generator_TableVarName="tablePorcentajeNivelRating" msprop:Generator_TablePropName="PorcentajeNivelRating" msprop:Generator_RowDeletingName="PorcentajeNivelRatingRowDeleting" msprop:Generator_UserTableName="PorcentajeNivelRating" msprop:Generator_RowChangingName="PorcentajeNivelRatingRowChanging" msprop:Generator_RowEvHandlerName="PorcentajeNivelRatingRowChangeEventHandler" msprop:Generator_RowDeletedName="PorcentajeNivelRatingRowDeleted" msprop:Generator_RowEvArgName="PorcentajeNivelRatingRowChangeEvent" msprop:Generator_RowChangedName="PorcentajeNivelRatingRowChanged" msprop:Generator_RowClassName="PorcentajeNivelRatingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ValorCaracteristica" msprop:Generator_ColumnVarNameInTable="columnValorCaracteristica" msprop:Generator_ColumnPropNameInRow="ValorCaracteristica" msprop:Generator_ColumnPropNameInTable="ValorCaracteristicaColumn" msprop:Generator_UserColumnName="ValorCaracteristica" type="xs:string" minOccurs="0" />
+              <xs:element name="CategInver" msprop:Generator_ColumnVarNameInTable="columnCategInver" msprop:Generator_ColumnPropNameInRow="CategInver" msprop:Generator_ColumnPropNameInTable="CategInverColumn" msprop:Generator_UserColumnName="CategInver" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoPortafolioSBS" msprop:Generator_ColumnVarNameInTable="columnCodigoPortafolioSBS" msprop:Generator_ColumnPropNameInRow="CodigoPortafolioSBS" msprop:Generator_ColumnPropNameInTable="CodigoPortafolioSBSColumn" msprop:Generator_UserColumnName="CodigoPortafolioSBS" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorPorcentaje" msprop:Generator_ColumnVarNameInTable="columnValorPorcentaje" msprop:Generator_ColumnPropNameInRow="ValorPorcentaje" msprop:Generator_ColumnPropNameInTable="ValorPorcentajeColumn" msprop:Generator_UserColumnName="ValorPorcentaje" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion" type="xs:string" minOccurs="0" />
+              <xs:element name="GrupoRating" msprop:Generator_ColumnVarNameInTable="columnGrupoRating" msprop:Generator_ColumnPropNameInRow="GrupoRating" msprop:Generator_ColumnPropNameInTable="GrupoRatingColumn" msprop:Generator_UserColumnName="GrupoRating" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

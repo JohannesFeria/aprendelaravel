@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ParametroTD" targetNamespace="http://tempuri.org/ParametroTD.xsd" xmlns:mstns="http://tempuri.org/ParametroTD.xsd" xmlns="http://tempuri.org/ParametroTD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ParametroTD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ParametroTD" msprop:Generator_UserDSName="ParametroTD" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PARAMETRO_GEN_INTERFACES" msprop:Generator_UserTableName="PARAMETRO_GEN_INTERFACES" msprop:Generator_RowDeletedName="PARAMETRO_GEN_INTERFACESRowDeleted" msprop:Generator_TableClassName="PARAMETRO_GEN_INTERFACESDataTable" msprop:Generator_RowChangedName="PARAMETRO_GEN_INTERFACESRowChanged" msprop:Generator_RowClassName="PARAMETRO_GEN_INTERFACESRow" msprop:Generator_RowChangingName="PARAMETRO_GEN_INTERFACESRowChanging" msprop:Generator_RowEvArgName="PARAMETRO_GEN_INTERFACESRowChangeEvent" msprop:Generator_RowEvHandlerName="PARAMETRO_GEN_INTERFACESRowChangeEventHandler" msprop:Generator_TablePropName="PARAMETRO_GEN_INTERFACES" msprop:Generator_TableVarName="tablePARAMETRO_GEN_INTERFACES" msprop:Generator_RowDeletingName="PARAMETRO_GEN_INTERFACESRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODIGO" msprop:Generator_UserColumnName="CODIGO" msprop:Generator_ColumnPropNameInRow="CODIGO" msprop:Generator_ColumnVarNameInTable="columnCODIGO" msprop:Generator_ColumnPropNameInTable="CODIGOColumn" type="xs:decimal" />
+              <xs:element name="CODIGOTABLA" msprop:Generator_UserColumnName="CODIGOTABLA" msprop:Generator_ColumnPropNameInRow="CODIGOTABLA" msprop:Generator_ColumnVarNameInTable="columnCODIGOTABLA" msprop:Generator_ColumnPropNameInTable="CODIGOTABLAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPCION" msprop:Generator_UserColumnName="DESCRIPCION" msprop:Generator_ColumnPropNameInRow="DESCRIPCION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPCION" msprop:Generator_ColumnPropNameInTable="DESCRIPCIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CODIGOUNICO" msprop:Generator_UserColumnName="CODIGOUNICO" msprop:Generator_ColumnPropNameInRow="CODIGOUNICO" msprop:Generator_ColumnVarNameInTable="columnCODIGOUNICO" msprop:Generator_ColumnPropNameInTable="CODIGOUNICOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CAMPO1" msprop:Generator_UserColumnName="CAMPO1" msprop:Generator_ColumnPropNameInRow="CAMPO1" msprop:Generator_ColumnVarNameInTable="columnCAMPO1" msprop:Generator_ColumnPropNameInTable="CAMPO1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CAMPO2" msprop:Generator_UserColumnName="CAMPO2" msprop:Generator_ColumnPropNameInRow="CAMPO2" msprop:Generator_ColumnVarNameInTable="columnCAMPO2" msprop:Generator_ColumnPropNameInTable="CAMPO2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CAMPO3" msprop:Generator_UserColumnName="CAMPO3" msprop:Generator_ColumnPropNameInRow="CAMPO3" msprop:Generator_ColumnVarNameInTable="columnCAMPO3" msprop:Generator_ColumnPropNameInTable="CAMPO3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="USUARIO_CREACION" msprop:Generator_UserColumnName="USUARIO_CREACION" msprop:Generator_ColumnPropNameInRow="USUARIO_CREACION" msprop:Generator_ColumnVarNameInTable="columnUSUARIO_CREACION" msprop:Generator_ColumnPropNameInTable="USUARIO_CREACIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_CREACION" msprop:Generator_UserColumnName="FECHA_CREACION" msprop:Generator_ColumnPropNameInRow="FECHA_CREACION" msprop:Generator_ColumnVarNameInTable="columnFECHA_CREACION" msprop:Generator_ColumnPropNameInTable="FECHA_CREACIONColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USUARIO_MODIFICACION" msprop:Generator_UserColumnName="USUARIO_MODIFICACION" msprop:Generator_ColumnPropNameInRow="USUARIO_MODIFICACION" msprop:Generator_ColumnVarNameInTable="columnUSUARIO_MODIFICACION" msprop:Generator_ColumnPropNameInTable="USUARIO_MODIFICACIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_MODIFICACION" msprop:Generator_UserColumnName="FECHA_MODIFICACION" msprop:Generator_ColumnPropNameInRow="FECHA_MODIFICACION" msprop:Generator_ColumnVarNameInTable="columnFECHA_MODIFICACION" msprop:Generator_ColumnPropNameInTable="FECHA_MODIFICACIONColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PARAMETRO_GEN_INTERFACESKey1">
+      <xs:selector xpath=".//mstns:PARAMETRO_GEN_INTERFACES" />
+      <xs:field xpath="mstns:CODIGO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
